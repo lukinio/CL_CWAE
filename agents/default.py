@@ -3,27 +3,27 @@ import torch
 import torch.nn as nn
 from types import MethodType
 import models
-from utils.metric import accuracy, AverageMeter, Timer
+from utils.metric import AverageMeter
+from metrics.acc import accumulate_acc
+
 
 class NormalNN(nn.Module):
-    '''
-    Normal Neural Network with SGD for classification
-    '''
+    """ Normal Neural Network with SGD for classification """
     def __init__(self, agent_config):
-        '''
+        """
         :param agent_config (dict): lr=float,momentum=float,weight_decay=float,
                                     schedule=[int],  # The last number in the list is the end of epoch
                                     model_type=str,model_name=str,out_dim={task:dim},model_weights=str
                                     force_single_head=bool
                                     print_freq=int
                                     gpuid=[int]
-        '''
+        """
         super(NormalNN, self).__init__()
-        self.log = print if agent_config['print_freq'] > 0 else lambda \
-            *args: None  # Use a void function to replace the print
+        self.log = print
         self.config = agent_config
         # If out_dim is a dict, there is a list of tasks. The model will have a head for each task.
-        self.multihead = True if len(self.config['out_dim'])>1 else False  # A convenience flag to indicate multi-head/task
+        # A convenience flag to indicate multi-head/task
+        self.multihead = True if len(self.config['out_dim']) > 1 else False
         self.model = self.create_model()
         self.criterion_fn = nn.CrossEntropyLoss()
         if agent_config['gpuid'][0] >= 0:
@@ -33,14 +33,15 @@ class NormalNN(nn.Module):
             self.gpu = False
         self.init_optimizer()
         self.reset_optimizer = False
-        self.valid_out_dim = 'ALL'  # Default: 'ALL' means all output nodes are active
-                                    # Set a interger here for the incremental class scenario
+        # Default: 'ALL' means all output nodes are active
+        # Set a interger here for the incremental class scenario
+        self.valid_out_dim = 'ALL'
 
     def init_optimizer(self):
-        optimizer_arg = {'params':self.model.parameters(),
-                         'lr':self.config['lr'],
-                         'weight_decay':self.config['weight_decay']}
-        if self.config['optimizer'] in ['SGD','RMSprop']:
+        optimizer_arg = {'params': self.model.parameters(),
+                         'lr': self.config['lr'],
+                         'weight_decay': self.config['weight_decay']}
+        if self.config['optimizer'] in ['SGD', 'RMSprop']:
             optimizer_arg['momentum'] = self.config['momentum']
         elif self.config['optimizer'] in ['Rprop']:
             optimizer_arg.pop('weight_decay')
@@ -65,8 +66,8 @@ class NormalNN(nn.Module):
         # The output of the model will be a dict: {task_name1:output1, task_name2:output2 ...}
         # For a single-headed model the output will be {'All':output}
         model.last = nn.ModuleDict()
-        for task,out_dim in cfg['out_dim'].items():
-            model.last[task] = nn.Linear(n_feat,out_dim)
+        for task, out_dim in cfg['out_dim'].items():
+            model.last[task] = nn.Linear(n_feat, out_dim)
 
         # Redefine the task-dependent function
         def new_logits(self, x):
@@ -98,28 +99,26 @@ class NormalNN(nn.Module):
 
     def validation(self, dataloader):
         # This function doesn't distinguish tasks.
-        batch_timer = Timer()
         acc = AverageMeter()
-        batch_timer.tic()
+        losses = AverageMeter()
 
         orig_mode = self.training
         self.eval()
-        for i, (input, target, task) in enumerate(dataloader):
-
+        for i, (inputs, targets, task) in enumerate(dataloader):
             if self.gpu:
                 with torch.no_grad():
-                    input = input.cuda()
-                    target = target.cuda()
-            output = self.predict(input)
+                    inputs = inputs.cuda()
+                    targets = targets.cuda()
+            output = self.predict(inputs)
+            loss = self.criterion(output, targets, task)
 
             # Summarize the performance of all tasks, or 1 task, depends on dataloader.
             # Calculated by total number of data.
-            acc = accumulate_acc(output, target, task, acc)
+            acc = accumulate_acc(output, targets, task, acc)
+            losses.update(loss, inputs.size(0))
 
         self.train(orig_mode)
-
-        self.log(' * Val Acc {acc.avg:.3f}, Total time {time:.2f}'
-              .format(acc=acc,time=batch_timer.toc()))
+        self.log(f"* VALID - Accuracy {acc.avg:.3f} Loss {losses.avg:.4f}")
         return acc.avg
 
     def criterion(self, preds, targets, tasks, **kwargs):
@@ -128,17 +127,19 @@ class NormalNN(nn.Module):
         # The criterion will match the head and task to calculate the loss.
         if self.multihead:
             loss = 0
-            for t,t_preds in preds.items():
-                inds = [i for i in range(len(tasks)) if tasks[i]==t]  # The index of inputs that matched specific task
-                if len(inds)>0:
+            for t, t_preds in preds.items():
+                # The index of inputs that matched specific task
+                inds = [i for i in range(len(tasks)) if tasks[i] == t]
+                if len(inds) > 0:
                     t_preds = t_preds[inds]
                     t_target = targets[inds]
                     loss += self.criterion_fn(t_preds, t_target) * len(inds)  # restore the loss from average
             loss /= len(targets)  # Average the total loss by the mini-batch size
         else:
             pred = preds['All']
-            if isinstance(self.valid_out_dim, int):  # (Not 'ALL') Mask out the outputs of unseen classes for incremental class scenario
-                pred = preds['All'][:,:self.valid_out_dim]
+            # (Not 'ALL') Mask out the outputs of unseen classes for incremental class scenario
+            if isinstance(self.valid_out_dim, int):
+                pred = preds['All'][:, :self.valid_out_dim]
             loss = self.criterion_fn(pred, targets)
         return loss
 
@@ -156,60 +157,38 @@ class NormalNN(nn.Module):
             self.init_optimizer()
 
         for epoch in range(self.config['schedule'][-1]):
-            data_timer = Timer()
-            batch_timer = Timer()
-            batch_time = AverageMeter()
-            data_time = AverageMeter()
             losses = AverageMeter()
             acc = AverageMeter()
 
             # Config the model and optimizer
-            self.log('Epoch:{0}'.format(epoch))
+            self.log(f"Epoch:{epoch}")
             self.model.train()
-            self.scheduler.step(epoch)
             for param_group in self.optimizer.param_groups:
-                self.log('LR:',param_group['lr'])
+                self.log('LR:', param_group['lr'])
 
             # Learning with mini-batch
-            data_timer.tic()
-            batch_timer.tic()
-            self.log('Itr\t\tTime\t\t  Data\t\t  Loss\t\tAcc')
-            for i, (input, target, task) in enumerate(train_loader):
-
-                data_time.update(data_timer.toc())  # measure data loading time
-
+            for i, (inputs, targets, task) in enumerate(train_loader):
                 if self.gpu:
-                    input = input.cuda()
-                    target = target.cuda()
+                    inputs = inputs.cuda()
+                    targets = targets.cuda()
 
-                loss, output = self.update_model(input, target, task)
-                input = input.detach()
-                target = target.detach()
+                loss, outputs = self.update_model(inputs, targets, task)
+                inputs = inputs.detach()
+                targets = targets.detach()
 
                 # measure accuracy and record loss
-                acc = accumulate_acc(output, target, task, acc)
-                losses.update(loss, input.size(0))
+                acc = accumulate_acc(outputs, targets, task, acc)
+                losses.update(loss, inputs.size(0))
 
-                batch_time.update(batch_timer.toc())  # measure elapsed time
-                data_timer.toc()
-
-                if ((self.config['print_freq']>0) and (i % self.config['print_freq'] == 0)) or (i+1)==len(train_loader):
-                    self.log('[{0}/{1}]\t'
-                          '{batch_time.val:.4f} ({batch_time.avg:.4f})\t'
-                          '{data_time.val:.4f} ({data_time.avg:.4f})\t'
-                          '{loss.val:.3f} ({loss.avg:.3f})\t'
-                          '{acc.val:.2f} ({acc.avg:.2f})'.format(
-                        i, len(train_loader), batch_time=batch_time,
-                        data_time=data_time, loss=losses, acc=acc))
-
-            self.log(' * Train Acc {acc.avg:.3f}'.format(acc=acc))
+            self.log(f"* TRAIN - Accuracy {acc.avg:.3f} Loss {losses.avg:.4f}")
 
             # Evaluate the performance of current task
-            if val_loader != None:
+            if val_loader is not None:
                 self.validation(val_loader)
+            self.scheduler.step()
 
     def learn_stream(self, data, label):
-        assert False,'No implementation yet'
+        assert False, 'No implementation yet'
 
     def add_valid_output_dim(self, dim=0):
         # This function is kind of ad-hoc, but it is the simplest way to support incremental class learning
@@ -225,7 +204,7 @@ class NormalNN(nn.Module):
 
     def save_model(self, filename):
         model_state = self.model.state_dict()
-        if isinstance(self.model,torch.nn.DataParallel):
+        if isinstance(self.model, torch.nn.DataParallel):
             # Get rid of 'module' before the name of states
             model_state = self.model.module.state_dict()
         for key in model_state.keys():  # Always save it to cpu
@@ -242,16 +221,3 @@ class NormalNN(nn.Module):
         if len(self.config['gpuid']) > 1:
             self.model = torch.nn.DataParallel(self.model, device_ids=self.config['gpuid'], output_device=self.config['gpuid'][0])
         return self
-
-def accumulate_acc(output, target, task, meter):
-    if 'All' in output.keys(): # Single-headed model
-        meter.update(accuracy(output['All'], target), len(target))
-    else:  # outputs from multi-headed (multi-task) model
-        for t, t_out in output.items():
-            inds = [i for i in range(len(task)) if task[i] == t]  # The index of inputs that matched specific task
-            if len(inds) > 0:
-                t_out = t_out[inds]
-                t_target = target[inds]
-                meter.update(accuracy(t_out, t_target), len(inds))
-
-    return meter

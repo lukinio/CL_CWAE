@@ -2,6 +2,7 @@ import os
 import sys
 import argparse
 import torch
+from torch.utils.data.dataloader import DataLoader
 import numpy as np
 from random import shuffle
 from collections import OrderedDict
@@ -28,19 +29,22 @@ def run(args):
                                                                           remap_class=not args.no_class_remap)
 
     # Prepare the Agent (model)
-    agent_config = {'lr': args.lr, 'momentum': args.momentum, 'weight_decay': args.weight_decay,'schedule': args.schedule,
-                    'model_type':args.model_type, 'model_name': args.model_name, 'model_weights':args.model_weights,
-                    'out_dim':{'All':args.force_out_dim} if args.force_out_dim>0 else task_output_space,
-                    'optimizer':args.optimizer,
-                    'print_freq':args.print_freq, 'gpuid': args.gpuid,
-                    'reg_coef':args.reg_coef}
+    agent_config = {'model_type': args.model_type, 'model_name': args.model_name, 'model_weights': args.model_weights,
+                    'generator_type': args.generator_type, 'generator_name': args.generator_name, 'gpuid': args.gpuid,
+                    'out_dim': {'All': args.force_out_dim} if args.force_out_dim > 0 else task_output_space,
+                    'batch_size': args.batch_size, 'schedule': args.schedule,
+                    'optimizer': args.optimizer,
+                    'lr': args.lr, 'momentum': args.momentum, 'weight_decay': args.weight_decay,
+                    'generator_epoch': args.generator_epoch, 'generator_lr': args.generator_lr,
+                    'latent_size': args.latent_size,
+                    'reg_coef': args.reg_coef}
     agent = agents.__dict__[args.agent_type].__dict__[args.agent_name](agent_config)
     print(agent.model)
-    print('#parameter of model:',agent.count_parameter())
+    print('#parameter of model:', agent.count_parameter())
 
     # Decide split ordering
     task_names = sorted(list(task_output_space.keys()), key=int)
-    print('Task order:',task_names)
+    print('Task order:', task_names)
     if args.rand_split_order:
         shuffle(task_names)
         print('Shuffled task order:', task_names)
@@ -64,11 +68,11 @@ def run(args):
         # Feed data to agent and evaluate agent's performance
         for i in range(len(task_names)):
             train_name = task_names[i]
-            print('======================',train_name,'=======================')
-            train_loader = torch.utils.data.DataLoader(train_dataset_splits[train_name],
-                                                        batch_size=args.batch_size, shuffle=True, num_workers=args.workers)
-            val_loader = torch.utils.data.DataLoader(val_dataset_splits[train_name],
-                                                      batch_size=args.batch_size, shuffle=False, num_workers=args.workers)
+            print(f"{30 * '='} Train task: {train_name} {30 * '='}")
+            train_loader = DataLoader(train_dataset_splits[train_name], batch_size=args.batch_size,
+                                      shuffle=True, num_workers=args.workers)
+            val_loader = DataLoader(val_dataset_splits[train_name], batch_size=args.batch_size,
+                                    shuffle=False, num_workers=args.workers)
 
             if args.incremental_class:
                 agent.add_valid_output_dim(task_output_space[train_name])
@@ -82,9 +86,7 @@ def run(args):
                 val_name = task_names[j]
                 print('validation split name:', val_name)
                 val_data = val_dataset_splits[val_name] if not args.eval_on_train_set else train_dataset_splits[val_name]
-                val_loader = torch.utils.data.DataLoader(val_data,
-                                                         batch_size=args.batch_size, shuffle=False,
-                                                         num_workers=args.workers)
+                val_loader = DataLoader(val_data, batch_size=args.batch_size, shuffle=False, num_workers=args.workers)
                 acc_table[val_name][train_name] = agent.validation(val_loader)
 
     return acc_table, task_names
@@ -96,6 +98,8 @@ def get_args(argv):
                         help="The list of gpuid, ex:--gpuid 3 1. Negative value means cpu-only")
     parser.add_argument('--model_type', type=str, default='mlp', help="The type (mlp|lenet|vgg|resnet) of backbone network")
     parser.add_argument('--model_name', type=str, default='MLP', help="The name of actual model for the backbone")
+    parser.add_argument('--generator_type', type=str, default='generator')
+    parser.add_argument('--generator_name', type=str, default='Generator')
     parser.add_argument('--force_out_dim', type=int, default=2, help="Set 0 to let the task decide the required output dimension")
     parser.add_argument('--agent_type', type=str, default='default', help="The type (filename) of agent")
     parser.add_argument('--agent_name', type=str, default='NormalNN', help="The class name of agent")
@@ -120,7 +124,9 @@ def get_args(argv):
     parser.add_argument('--weight_decay', type=float, default=0)
     parser.add_argument('--schedule', nargs="+", type=int, default=[2],
                         help="The list of epoch numbers to reduce learning rate by factor of 0.1. Last number is the end epoch")
-    parser.add_argument('--print_freq', type=float, default=100, help="Print the log at every x iteration")
+    parser.add_argument('--generator_epoch', type=int, default=2)
+    parser.add_argument('--generator_lr', type=float, default=2)
+    parser.add_argument('--latent_size', type=int, default=8)
     parser.add_argument('--model_weights', type=str, default=None,
                         help="The path to the file for the model weights (*.pth).")
     parser.add_argument('--reg_coef', nargs="+", type=float, default=[0.], help="The coefficient for regularization. Larger means less plasilicity. Give a list for hyperparameter search.")
@@ -165,9 +171,9 @@ if __name__ == '__main__':
             avg_final_acc[reg_coef][r] = avg_acc_history[-1]
 
             # Print the summary so far
-            print('===Summary of experiment repeats:',r+1,'/',args.repeat,'===')
+            print('===Summary of experiment repeats:', r+1, '/', args.repeat, '===')
             print('The regularization coefficient:', args.reg_coef)
             print('The last avg acc of all repeats:', avg_final_acc[reg_coef])
             print('mean:', avg_final_acc[reg_coef].mean(), 'std:', avg_final_acc[reg_coef].std())
-    for reg_coef,v in avg_final_acc.items():
-        print('reg_coef:', reg_coef,'mean:', avg_final_acc[reg_coef].mean(), 'std:', avg_final_acc[reg_coef].std())
+    for reg_coef, v in avg_final_acc.items():
+        print('reg_coef:', reg_coef, 'mean:', avg_final_acc[reg_coef].mean(), 'std:', avg_final_acc[reg_coef].std())
