@@ -1,4 +1,6 @@
 import os
+from pathlib import Path
+
 import sys
 import argparse
 import torch
@@ -9,11 +11,14 @@ from collections import OrderedDict
 import dataloaders.base
 from dataloaders.datasetGen import SplitGen, PermutedGen
 import agents
+import wandb
 
 
-def run(args):
-    if not os.path.exists('outputs'):
-        os.mkdir('outputs')
+def exp_name(runs_dir: Path, run_name: str, tag: str = "", rep: str = "", reg_coef: int = 0):
+    return Path(runs_dir / f"{run_name}{'_' + tag if tag else tag}{'_coef#' + str(reg_coef) if reg_coef else ''}{'_repetition#' + rep if rep else rep}")
+
+
+def run(args, rep=1):
 
     # Prepare dataloaders
     train_dataset, val_dataset = dataloaders.base.__dict__[args.dataset](args.dataroot, args.train_aug)
@@ -32,7 +37,7 @@ def run(args):
     agent_config = {'model_type': args.model_type, 'model_name': args.model_name, 'model_weights': args.model_weights,
                     'generator_type': args.generator_type, 'generator_name': args.generator_name, 'gpuid': args.gpuid,
                     'out_dim': {'All': args.force_out_dim} if args.force_out_dim > 0 else task_output_space,
-                    'batch_size': args.batch_size, 'schedule': args.schedule,
+                    'batch_size': args.batch_size, 'schedule': args.schedule, 'wandb_logger': args.wandb_logger,
                     'optimizer': args.optimizer,
                     'lr': args.lr, 'momentum': args.momentum, 'weight_decay': args.weight_decay,
                     'generator_epoch': args.generator_epoch, 'generator_lr': args.generator_lr,
@@ -41,6 +46,12 @@ def run(args):
     agent = agents.__dict__[args.agent_type].__dict__[args.agent_name](agent_config)
     print(agent.model)
     print('#parameter of model:', agent.count_parameter())
+
+    runs_path = Path('runs')
+    log_dir = str(exp_name(runs_path, f"{args.dataset}_", tag=args.exp_tag, rep=str(rep), reg_coef=args.reg_coef))
+    if args.wandb_logger:
+        wandb.init(name=log_dir.split("/")[1], project='CL_CWAE', entity='lukinio', config=vars(args))
+        wandb.watch(agent.model, agent.criterion_fn, log="all")
 
     # Decide split ordering
     task_names = sorted(list(task_output_space.keys()), key=int)
@@ -106,9 +117,11 @@ def get_args(argv):
     parser.add_argument('--optimizer', type=str, default='SGD', help="SGD|Adam|RMSprop|amsgrad|Adadelta|Adagrad|Adamax ...")
     parser.add_argument('--dataroot', type=str, default='data', help="The root folder of dataset or downloaded data")
     parser.add_argument('--dataset', type=str, default='MNIST', help="MNIST(default)|CIFAR10|CIFAR100")
+    parser.add_argument('--exp_tag', type=str, default='')
     parser.add_argument('--n_permutation', type=int, default=0, help="Enable permuted tests when >0")
     parser.add_argument('--first_split_size', type=int, default=2)
     parser.add_argument('--other_split_size', type=int, default=2)
+    parser.add_argument('--wandb_logger', dest='wandb_logger', default=False, action='store_true')
     parser.add_argument('--no_class_remap', dest='no_class_remap', default=False, action='store_true',
                         help="Avoid the dataset with a subset of classes doing the remapping. Ex: [2,5,6 ...] -> [0,1,2 ...]")
     parser.add_argument('--train_aug', dest='train_aug', default=False, action='store_true',
@@ -152,7 +165,7 @@ if __name__ == '__main__':
         for r in range(args.repeat):
 
             # Run the experiment
-            acc_table, task_names = run(args)
+            acc_table, task_names = run(args, rep=r+1)
             print(acc_table)
 
             # Calculate average performance across tasks
@@ -175,5 +188,8 @@ if __name__ == '__main__':
             print('The regularization coefficient:', args.reg_coef)
             print('The last avg acc of all repeats:', avg_final_acc[reg_coef])
             print('mean:', avg_final_acc[reg_coef].mean(), 'std:', avg_final_acc[reg_coef].std())
+            if args.wandb_logger:
+                wandb.run.finish()
+
     for reg_coef, v in avg_final_acc.items():
         print('reg_coef:', reg_coef, 'mean:', avg_final_acc[reg_coef].mean(), 'std:', avg_final_acc[reg_coef].std())

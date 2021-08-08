@@ -1,10 +1,10 @@
-from __future__ import print_function
 import torch
 import torch.nn as nn
 from types import MethodType
 import models
 from utils.metric import AverageMeter
 from metrics.acc import accumulate_acc
+import wandb
 
 
 class NormalNN(nn.Module):
@@ -24,6 +24,7 @@ class NormalNN(nn.Module):
         # If out_dim is a dict, there is a list of tasks. The model will have a head for each task.
         # A convenience flag to indicate multi-head/task
         self.multihead = True if len(self.config['out_dim']) > 1 else False
+        self.wandb_is_on = self.config['wandb_logger']
         self.model = self.create_model()
         self.criterion_fn = nn.CrossEntropyLoss()
         if agent_config['gpuid'][0] >= 0:
@@ -101,6 +102,10 @@ class NormalNN(nn.Module):
         # This function doesn't distinguish tasks.
         acc = AverageMeter()
         losses = AverageMeter()
+        task_name = ""
+        for _, _, task in dataloader:
+            task_name = task[0]
+            break
 
         orig_mode = self.training
         self.eval()
@@ -119,6 +124,8 @@ class NormalNN(nn.Module):
 
         self.train(orig_mode)
         self.log(f"* VALID - Accuracy {acc.avg:.3f} Loss {losses.avg:.4f}")
+        if self.wandb_is_on:
+            wandb.log({f"valid/acc/task#{task_name}": acc.avg, f"valid/loss/task#{task_name}": losses.avg})
         return acc.avg
 
     def criterion(self, preds, targets, tasks, **kwargs):
@@ -156,6 +163,11 @@ class NormalNN(nn.Module):
             self.log('Optimizer is reset!')
             self.init_optimizer()
 
+        task_name = ""
+        for _, _, task in train_loader:
+            task_name = task[0]
+            break
+
         for epoch in range(self.config['schedule'][-1]):
             losses = AverageMeter()
             acc = AverageMeter()
@@ -181,6 +193,8 @@ class NormalNN(nn.Module):
                 losses.update(loss, inputs.size(0))
 
             self.log(f"* TRAIN - Accuracy {acc.avg:.3f} Loss {losses.avg:.4f}")
+            if self.wandb_is_on:
+                wandb.log({f"train/acc/task#{task_name}": acc.avg, f"train/loss/task#{task_name}": losses.avg})
 
             # Evaluate the performance of current task
             if val_loader is not None:

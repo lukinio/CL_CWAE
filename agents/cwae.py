@@ -5,6 +5,7 @@ from metrics.acc import accumulate_acc
 import models
 from metrics import cw
 from .default import NormalNN
+import wandb
 
 
 class CWAE(NormalNN):
@@ -38,6 +39,8 @@ class CWAE(NormalNN):
                 losses.update(generator_loss, y.size(0))
 
             self.log(f"Epoch: {epoch}  |  loss: {losses.avg:.4f}")
+            if self.wandb_is_on:
+                wandb.log({f"generator/loss/task#{self.task_count}": losses.avg})
 
     def learn_batch(self, train_loader, val_loader=None):
 
@@ -51,7 +54,10 @@ class CWAE(NormalNN):
             p.requires_grad = False
 
         actv_data = torch.cat([self.model.features(inputs.cuda()) for inputs, _, _ in train_loader], dim=0)
+        actv_data = torch.sigmoid(actv_data)
         self.log(f"mean: {actv_data.mean()} std: {actv_data.std()}")
+        if self.wandb_is_on:
+            wandb.log({"z_actv": wandb.Histogram(actv_data.cpu())})
         actv_loader = DataLoader(actv_data, batch_size=self.config['batch_size'], shuffle=True)
 
         # 3. train generator
@@ -65,9 +71,15 @@ class CWAE(NormalNN):
 
     def criterion(self, inputs, targets, tasks, regularization=True, z_actv=None, **kwargs):
         loss = super().criterion(inputs, targets, tasks, **kwargs)
+        mode = 'train' if self.training else 'valid'
+        if self.wandb_is_on:
+            wandb.log({f"{mode}/batch/task#{self.task_count}/loss": loss})
         if self.task_count >= 1:
             v = torch.randn((z_actv.size(0), self.config['latent_size'])).cuda()
-            loss += self.config['reg_coef'] * cw.cw_sampling(z_actv, self.generator(v))
+            cw_loss = cw.cw_sampling(z_actv, self.generator(v)) #, y=torch.as_tensor(0.0001))
+            loss += self.config['reg_coef'] * cw_loss
+            if self.wandb_is_on:
+                wandb.log({f"{mode}/batch/task#{self.task_count}/cw_loss": cw_loss})
         return loss
 
     def update_model(self, inputs, targets, tasks):
@@ -82,6 +94,10 @@ class CWAE(NormalNN):
         # This function doesn't distinguish tasks.
         acc = AverageMeter()
         losses = AverageMeter()
+        task_name = ""
+        for _, _, task in dataloader:
+            task_name = task[0]
+            break
 
         orig_mode = self.training
         self.eval()
@@ -103,6 +119,8 @@ class CWAE(NormalNN):
 
         self.train(orig_mode)
         self.log(f"* VALID - Accuracy {acc.avg:.3f} Loss {losses.avg:.4f}")
+        if self.wandb_is_on:
+            wandb.log({f"valid/acc/task#{task_name}": acc.avg, f"valid/loss/task#{task_name}": losses.avg})
         return acc.avg
 
     def forward_once(self, x):
