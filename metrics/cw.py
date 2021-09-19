@@ -21,7 +21,19 @@ def cw(X: torch.Tensor, y: torch.Tensor = None):
     return (1/m.sqrt(1+y)) + A - B
 
 
-def cw_sampling(first_sample: torch.Tensor, second_sample: torch.Tensor, y: torch.Tensor = None):
+def __silverman_rule_of_thumb_sample(combined_sample: torch.Tensor):
+    N = combined_sample.size(0)//2
+    stddev = combined_sample.std()
+    return (1.06*stddev*N**(-0.2))**2
+
+
+def cw_sampling_silverman(first_sample: torch.Tensor, second_sample: torch.Tensor) -> torch.Tensor:
+    with torch.no_grad():
+        gamma = __silverman_rule_of_thumb_sample(torch.cat((first_sample, second_sample), 0))
+    return cw_sampling(first_sample, second_sample, gamma)
+
+
+def cw_sampling(first_sample: torch.Tensor, second_sample: torch.Tensor, y: torch.Tensor):
     def phi_sampling(s, D):
         return (1.0 + 4.0*s/(2.0*D-3))**(-0.5)
 
@@ -29,8 +41,8 @@ def cw_sampling(first_sample: torch.Tensor, second_sample: torch.Tensor, y: torc
     N = float(N_int)
     D = float(D_int)
 
-    if y is None:
-        y = __silverman_rule_of_thumb(N_int)
+    # if y is None:
+    #     y = __silverman_rule_of_thumb(N_int)
 
     T = 1.0/(2.0*N*N*m.sqrt(m.pi*y))
 

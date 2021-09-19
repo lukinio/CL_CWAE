@@ -42,7 +42,10 @@ def run(args, rep=1):
                     'lr': args.lr, 'momentum': args.momentum, 'weight_decay': args.weight_decay,
                     'generator_epoch': args.generator_epoch, 'generator_lr': args.generator_lr,
                     'latent_size': args.latent_size,
-                    'reg_coef': args.reg_coef}
+                    'reg_coef': args.reg_coef,
+                    'reg_coef_2': args.reg_coef_2,
+                    'reset_optimizer': args.reset_optimizer,
+                    }
     agent = agents.__dict__[args.agent_type].__dict__[args.agent_name](agent_config)
     print(agent.model)
     print('#parameter of model:', agent.count_parameter())
@@ -60,6 +63,7 @@ def run(args, rep=1):
         shuffle(task_names)
         print('Shuffled task order:', task_names)
 
+    # task_names = ['3', '8', '5', '1', '10', '2', '7', '6', '9', '4']
     acc_table = OrderedDict()
     if args.offline_training:  # Non-incremental learning / offline_training / measure the upper-bound performance
         task_names = ['All']
@@ -79,7 +83,7 @@ def run(args, rep=1):
         # Feed data to agent and evaluate agent's performance
         for i in range(len(task_names)):
             train_name = task_names[i]
-            print(f"{30 * '='} Train task: {train_name} {30 * '='}")
+            print(f"{30 * '='} Task: {i+1} {30 * '='}")
             train_loader = DataLoader(train_dataset_splits[train_name], batch_size=args.batch_size,
                                       shuffle=True, num_workers=args.workers)
             val_loader = DataLoader(val_dataset_splits[train_name], batch_size=args.batch_size,
@@ -96,7 +100,12 @@ def run(args, rep=1):
             for j in range(i+1):
                 val_name = task_names[j]
                 print('validation split name:', val_name)
-                val_data = val_dataset_splits[val_name] if not args.eval_on_train_set else train_dataset_splits[val_name]
+                if args.eval_on_train_set:
+                    loader = DataLoader(train_dataset_splits[val_name], batch_size=args.batch_size, shuffle=False,
+                                        num_workers=args.workers)
+                    agent.validation(loader)
+
+                val_data = val_dataset_splits[val_name]
                 val_loader = DataLoader(val_data, batch_size=args.batch_size, shuffle=False, num_workers=args.workers)
                 acc_table[val_name][train_name] = agent.validation(val_loader)
 
@@ -143,6 +152,8 @@ def get_args(argv):
     parser.add_argument('--model_weights', type=str, default=None,
                         help="The path to the file for the model weights (*.pth).")
     parser.add_argument('--reg_coef', nargs="+", type=float, default=[0.], help="The coefficient for regularization. Larger means less plasilicity. Give a list for hyperparameter search.")
+    parser.add_argument('--reg_coef_2', type=float, default=0.)
+    parser.add_argument('--reset_optimizer', dest='reset_optimizer', default=False, action='store_true')
     parser.add_argument('--eval_on_train_set', dest='eval_on_train_set', default=False, action='store_true',
                         help="Force the evaluation on train set")
     parser.add_argument('--offline_training', dest='offline_training', default=False, action='store_true',
