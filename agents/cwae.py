@@ -13,44 +13,47 @@ class CWAE(NormalNN):
     def __init__(self, agent_config):
         super().__init__(agent_config)
         self.task_count = 0
-        self.generator = self.create_generator()
-        self.generator = self.generator.cuda()
+        self.cwae_online = self.config['cwae_online']
+        self.generators = {}
 
     def create_generator(self):
         cfg = self.config
         generator = models.__dict__[cfg['generator_type']].__dict__[cfg['generator_name']](cfg['latent_size'])
 
-        self.generator_optimizer = torch.optim.Adam(generator.parameters(), lr=self.config['generator_lr'])
-        self.gen_scheduler = torch.optim.lr_scheduler.MultiStepLR(self.generator_optimizer,
-                                                                  milestones=[self.config['generator_epoch']],
-                                                                  gamma=0.1)
+        optimizer = torch.optim.Adam(generator.parameters(), lr=self.config['generator_lr'])
+        scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[self.config['generator_epoch']], gamma=0.1)
+        generator = generator.cuda()
+        return generator, optimizer, scheduler
 
-        return generator
+    def get_generator(self, task_id):
+        if task_id in self.generators:
+            return self.generators[task_id]
+        self.generators[task_id] = self.create_generator()
+        return self.generators[task_id]
 
-    def train_generator(self, train_loader):
+    def train_generator(self, train_loader, generator, optimizer, scheduler):
         self.log(f"{15 * '='} Train Generator {15 * '='}")
-        # self.generator = self.create_generator()
 
         losses = AverageMeter()
-        self.generator.train()
+        generator.train()
         for epoch in range(self.config['generator_epoch']):
             for y in train_loader:
                 y = y.cuda()
                 v = torch.randn((y.size(0), self.config['latent_size'])).cuda()
 
-                generator_loss = cw.cw_sampling_silverman(y, self.generator(v))
-                self.generator_optimizer.zero_grad()
+                generator_loss = cw.cw_sampling_silverman(y, generator(v))
+                optimizer.zero_grad()
                 generator_loss.backward()
-                self.generator_optimizer.step()
+                optimizer.step()
 
                 losses.update(generator_loss, y.size(0))
 
             self.log(f"Epoch: {epoch+1}  |  loss: {losses.avg:.4f}")
             if self.wandb_is_on:
                 wandb.log({f"generator/loss/task#{self.task_count}": losses.avg})
-            self.gen_scheduler.step()
+            scheduler.step()
 
-        self.generator.eval()
+        generator.eval()
 
     def learn_batch(self, train_loader, val_loader=None):
 
@@ -64,15 +67,18 @@ class CWAE(NormalNN):
             p.requires_grad = False
 
         actv_data = torch.cat([self.model.features(inputs.cuda()) for inputs, _, _ in train_loader], dim=0)
-        # ad_min, ad_max = torch.min(actv_data), torch.max(actv_data)
-        # normalized = (actv_data - ad_min) / (ad_max - ad_min)
         self.log(f"mean: {actv_data.mean()} std: {actv_data.std()}")
         if self.wandb_is_on:
             wandb.log({"z_actv": wandb.Histogram(actv_data.cpu())})
         actv_loader = DataLoader(actv_data, batch_size=self.config['batch_size'], shuffle=True)
 
         # 3. train generator
-        self.train_generator(actv_loader)
+        if self.cwae_online:
+            generator, optimizer, scheduler = self.get_generator(self.task_count+1)
+        else:
+            generator, optimizer, scheduler = self.get_generator(0)
+
+        self.train_generator(actv_loader, generator, optimizer, scheduler)
 
         # 4. Unfroze network
         self.train(mode=mode)
@@ -95,9 +101,10 @@ class CWAE(NormalNN):
             v = torch.randn((z_actv.size(0), self.config['latent_size'])).cuda()
             # coeff = torch.as_tensor(self.config['reg_coef_2']).cuda() if self.config['reg_coef_2'] != 0 else None
             # cw_loss = torch.log(cw.cw_sampling_silverman(z_actv, self.generator(v)))
-            self.generator.eval()
-            cw_loss = cw.cw_sampling_silverman(z_actv, self.generator(v))
-            self.generator.train()
+            cw_loss = 0
+            for gen_id, (generator, _, _) in self.generators.items():
+                cw_loss += cw.cw_sampling_silverman(z_actv, generator(v)) / len(self.generators)
+            # cw_loss = cw.cw_sampling_silverman(z_actv, self.generator(v))
             loss += self.config['reg_coef'] * cw_loss
             if self.wandb_is_on:
                 wandb.log({f"{mode}/batch/task#{self.task_count}/cw_loss": cw_loss})

@@ -45,6 +45,7 @@ def run(args, rep=1):
                     'reg_coef': args.reg_coef,
                     'reg_coef_2': args.reg_coef_2,
                     'reset_optimizer': args.reset_optimizer,
+                    'cwae_online': args.cwae_online,
                     }
     agent = agents.__dict__[args.agent_type].__dict__[args.agent_name](agent_config)
     print(agent.model)
@@ -154,6 +155,7 @@ def get_args(argv):
     parser.add_argument('--reg_coef', nargs="+", type=float, default=[0.], help="The coefficient for regularization. Larger means less plasilicity. Give a list for hyperparameter search.")
     parser.add_argument('--reg_coef_2', type=float, default=0.)
     parser.add_argument('--reset_optimizer', dest='reset_optimizer', default=False, action='store_true')
+    parser.add_argument('--cwae_online', dest='cwae_online', default=False, action='store_true')
     parser.add_argument('--eval_on_train_set', dest='eval_on_train_set', default=False, action='store_true',
                         help="Force the evaluation on train set")
     parser.add_argument('--offline_training', dest='offline_training', default=False, action='store_true',
