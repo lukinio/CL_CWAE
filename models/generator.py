@@ -55,3 +55,30 @@ class Generator2(nn.Module):
     def forward(self, input_latent: torch.Tensor):
         decoded_images = self.main(input_latent)
         return decoded_images
+
+
+class GeneratorCIFAR(nn.Module):
+    def __init__(self, latent_size: int):
+        super().__init__()
+        self.__sequential_blocks = [
+            nn.Linear(latent_size, 128),
+            nn.BatchNorm1d(128),
+            nn.ReLU(),
+            nn.Linear(128, 256),
+            nn.BatchNorm1d(256),
+            nn.ReLU(),
+            nn.Linear(256, 512),
+            nn.BatchNorm1d(512),
+            nn.ReLU(),
+            nn.Linear(512, 1024),
+            nn.ReLU(),
+            nn.Linear(1024, 512),
+            nn.ReLU(),
+            nn.Linear(512, 256),
+            nn.ReLU()
+        ]
+        self.main = nn.Sequential(*self.__sequential_blocks)
+
+    def forward(self, input_latent: torch.Tensor):
+        decoded_images = self.main(input_latent)
+        return decoded_images

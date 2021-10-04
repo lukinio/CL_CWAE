@@ -4,38 +4,40 @@ REPEAT=10
 mkdir -p $OUTDIR
 
 # INCREMENTAL TASK
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adam    --force_out_dim 0 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn                                              --lr 0.001 --offline_training         | tee ${OUTDIR}/IT_Offline.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adam    --force_out_dim 0 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn                                              --lr 0.001                            | tee ${OUTDIR}/IT_Adam.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer SGD     --force_out_dim 0 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn                                              --lr 0.01                             | tee ${OUTDIR}/IT_SGD.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adagrad --force_out_dim 0 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn                                              --lr 0.01                             | tee ${OUTDIR}/IT_Adagrad.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adam    --force_out_dim 0 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type customization  --agent_name EWC_online --lr 0.001 --reg_coef 500     | tee ${OUTDIR}/IT_EWC_online.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adam    --force_out_dim 0 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type customization  --agent_name EWC        --lr 0.001 --reg_coef 1000      | tee ${OUTDIR}/IT_EWC.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adam    --force_out_dim 0 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type regularization --agent_name SI  --lr 0.001 --reg_coef 100               | tee ${OUTDIR}/IT_SI.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adam    --force_out_dim 0 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type regularization --agent_name L2  --lr 0.001 --reg_coef 1               | tee ${OUTDIR}/IT_L2.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adam    --force_out_dim 0 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type regularization --agent_name MAS --lr 0.001 --reg_coef 10              | tee ${OUTDIR}/IT_MAS.log
 
-#python -u iBatchLearn.py --dataset CIFAR10 --train_aug --gpuid $GPUID --repeat $REPEAT \
-#       --optimizer Adam --force_out_dim 0 --first_split_size 2 --other_split_size 2 --schedule 12 \
-#       --batch_size 128 --model_name cnn --model_type cnn --agent_type customization \
-#       --agent_name EWC_online --lr 0.001 --reg_coef 500 \
-#       | tee ${OUTDIR}/IT_EWC_online.log
-#
-#python -u iBatchLearn.py --dataset CIFAR10 --train_aug --gpuid $GPUID --repeat $REPEAT \
-#       --optimizer Adam --force_out_dim 0 --first_split_size 2 --other_split_size 2 --schedule 12 \
-#       --batch_size 128 --model_name cnn --model_type cnn --agent_type customization \
-#       --agent_name EWC --lr 0.001 --reg_coef 1000 \
-#       | tee ${OUTDIR}/IT_EWC.log
+
+
 
 # INCREMENTAL DOMAIN
 
-#python -u iBatchLearn.py --dataroot /shared/sets/datasets/vision --dataset CIFAR10 --train_aug \
-#       --gpuid $GPUID --repeat $REPEAT --optimizer Adam --force_out_dim 2 --first_split_size 2 \
-#       --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn \
-#       --agent_type customization --agent_name EWC --lr 0.001 --reg_coef 100 \
-#       | tee ${OUTDIR}/ID_EWC.log
-#
-#python -u iBatchLearn.py --dataroot /shared/sets/datasets/vision --dataset CIFAR10 --train_aug \
-#       --gpuid $GPUID --repeat $REPEAT --optimizer Adam --force_out_dim 2 --first_split_size 2 \
-#       --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn \
-#       --agent_type customization  --agent_name EWC_online --lr 0.001 --reg_coef 500 \
-#       | tee ${OUTDIR}/ID_EWC_online.log
-
-
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adam    --force_out_dim 2 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn                                              --lr 0.001 --offline_training         | tee ${OUTDIR}/ID_Offline.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adam    --force_out_dim 2 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn                                              --lr 0.001                            | tee ${OUTDIR}/ID_Adam.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer SGD     --force_out_dim 2 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn                                              --lr 0.01                             | tee ${OUTDIR}/ID_SGD.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adagrad --force_out_dim 2 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn                                              --lr 0.01                             | tee ${OUTDIR}/ID_Adagrad.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adam    --force_out_dim 2 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type customization  --agent_name EWC_online --lr 0.001 --reg_coef 500       | tee ${OUTDIR}/ID_EWC_online.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adam    --force_out_dim 2 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type customization  --agent_name EWC        --lr 0.001 --reg_coef 100       | tee ${OUTDIR}/ID_EWC.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adam    --force_out_dim 2 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type regularization --agent_name SI         --lr 0.001 --reg_coef 100    | tee ${OUTDIR}/ID_SI.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adam    --force_out_dim 2 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type regularization --agent_name L2         --lr 0.001 --reg_coef 0.0001   | tee ${OUTDIR}/ID_L2.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --optimizer Adam    --force_out_dim 2 --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type regularization --agent_name MAS        --lr 0.001 --reg_coef 10  | tee ${OUTDIR}/ID_MAS.log
 
 
 # INCREMENTAL CLASS
 
-python -u iBatchLearn.py --dataroot /shared/sets/datasets/vision --dataset CIFAR10 --train_aug --gpuid $GPUID --repeat $REPEAT --incremental_class --optimizer Adam    --force_out_dim 10 --no_class_remap --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type customization  --agent_name EWC        --lr 0.001 --reg_coef 2            | tee ${OUTDIR}/IC_EWC.log
-python -u iBatchLearn.py --dataroot /shared/sets/datasets/vision --dataset CIFAR10 --train_aug --gpuid $GPUID --repeat $REPEAT --incremental_class --optimizer Adam    --force_out_dim 10 --no_class_remap --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type customization  --agent_name EWC_online --lr 0.001 --reg_coef 2            | tee ${OUTDIR}/IC_EWC_online.log
-
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --incremental_class --optimizer Adam    --force_out_dim 10 --no_class_remap --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn                        --lr 0.001                                  --offline_training  | tee ${OUTDIR}/IC_Offline.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --incremental_class --optimizer Adam    --force_out_dim 10 --no_class_remap --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn                                             --lr 0.001                                 | tee ${OUTDIR}/IC_Adam.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --incremental_class --optimizer SGD     --force_out_dim 10 --no_class_remap --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn                                             --lr 0.1                                   | tee ${OUTDIR}/IC_SGD.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --incremental_class --optimizer Adagrad --force_out_dim 10 --no_class_remap --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn                                             --lr 0.1                                   | tee ${OUTDIR}/IC_Adagrad.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --incremental_class --optimizer Adam    --force_out_dim 10 --no_class_remap --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type customization  --agent_name EWC        --lr 0.001 --reg_coef 2            | tee ${OUTDIR}/IC_EWC.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --incremental_class --optimizer Adam    --force_out_dim 10 --no_class_remap --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type customization  --agent_name EWC_online --lr 0.001 --reg_coef 2            | tee ${OUTDIR}/IC_EWC_online.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --incremental_class --optimizer Adam    --force_out_dim 10 --no_class_remap --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type regularization --agent_name SI         --lr 0.001 --reg_coef 0.001        | tee ${OUTDIR}/IC_SI.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --incremental_class --optimizer Adam    --force_out_dim 10 --no_class_remap --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type regularization --agent_name L2         --lr 0.001 --reg_coef 500          | tee ${OUTDIR}/IC_L2.log
+python -u iBatchLearn.py --dataset CIFAR10 --dataroot /shared/sets/datasets/vision --train_aug --gpuid $GPUID --repeat $REPEAT --incremental_class --optimizer Adam    --force_out_dim 10 --no_class_remap --first_split_size 2 --other_split_size 2 --schedule 12 --batch_size 128 --model_name cnn --model_type cnn --agent_type regularization --agent_name MAS        --lr 0.001 --reg_coef 0.001        |tee  ${OUTDIR}/IC_MAS.log
