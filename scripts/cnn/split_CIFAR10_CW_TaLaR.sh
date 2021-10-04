@@ -25,7 +25,7 @@ python -u iBatchLearn.py --gpuid "${GPUID}" --repeat "${REPEAT}" \
        --exp_tag ID_latent8 \
        --schedule 12 --batch_size 128 --optimizer Adam --lr 1e-4 \
        --generator_epoch 10 --generator_lr 1e-4 --latent_size 64 \
-       --reg_coef 100 --reg_coef_2 0.00001 \
+       --reg_coef 10 --reg_coef_2 0.00001 \
        | tee ${OUTDIR}/ID_CW_TaLaR_test.log
 
 

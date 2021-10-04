@@ -1,0 +1,1531 @@
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1460482
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 99.116 Loss 0.0270
+* VALID - Accuracy 99.905 Loss 0.0021
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.929 Loss 0.0028
+* VALID - Accuracy 99.622 Loss 0.0121
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.921 Loss 0.0027
+* VALID - Accuracy 99.811 Loss 0.0031
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.961 Loss 0.0016
+* VALID - Accuracy 99.905 Loss 0.0028
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 99.905 Loss 0.0028
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 61.692 Loss 4.0705
+* VALID - Accuracy 81.195 Loss 0.6458
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 93.647 Loss 0.2743
+* VALID - Accuracy 97.013 Loss 0.1247
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 97.303 Loss 0.1116
+* VALID - Accuracy 98.090 Loss 0.0777
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.849 Loss 0.0804
+* VALID - Accuracy 98.433 Loss 0.0579
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 84.539 Loss 0.3215
+validation split name: 2
+* VALID - Accuracy 98.433 Loss 0.0457
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 75.619 Loss 0.8400
+* VALID - Accuracy 80.363 Loss 0.5261
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 89.683 Loss 0.2582
+* VALID - Accuracy 96.958 Loss 0.0928
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 97.745 Loss 0.0689
+* VALID - Accuracy 98.879 Loss 0.0396
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.041 Loss 0.0368
+* VALID - Accuracy 99.466 Loss 0.0263
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 25.201 Loss 2.2644
+validation split name: 2
+* VALID - Accuracy 78.844 Loss 0.6087
+validation split name: 3
+* VALID - Accuracy 99.466 Loss 0.0247
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 51.646 Loss 1.6037
+* VALID - Accuracy 84.139 Loss 0.7349
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 90.060 Loss 0.5617
+* VALID - Accuracy 94.159 Loss 0.4346
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.191 Loss 0.3442
+* VALID - Accuracy 96.828 Loss 0.2790
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.587 Loss 0.2345
+* VALID - Accuracy 97.482 Loss 0.2034
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 83.310 Loss 0.4137
+validation split name: 2
+* VALID - Accuracy 87.757 Loss 0.3619
+validation split name: 3
+* VALID - Accuracy 76.574 Loss 0.6153
+validation split name: 4
+* VALID - Accuracy 97.482 Loss 0.0584
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 52.737 Loss 2.2682
+* VALID - Accuracy 53.001 Loss 2.1673
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 52.686 Loss 2.1671
+* VALID - Accuracy 53.202 Loss 2.1582
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 52.661 Loss 2.1661
+* VALID - Accuracy 52.950 Loss 2.1634
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 52.746 Loss 2.1667
+* VALID - Accuracy 53.101 Loss 2.1604
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 82.459 Loss 0.4288
+validation split name: 2
+* VALID - Accuracy 88.247 Loss 0.3460
+validation split name: 3
+* VALID - Accuracy 76.894 Loss 0.5938
+validation split name: 4
+* VALID - Accuracy 97.533 Loss 0.0574
+validation split name: 5
+* VALID - Accuracy 53.101 Loss 2.1017
+OrderedDict([('1', OrderedDict([('1', 99.90543735224587), ('2', 84.53900709219859), ('3', 25.20094562647754), ('4', 83.3096926713948), ('5', 82.45862884160756)])), ('2', OrderedDict([('2', 98.43290891283056), ('3', 78.84427032321254), ('4', 87.75710088148874), ('5', 88.24681684622918)])), ('3', OrderedDict([('3', 99.46638207043756), ('4', 76.57417289220918), ('5', 76.89434364994663)])), ('4', OrderedDict([('4', 97.48237663645519), ('5', 97.53272910372608)])), ('5', OrderedDict([('5', 53.10136157337367)]))])
+Task 1 average acc: 99.90543735224587
+Task 2 average acc: 91.48595800251456
+Task 3 average acc: 67.83719934004255
+Task 4 average acc: 86.28083577038697
+Task 5 average acc: 79.64677600297662
+===Summary of experiment repeats: 1 / 10 ===
+The regularization coefficient: 10000.0
+The last avg acc of all repeats: [79.646776  0.        0.        0.        0.        0.        0.
+  0.        0.        0.      ]
+mean: 7.964677600297662 std: 23.894032800892987
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1460482
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 99.250 Loss 0.0248
+* VALID - Accuracy 99.953 Loss 0.0014
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.889 Loss 0.0038
+* VALID - Accuracy 99.953 Loss 0.0013
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.842 Loss 0.0038
+* VALID - Accuracy 99.858 Loss 0.0045
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.913 Loss 0.0017
+* VALID - Accuracy 99.858 Loss 0.0027
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 99.858 Loss 0.0027
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 58.260 Loss 5.0974
+* VALID - Accuracy 87.120 Loss 0.6373
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 93.995 Loss 0.3010
+* VALID - Accuracy 97.013 Loss 0.1483
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 97.047 Loss 0.1364
+* VALID - Accuracy 97.600 Loss 0.0954
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.444 Loss 0.1015
+* VALID - Accuracy 98.041 Loss 0.0752
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 75.650 Loss 0.5749
+validation split name: 2
+* VALID - Accuracy 98.041 Loss 0.0514
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 74.767 Loss 0.7651
+* VALID - Accuracy 78.975 Loss 0.5455
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 88.626 Loss 0.2926
+* VALID - Accuracy 95.784 Loss 0.1133
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 97.416 Loss 0.0783
+* VALID - Accuracy 98.773 Loss 0.0441
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 98.899 Loss 0.0428
+* VALID - Accuracy 99.466 Loss 0.0283
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 35.319 Loss 1.6970
+validation split name: 2
+* VALID - Accuracy 85.602 Loss 0.4132
+validation split name: 3
+* VALID - Accuracy 99.466 Loss 0.0273
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 45.490 Loss 1.6153
+* VALID - Accuracy 79.255 Loss 0.5984
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 80.062 Loss 0.5835
+* VALID - Accuracy 83.082 Loss 0.4862
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 81.310 Loss 0.5460
+* VALID - Accuracy 83.686 Loss 0.4764
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 81.515 Loss 0.5384
+* VALID - Accuracy 83.837 Loss 0.4637
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 54.894 Loss 1.2359
+validation split name: 2
+* VALID - Accuracy 81.685 Loss 0.6064
+validation split name: 3
+* VALID - Accuracy 69.424 Loss 0.8115
+validation split name: 4
+* VALID - Accuracy 83.837 Loss 0.4492
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 50.924 Loss 2.9894
+* VALID - Accuracy 50.429 Loss 2.8852
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 55.441 Loss 1.8301
+* VALID - Accuracy 67.776 Loss 0.8712
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 81.627 Loss 0.5080
+* VALID - Accuracy 89.914 Loss 0.3237
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 92.356 Loss 0.2331
+* VALID - Accuracy 93.495 Loss 0.2163
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 41.040 Loss 2.8786
+validation split name: 2
+* VALID - Accuracy 66.846 Loss 1.0802
+validation split name: 3
+* VALID - Accuracy 40.075 Loss 1.6093
+validation split name: 4
+* VALID - Accuracy 91.339 Loss 0.2353
+validation split name: 5
+* VALID - Accuracy 93.495 Loss 0.1944
+OrderedDict([('1', OrderedDict([('1', 99.8581560283688), ('2', 75.65011820330969), ('3', 35.319148936170215), ('4', 54.8936170212766), ('5', 41.040189125295505)])), ('2', OrderedDict([('2', 98.0411361410382), ('3', 85.60235063663076), ('4', 81.68462291870715), ('5', 66.8462291870715)])), ('3', OrderedDict([('3', 99.46638207043756), ('4', 69.42369263607257), ('5', 40.07470651013874)])), ('4', OrderedDict([('4', 83.83685800604229), ('5', 91.33937562940584)])), ('5', OrderedDict([('5', 93.4947049924357)]))])
+Task 1 average acc: 99.8581560283688
+Task 2 average acc: 86.84562717217395
+Task 3 average acc: 73.46262721441285
+Task 4 average acc: 72.45969764552466
+Task 5 average acc: 66.55904108886945
+===Summary of experiment repeats: 2 / 10 ===
+The regularization coefficient: 10000.0
+The last avg acc of all repeats: [79.646776   66.55904109  0.          0.          0.          0.
+  0.          0.          0.          0.        ]
+mean: 14.62058170918461 std: 29.3872434624085
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1460482
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 99.289 Loss 0.0335
+* VALID - Accuracy 99.905 Loss 0.0046
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.905 Loss 0.0025
+* VALID - Accuracy 99.953 Loss 0.0015
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.937 Loss 0.0019
+* VALID - Accuracy 99.953 Loss 0.0021
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.921 Loss 0.0039
+* VALID - Accuracy 99.953 Loss 0.0024
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 99.953 Loss 0.0024
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 44.627 Loss 8.7673
+* VALID - Accuracy 45.201 Loss 2.0009
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 82.190 Loss 0.7920
+* VALID - Accuracy 96.229 Loss 0.3062
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.675 Loss 0.2287
+* VALID - Accuracy 97.747 Loss 0.1565
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.436 Loss 0.1449
+* VALID - Accuracy 98.041 Loss 0.1088
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 76.738 Loss 0.4412
+validation split name: 2
+* VALID - Accuracy 98.041 Loss 0.0549
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 76.312 Loss 0.6650
+* VALID - Accuracy 82.070 Loss 0.4550
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 89.648 Loss 0.2585
+* VALID - Accuracy 96.852 Loss 0.0913
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 98.278 Loss 0.0614
+* VALID - Accuracy 99.306 Loss 0.0319
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.254 Loss 0.0319
+* VALID - Accuracy 99.680 Loss 0.0203
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 28.132 Loss 1.5951
+validation split name: 2
+* VALID - Accuracy 83.203 Loss 0.4858
+validation split name: 3
+* VALID - Accuracy 99.680 Loss 0.0195
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 34.400 Loss 2.2014
+* VALID - Accuracy 45.670 Loss 1.4651
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 82.295 Loss 0.4402
+* VALID - Accuracy 96.375 Loss 0.1174
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 97.784 Loss 0.0727
+* VALID - Accuracy 98.439 Loss 0.0608
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.031 Loss 0.0405
+* VALID - Accuracy 98.842 Loss 0.0446
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 87.234 Loss 0.3657
+validation split name: 2
+* VALID - Accuracy 89.177 Loss 0.3304
+validation split name: 3
+* VALID - Accuracy 84.792 Loss 0.3857
+validation split name: 4
+* VALID - Accuracy 98.842 Loss 0.0345
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 51.737 Loss 2.1025
+* VALID - Accuracy 52.849 Loss 1.9936
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 53.161 Loss 1.9370
+* VALID - Accuracy 58.497 Loss 1.4033
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 73.890 Loss 0.7149
+* VALID - Accuracy 87.040 Loss 0.3723
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 91.653 Loss 0.2249
+* VALID - Accuracy 94.503 Loss 0.1612
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 67.139 Loss 0.9554
+validation split name: 2
+* VALID - Accuracy 70.519 Loss 0.9838
+validation split name: 3
+* VALID - Accuracy 37.086 Loss 1.8827
+validation split name: 4
+* VALID - Accuracy 96.475 Loss 0.1222
+validation split name: 5
+* VALID - Accuracy 94.503 Loss 0.1575
+OrderedDict([('1', OrderedDict([('1', 99.95271867612293), ('2', 76.73758865248227), ('3', 28.13238770685579), ('4', 87.23404255319149), ('5', 67.13947990543736)])), ('2', OrderedDict([('2', 98.0411361410382), ('3', 83.20274240940255), ('4', 89.17727717923604), ('5', 70.51909892262488)])), ('3', OrderedDict([('3', 99.67982924226254), ('4', 84.79188900747064), ('5', 37.086446104589115)])), ('4', OrderedDict([('4', 98.84189325276938), ('5', 96.47532729103726)])), ('5', OrderedDict([('5', 94.50327786182552)]))])
+Task 1 average acc: 99.95271867612293
+Task 2 average acc: 87.38936239676023
+Task 3 average acc: 70.33831978617363
+Task 4 average acc: 90.0112754981669
+Task 5 average acc: 73.14472601710284
+===Summary of experiment repeats: 3 / 10 ===
+The regularization coefficient: 10000.0
+The last avg acc of all repeats: [79.646776   66.55904109 73.14472602  0.          0.          0.
+  0.          0.          0.          0.        ]
+mean: 21.93505431089489 std: 33.633911081282385
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1460482
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 99.305 Loss 0.0316
+* VALID - Accuracy 99.905 Loss 0.0025
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.929 Loss 0.0025
+* VALID - Accuracy 99.905 Loss 0.0030
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.937 Loss 0.0018
+* VALID - Accuracy 99.905 Loss 0.0022
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.945 Loss 0.0017
+* VALID - Accuracy 99.905 Loss 0.0037
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 99.905 Loss 0.0037
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 55.265 Loss 4.8234
+* VALID - Accuracy 70.960 Loss 1.1601
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 90.760 Loss 0.4903
+* VALID - Accuracy 96.425 Loss 0.1981
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 97.055 Loss 0.1553
+* VALID - Accuracy 97.649 Loss 0.1046
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.576 Loss 0.1040
+* VALID - Accuracy 98.090 Loss 0.0773
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 77.967 Loss 0.4316
+validation split name: 2
+* VALID - Accuracy 98.090 Loss 0.0503
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 78.674 Loss 0.6811
+* VALID - Accuracy 86.339 Loss 0.3685
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 94.362 Loss 0.1623
+* VALID - Accuracy 98.986 Loss 0.0497
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 98.935 Loss 0.0426
+* VALID - Accuracy 99.733 Loss 0.0241
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.325 Loss 0.0276
+* VALID - Accuracy 99.893 Loss 0.0173
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 22.364 Loss 1.9289
+validation split name: 2
+* VALID - Accuracy 83.790 Loss 0.5129
+validation split name: 3
+* VALID - Accuracy 99.893 Loss 0.0145
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 35.861 Loss 2.1830
+* VALID - Accuracy 59.617 Loss 1.0832
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 71.854 Loss 0.8235
+* VALID - Accuracy 81.873 Loss 0.5754
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 81.318 Loss 0.5994
+* VALID - Accuracy 85.448 Loss 0.5124
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 84.659 Loss 0.5400
+* VALID - Accuracy 87.261 Loss 0.4857
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 54.043 Loss 1.3170
+validation split name: 2
+* VALID - Accuracy 85.211 Loss 0.4894
+validation split name: 3
+* VALID - Accuracy 88.687 Loss 0.2669
+validation split name: 4
+* VALID - Accuracy 87.261 Loss 0.3645
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 45.093 Loss 2.6902
+* VALID - Accuracy 48.311 Loss 2.0706
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 67.398 Loss 1.3108
+* VALID - Accuracy 87.645 Loss 0.6614
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 91.271 Loss 0.4500
+* VALID - Accuracy 93.394 Loss 0.3335
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 94.907 Loss 0.2560
+* VALID - Accuracy 95.915 Loss 0.2162
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 42.270 Loss 1.8899
+validation split name: 2
+* VALID - Accuracy 62.243 Loss 1.2051
+validation split name: 3
+* VALID - Accuracy 32.924 Loss 1.9094
+validation split name: 4
+* VALID - Accuracy 86.959 Loss 0.3183
+validation split name: 5
+* VALID - Accuracy 95.915 Loss 0.1236
+OrderedDict([('1', OrderedDict([('1', 99.90543735224587), ('2', 77.96690307328605), ('3', 22.36406619385343), ('4', 54.04255319148936), ('5', 42.269503546099294)])), ('2', OrderedDict([('2', 98.09010773751224), ('3', 83.79040156709108), ('4', 85.2105778648384), ('5', 62.24289911851126)])), ('3', OrderedDict([('3', 99.89327641408751), ('4', 88.68729989327642), ('5', 32.924226254002136)])), ('4', OrderedDict([('4', 87.26082578046324), ('5', 86.95871097683786)])), ('5', OrderedDict([('5', 95.91527987897126)]))])
+Task 1 average acc: 99.90543735224587
+Task 2 average acc: 88.02850540539914
+Task 3 average acc: 68.68258139167735
+Task 4 average acc: 78.80031418251686
+Task 5 average acc: 64.06212395488437
+===Summary of experiment repeats: 4 / 10 ===
+The regularization coefficient: 10000.0
+The last avg acc of all repeats: [79.646776   66.55904109 73.14472602 64.06212395  0.          0.
+  0.          0.          0.          0.        ]
+mean: 28.34126670638333 std: 34.92212416626835
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1460482
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 99.281 Loss 0.0271
+* VALID - Accuracy 99.905 Loss 0.0019
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.929 Loss 0.0023
+* VALID - Accuracy 99.953 Loss 0.0017
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.937 Loss 0.0022
+* VALID - Accuracy 99.905 Loss 0.0029
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.953 Loss 0.0009
+* VALID - Accuracy 99.905 Loss 0.0032
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 99.905 Loss 0.0032
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 55.323 Loss 6.2717
+* VALID - Accuracy 67.434 Loss 1.1081
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 88.130 Loss 0.5872
+* VALID - Accuracy 96.425 Loss 0.2376
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.302 Loss 0.1857
+* VALID - Accuracy 97.845 Loss 0.1177
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.287 Loss 0.1127
+* VALID - Accuracy 98.286 Loss 0.0792
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 74.894 Loss 0.5711
+validation split name: 2
+* VALID - Accuracy 98.286 Loss 0.0527
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 73.630 Loss 0.8712
+* VALID - Accuracy 72.999 Loss 0.8498
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 79.038 Loss 0.5625
+* VALID - Accuracy 85.806 Loss 0.3595
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 88.316 Loss 0.3067
+* VALID - Accuracy 91.569 Loss 0.2427
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 92.391 Loss 0.2151
+* VALID - Accuracy 95.251 Loss 0.1524
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 63.924 Loss 0.7876
+validation split name: 2
+* VALID - Accuracy 96.474 Loss 0.0900
+validation split name: 3
+* VALID - Accuracy 95.251 Loss 0.1299
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 54.831 Loss 1.1881
+* VALID - Accuracy 85.498 Loss 0.3704
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 89.888 Loss 0.2615
+* VALID - Accuracy 92.598 Loss 0.1923
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 93.901 Loss 0.1496
+* VALID - Accuracy 97.835 Loss 0.0509
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.335 Loss 0.0228
+* VALID - Accuracy 98.993 Loss 0.0264
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 81.655 Loss 0.4543
+validation split name: 2
+* VALID - Accuracy 90.548 Loss 0.3038
+validation split name: 3
+* VALID - Accuracy 56.243 Loss 1.3560
+validation split name: 4
+* VALID - Accuracy 98.993 Loss 0.0250
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 62.780 Loss 2.2795
+* VALID - Accuracy 63.137 Loss 2.0155
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 62.831 Loss 1.9727
+* VALID - Accuracy 64.297 Loss 1.8696
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 76.695 Loss 0.8481
+* VALID - Accuracy 86.788 Loss 0.4768
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 90.551 Loss 0.2864
+* VALID - Accuracy 92.587 Loss 0.2376
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 57.967 Loss 2.0818
+validation split name: 2
+* VALID - Accuracy 69.540 Loss 1.1995
+validation split name: 3
+* VALID - Accuracy 40.395 Loss 2.0843
+validation split name: 4
+* VALID - Accuracy 97.382 Loss 0.1101
+validation split name: 5
+* VALID - Accuracy 92.587 Loss 0.2235
+OrderedDict([('1', OrderedDict([('1', 99.90543735224587), ('2', 74.8936170212766), ('3', 63.924349881796694), ('4', 81.6548463356974), ('5', 57.966903073286055)])), ('2', OrderedDict([('2', 98.28599412340843), ('3', 96.47404505386875), ('4', 90.5484818805093), ('5', 69.53966699314398)])), ('3', OrderedDict([('3', 95.25080042689434), ('4', 56.24332977588047), ('5', 40.394877267876204)])), ('4', OrderedDict([('4', 98.99295065458207), ('5', 97.38167170191339)])), ('5', OrderedDict([('5', 92.58698940998487)]))])
+Task 1 average acc: 99.90543735224587
+Task 2 average acc: 86.58980557234251
+Task 3 average acc: 85.2163984541866
+Task 4 average acc: 81.85990216166732
+Task 5 average acc: 71.57402168924091
+===Summary of experiment repeats: 5 / 10 ===
+The regularization coefficient: 10000.0
+The last avg acc of all repeats: [79.646776   66.55904109 73.14472602 64.06212395 71.57402169  0.
+  0.          0.          0.          0.        ]
+mean: 35.498668875307416 std: 35.70589196428355
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1460482
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 99.124 Loss 0.0329
+* VALID - Accuracy 99.953 Loss 0.0014
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.913 Loss 0.0033
+* VALID - Accuracy 99.905 Loss 0.0023
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.929 Loss 0.0017
+* VALID - Accuracy 99.905 Loss 0.0032
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.882 Loss 0.0032
+* VALID - Accuracy 99.905 Loss 0.0047
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 99.905 Loss 0.0047
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 60.179 Loss 3.7837
+* VALID - Accuracy 92.018 Loss 0.4324
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 95.475 Loss 0.2206
+* VALID - Accuracy 97.209 Loss 0.1230
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 97.295 Loss 0.1140
+* VALID - Accuracy 97.845 Loss 0.0854
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.841 Loss 0.0864
+* VALID - Accuracy 98.335 Loss 0.0706
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 78.203 Loss 0.4473
+validation split name: 2
+* VALID - Accuracy 98.335 Loss 0.0540
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 75.886 Loss 0.8131
+* VALID - Accuracy 79.509 Loss 0.5538
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 85.226 Loss 0.3912
+* VALID - Accuracy 92.689 Loss 0.1970
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 95.827 Loss 0.1218
+* VALID - Accuracy 98.239 Loss 0.0615
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 98.633 Loss 0.0539
+* VALID - Accuracy 99.306 Loss 0.0354
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 58.960 Loss 0.8289
+validation split name: 2
+* VALID - Accuracy 88.541 Loss 0.3080
+validation split name: 3
+* VALID - Accuracy 99.306 Loss 0.0282
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 53.493 Loss 1.3676
+* VALID - Accuracy 85.851 Loss 0.4694
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 93.745 Loss 0.2114
+* VALID - Accuracy 97.936 Loss 0.0873
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.122 Loss 0.0533
+* VALID - Accuracy 98.892 Loss 0.0510
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.508 Loss 0.0323
+* VALID - Accuracy 99.194 Loss 0.0366
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 80.473 Loss 0.4581
+validation split name: 2
+* VALID - Accuracy 89.912 Loss 0.3479
+validation split name: 3
+* VALID - Accuracy 67.129 Loss 0.9830
+validation split name: 4
+* VALID - Accuracy 99.194 Loss 0.0223
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 60.890 Loss 2.3912
+* VALID - Accuracy 63.691 Loss 1.5898
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 69.898 Loss 1.1365
+* VALID - Accuracy 75.643 Loss 0.9751
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 78.678 Loss 0.7983
+* VALID - Accuracy 83.661 Loss 0.7219
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 85.153 Loss 0.6040
+* VALID - Accuracy 87.242 Loss 0.5934
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 40.662 Loss 2.6907
+validation split name: 2
+* VALID - Accuracy 69.833 Loss 1.1644
+validation split name: 3
+* VALID - Accuracy 50.800 Loss 1.5614
+validation split name: 4
+* VALID - Accuracy 96.626 Loss 0.1111
+validation split name: 5
+* VALID - Accuracy 87.242 Loss 0.4206
+OrderedDict([('1', OrderedDict([('1', 99.90543735224587), ('2', 78.2033096926714), ('3', 58.959810874704495), ('4', 80.47281323877068), ('5', 40.66193853427896)])), ('2', OrderedDict([('2', 98.33496571988246), ('3', 88.54064642507346), ('4', 89.91185112634672), ('5', 69.83349657198825)])), ('3', OrderedDict([('3', 99.30629669156883), ('4', 67.1291355389541), ('5', 50.80042689434365)])), ('4', OrderedDict([('4', 99.19436052366567), ('5', 96.62638469284995)])), ('5', OrderedDict([('5', 87.24155320221887)]))])
+Task 1 average acc: 99.90543735224587
+Task 2 average acc: 88.26913770627692
+Task 3 average acc: 82.2689179971156
+Task 4 average acc: 84.1770401069343
+Task 5 average acc: 69.03275997913593
+===Summary of experiment repeats: 6 / 10 ===
+The regularization coefficient: 10000.0
+The last avg acc of all repeats: [79.646776   66.55904109 73.14472602 64.06212395 71.57402169 69.03275998
+  0.          0.          0.          0.        ]
+mean: 42.40194487322101 std: 34.83810383597009
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1460482
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 99.218 Loss 0.0280
+* VALID - Accuracy 99.905 Loss 0.0017
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.913 Loss 0.0026
+* VALID - Accuracy 99.953 Loss 0.0012
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.945 Loss 0.0019
+* VALID - Accuracy 99.905 Loss 0.0017
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.953 Loss 0.0015
+* VALID - Accuracy 99.953 Loss 0.0022
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 99.953 Loss 0.0022
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 53.338 Loss 6.6345
+* VALID - Accuracy 75.220 Loss 1.1010
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 90.843 Loss 0.4738
+* VALID - Accuracy 96.327 Loss 0.1657
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.658 Loss 0.1425
+* VALID - Accuracy 97.747 Loss 0.0978
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.361 Loss 0.0997
+* VALID - Accuracy 97.845 Loss 0.0752
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 72.861 Loss 0.6532
+validation split name: 2
+* VALID - Accuracy 97.845 Loss 0.0590
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 79.881 Loss 0.6161
+* VALID - Accuracy 89.434 Loss 0.2951
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 94.238 Loss 0.1867
+* VALID - Accuracy 97.652 Loss 0.1042
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 98.056 Loss 0.0905
+* VALID - Accuracy 98.719 Loss 0.0631
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 98.784 Loss 0.0620
+* VALID - Accuracy 99.306 Loss 0.0451
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 54.090 Loss 1.0663
+validation split name: 2
+* VALID - Accuracy 83.154 Loss 0.4938
+validation split name: 3
+* VALID - Accuracy 99.306 Loss 0.0282
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 46.376 Loss 1.7474
+* VALID - Accuracy 84.441 Loss 0.6051
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 91.381 Loss 0.3825
+* VALID - Accuracy 95.065 Loss 0.2514
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.766 Loss 0.1810
+* VALID - Accuracy 97.080 Loss 0.1510
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 98.030 Loss 0.1121
+* VALID - Accuracy 97.684 Loss 0.1085
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 76.927 Loss 0.5314
+validation split name: 2
+* VALID - Accuracy 90.451 Loss 0.3088
+validation split name: 3
+* VALID - Accuracy 86.873 Loss 0.3312
+validation split name: 4
+* VALID - Accuracy 97.684 Loss 0.0660
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 50.941 Loss 2.2064
+* VALID - Accuracy 52.244 Loss 2.1574
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 53.568 Loss 2.1134
+* VALID - Accuracy 55.673 Loss 2.0668
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 56.492 Loss 2.0551
+* VALID - Accuracy 57.337 Loss 2.0203
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 57.339 Loss 2.0323
+* VALID - Accuracy 57.842 Loss 2.0024
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 74.326 Loss 0.5911
+validation split name: 2
+* VALID - Accuracy 90.206 Loss 0.3264
+validation split name: 3
+* VALID - Accuracy 67.609 Loss 0.8059
+validation split name: 4
+* VALID - Accuracy 97.784 Loss 0.0630
+validation split name: 5
+* VALID - Accuracy 57.842 Loss 1.9738
+OrderedDict([('1', OrderedDict([('1', 99.95271867612293), ('2', 72.86052009456264), ('3', 54.089834515366434), ('4', 76.92671394799055), ('5', 74.32624113475177)])), ('2', OrderedDict([('2', 97.84524975514202), ('3', 83.1537708129285), ('4', 90.45053868756122), ('5', 90.20568070519099)])), ('3', OrderedDict([('3', 99.30629669156883), ('4', 86.87299893276415), ('5', 67.6093916755603)])), ('4', OrderedDict([('4', 97.68378650553878), ('5', 97.78449144008056)])), ('5', OrderedDict([('5', 57.8416540595058)]))])
+Task 1 average acc: 99.95271867612293
+Task 2 average acc: 85.35288492485233
+Task 3 average acc: 78.84996733995459
+Task 4 average acc: 87.98350951846368
+Task 5 average acc: 77.55349180301788
+===Summary of experiment repeats: 7 / 10 ===
+The regularization coefficient: 10000.0
+The last avg acc of all repeats: [79.646776   66.55904109 73.14472602 64.06212395 71.57402169 69.03275998
+ 77.5534918   0.          0.          0.        ]
+mean: 50.1572940535228 std: 33.12580067304079
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1460482
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 99.203 Loss 0.0281
+* VALID - Accuracy 99.905 Loss 0.0044
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.905 Loss 0.0029
+* VALID - Accuracy 99.953 Loss 0.0020
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.929 Loss 0.0029
+* VALID - Accuracy 99.858 Loss 0.0058
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.945 Loss 0.0025
+* VALID - Accuracy 99.858 Loss 0.0063
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 99.858 Loss 0.0063
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 53.669 Loss 5.2633
+* VALID - Accuracy 85.113 Loss 0.8354
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 94.615 Loss 0.3821
+* VALID - Accuracy 97.405 Loss 0.1763
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 97.427 Loss 0.1465
+* VALID - Accuracy 98.384 Loss 0.0998
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 98.073 Loss 0.0974
+* VALID - Accuracy 98.678 Loss 0.0715
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 70.875 Loss 0.6397
+validation split name: 2
+* VALID - Accuracy 98.678 Loss 0.0418
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 79.437 Loss 0.6306
+* VALID - Accuracy 87.140 Loss 0.3114
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 92.054 Loss 0.2013
+* VALID - Accuracy 97.705 Loss 0.0668
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 98.881 Loss 0.0455
+* VALID - Accuracy 99.466 Loss 0.0251
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.334 Loss 0.0279
+* VALID - Accuracy 99.520 Loss 0.0197
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 34.184 Loss 1.4623
+validation split name: 2
+* VALID - Accuracy 87.169 Loss 0.3684
+validation split name: 3
+* VALID - Accuracy 99.520 Loss 0.0156
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 36.182 Loss 2.2968
+* VALID - Accuracy 61.833 Loss 1.0091
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 83.321 Loss 0.4397
+* VALID - Accuracy 93.857 Loss 0.1648
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.298 Loss 0.0978
+* VALID - Accuracy 96.928 Loss 0.0764
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 98.596 Loss 0.0420
+* VALID - Accuracy 98.389 Loss 0.0443
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 76.690 Loss 0.5454
+validation split name: 2
+* VALID - Accuracy 92.654 Loss 0.2375
+validation split name: 3
+* VALID - Accuracy 80.736 Loss 0.5186
+validation split name: 4
+* VALID - Accuracy 98.389 Loss 0.0432
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 51.373 Loss 2.0563
+* VALID - Accuracy 52.093 Loss 2.0048
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 51.322 Loss 1.9700
+* VALID - Accuracy 52.345 Loss 1.8432
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 66.975 Loss 0.9530
+* VALID - Accuracy 81.241 Loss 0.5251
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 86.542 Loss 0.3489
+* VALID - Accuracy 90.419 Loss 0.2793
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 49.740 Loss 1.7239
+validation split name: 2
+* VALID - Accuracy 78.795 Loss 0.6097
+validation split name: 3
+* VALID - Accuracy 53.682 Loss 1.2285
+validation split name: 4
+* VALID - Accuracy 96.928 Loss 0.1038
+validation split name: 5
+* VALID - Accuracy 90.419 Loss 0.2706
+OrderedDict([('1', OrderedDict([('1', 99.8581560283688), ('2', 70.87470449172577), ('3', 34.184397163120565), ('4', 76.6903073286052), ('5', 49.73995271867612)])), ('2', OrderedDict([('2', 98.67776689520079), ('3', 87.16944172380019), ('4', 92.65426052889325), ('5', 78.7952987267385)])), ('3', OrderedDict([('3', 99.51974386339381), ('4', 80.73639274279616), ('5', 53.68196371398079)])), ('4', OrderedDict([('4', 98.38872104733132), ('5', 96.92849949647533)])), ('5', OrderedDict([('5', 90.41855774079677)]))])
+Task 1 average acc: 99.8581560283688
+Task 2 average acc: 84.77623569346328
+Task 3 average acc: 73.6245275834382
+Task 4 average acc: 87.11742041190648
+Task 5 average acc: 73.9128544793335
+===Summary of experiment repeats: 8 / 10 ===
+The regularization coefficient: 10000.0
+The last avg acc of all repeats: [79.646776   66.55904109 73.14472602 64.06212395 71.57402169 69.03275998
+ 77.5534918  73.91285448  0.          0.        ]
+mean: 57.54857950145615 std: 29.11262303700025
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1460482
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 99.210 Loss 0.0322
+* VALID - Accuracy 99.905 Loss 0.0035
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.937 Loss 0.0018
+* VALID - Accuracy 99.905 Loss 0.0025
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.921 Loss 0.0023
+* VALID - Accuracy 99.905 Loss 0.0026
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.984 Loss 0.0006
+* VALID - Accuracy 99.953 Loss 0.0030
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 99.953 Loss 0.0030
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 52.047 Loss 7.2477
+* VALID - Accuracy 51.273 Loss 2.0268
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 73.472 Loss 0.8908
+* VALID - Accuracy 95.103 Loss 0.3312
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.038 Loss 0.2114
+* VALID - Accuracy 97.258 Loss 0.1324
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.154 Loss 0.1233
+* VALID - Accuracy 98.041 Loss 0.0881
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 69.645 Loss 0.7350
+validation split name: 2
+* VALID - Accuracy 98.041 Loss 0.0558
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 73.941 Loss 0.7614
+* VALID - Accuracy 74.867 Loss 0.6793
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 83.628 Loss 0.4010
+* VALID - Accuracy 92.156 Loss 0.1801
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 95.481 Loss 0.1203
+* VALID - Accuracy 97.919 Loss 0.0640
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 98.162 Loss 0.0586
+* VALID - Accuracy 98.986 Loss 0.0363
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 48.180 Loss 1.1366
+validation split name: 2
+* VALID - Accuracy 87.463 Loss 0.3321
+validation split name: 3
+* VALID - Accuracy 98.986 Loss 0.0359
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 44.546 Loss 1.5913
+* VALID - Accuracy 72.961 Loss 0.7528
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 85.710 Loss 0.4210
+* VALID - Accuracy 95.418 Loss 0.1804
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 97.308 Loss 0.1354
+* VALID - Accuracy 97.784 Loss 0.1217
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 98.580 Loss 0.1001
+* VALID - Accuracy 98.288 Loss 0.1023
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 81.749 Loss 0.4677
+validation split name: 2
+* VALID - Accuracy 90.010 Loss 0.3261
+validation split name: 3
+* VALID - Accuracy 85.112 Loss 0.3678
+validation split name: 4
+* VALID - Accuracy 98.288 Loss 0.0454
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 47.788 Loss 2.1345
+* VALID - Accuracy 48.260 Loss 2.0820
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 50.195 Loss 2.0626
+* VALID - Accuracy 52.446 Loss 2.0160
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 53.254 Loss 1.8807
+* VALID - Accuracy 57.438 Loss 1.6696
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 59.712 Loss 1.4894
+* VALID - Accuracy 65.103 Loss 1.3010
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 78.582 Loss 0.4773
+validation split name: 2
+* VALID - Accuracy 88.590 Loss 0.2912
+validation split name: 3
+* VALID - Accuracy 70.438 Loss 0.6491
+validation split name: 4
+* VALID - Accuracy 97.986 Loss 0.0521
+validation split name: 5
+* VALID - Accuracy 65.103 Loss 0.9609
+OrderedDict([('1', OrderedDict([('1', 99.95271867612293), ('2', 69.64539007092199), ('3', 48.17966903073286), ('4', 81.74940898345153), ('5', 78.58156028368795)])), ('2', OrderedDict([('2', 98.0411361410382), ('3', 87.46327130264447), ('4', 90.00979431929481), ('5', 88.58961802154751)])), ('3', OrderedDict([('3', 98.98612593383137), ('4', 85.11205976520812), ('5', 70.4375667022412)])), ('4', OrderedDict([('4', 98.28801611278952), ('5', 97.98590130916415)])), ('5', OrderedDict([('5', 65.10337871911246)]))])
+Task 1 average acc: 99.95271867612293
+Task 2 average acc: 83.8432631059801
+Task 3 average acc: 78.20968875573624
+Task 4 average acc: 88.789819795186
+Task 5 average acc: 80.13960500715066
+===Summary of experiment repeats: 9 / 10 ===
+The regularization coefficient: 10000.0
+The last avg acc of all repeats: [79.646776   66.55904109 73.14472602 64.06212395 71.57402169 69.03275998
+ 77.5534918  73.91285448 80.13960501  0.        ]
+mean: 65.56254000217122 std: 22.43151355267425
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1460482
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 99.147 Loss 0.0251
+* VALID - Accuracy 100.000 Loss 0.0005
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.889 Loss 0.0030
+* VALID - Accuracy 99.953 Loss 0.0010
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.937 Loss 0.0026
+* VALID - Accuracy 99.953 Loss 0.0023
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.929 Loss 0.0027
+* VALID - Accuracy 99.953 Loss 0.0026
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 99.953 Loss 0.0026
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 53.892 Loss 4.2229
+* VALID - Accuracy 76.983 Loss 0.6977
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 93.167 Loss 0.2963
+* VALID - Accuracy 96.964 Loss 0.1319
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 97.361 Loss 0.1129
+* VALID - Accuracy 98.041 Loss 0.0783
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.907 Loss 0.0793
+* VALID - Accuracy 98.433 Loss 0.0591
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 70.638 Loss 0.7439
+validation split name: 2
+* VALID - Accuracy 98.433 Loss 0.0447
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 78.221 Loss 0.6969
+* VALID - Accuracy 87.140 Loss 0.3276
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 94.398 Loss 0.1547
+* VALID - Accuracy 98.399 Loss 0.0591
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 98.606 Loss 0.0495
+* VALID - Accuracy 99.573 Loss 0.0297
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.290 Loss 0.0300
+* VALID - Accuracy 99.680 Loss 0.0211
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 17.825 Loss 2.6117
+validation split name: 2
+* VALID - Accuracy 87.904 Loss 0.3538
+validation split name: 3
+* VALID - Accuracy 99.680 Loss 0.0174
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 42.149 Loss 1.9580
+* VALID - Accuracy 70.745 Loss 0.9230
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 76.164 Loss 0.8112
+* VALID - Accuracy 83.233 Loss 0.6341
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 80.497 Loss 0.6804
+* VALID - Accuracy 84.340 Loss 0.5854
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 81.343 Loss 0.6486
+* VALID - Accuracy 84.743 Loss 0.5598
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 52.813 Loss 2.0930
+validation split name: 2
+* VALID - Accuracy 81.978 Loss 0.5404
+validation split name: 3
+* VALID - Accuracy 88.367 Loss 0.2673
+validation split name: 4
+* VALID - Accuracy 84.743 Loss 0.4789
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 44.051 Loss 3.1408
+* VALID - Accuracy 44.428 Loss 3.1592
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 44.034 Loss 3.1183
+* VALID - Accuracy 43.520 Loss 3.1089
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 44.110 Loss 3.1150
+* VALID - Accuracy 43.621 Loss 3.1003
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 40.220 Loss 2.4867
+* VALID - Accuracy 44.982 Loss 1.4540
+Computing MAS
+validation split name: 1
+* VALID - Accuracy 10.071 Loss 2.2654
+validation split name: 2
+* VALID - Accuracy 93.732 Loss 0.1726
+validation split name: 3
+* VALID - Accuracy 97.172 Loss 0.0858
+validation split name: 4
+* VALID - Accuracy 87.966 Loss 0.3168
+validation split name: 5
+* VALID - Accuracy 44.982 Loss 1.4276
+OrderedDict([('1', OrderedDict([('1', 99.95271867612293), ('2', 70.63829787234043), ('3', 17.825059101654848), ('4', 52.81323877068558), ('5', 10.070921985815604)])), ('2', OrderedDict([('2', 98.43290891283056), ('3', 87.90401567091087), ('4', 81.97845249755142), ('5', 93.73163565132224)])), ('3', OrderedDict([('3', 99.67982924226254), ('4', 88.36712913553896), ('5', 97.1718249733191)])), ('4', OrderedDict([('4', 84.74320241691844), ('5', 87.96576032225579)])), ('5', OrderedDict([('5', 44.98234997478568)]))])
+Task 1 average acc: 99.95271867612293
+Task 2 average acc: 84.5356033925855
+Task 3 average acc: 68.46963467160941
+Task 4 average acc: 76.9755057051736
+Task 5 average acc: 66.78449858149968
+===Summary of experiment repeats: 10 / 10 ===
+The regularization coefficient: 10000.0
+The last avg acc of all repeats: [79.646776   66.55904109 73.14472602 64.06212395 71.57402169 69.03275998
+ 77.5534918  73.91285448 80.13960501 66.78449858]
+mean: 72.24098986032118 std: 5.373617113203593
+reg_coef: 10000.0 mean: 72.24098986032118 std: 5.373617113203593

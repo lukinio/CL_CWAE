@@ -1,0 +1,3401 @@
+Files already downloaded and verified
+Files already downloaded and verified
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+CNN(
+  (c1): Sequential(
+    (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU()
+    (9): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c2): Sequential(
+    (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c3): Sequential(
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc1): Sequential(
+    (0): Linear(in_features=2048, out_features=256, bias=True)
+    (1): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 962858
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 34.470 Loss 0.5094
+* VALID - Accuracy 44.400 Loss 0.3171
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 41.620 Loss 0.2592
+* VALID - Accuracy 45.550 Loss 0.2101
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 43.660 Loss 0.1964
+* VALID - Accuracy 46.900 Loss 0.1675
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 44.490 Loss 0.1590
+* VALID - Accuracy 46.550 Loss 0.1292
+Epoch:4
+LR: 0.001
+* TRAIN - Accuracy 45.880 Loss 0.1274
+* VALID - Accuracy 46.300 Loss 0.1071
+Epoch:5
+LR: 0.001
+* TRAIN - Accuracy 46.990 Loss 0.0982
+* VALID - Accuracy 43.700 Loss 0.1421
+Epoch:6
+LR: 0.001
+* TRAIN - Accuracy 47.140 Loss 0.0933
+* VALID - Accuracy 48.050 Loss 0.0602
+Epoch:7
+LR: 0.001
+* TRAIN - Accuracy 47.510 Loss 0.0773
+* VALID - Accuracy 47.600 Loss 0.0571
+Epoch:8
+LR: 0.001
+* TRAIN - Accuracy 47.360 Loss 0.0734
+* VALID - Accuracy 48.800 Loss 0.0612
+Epoch:9
+LR: 0.001
+* TRAIN - Accuracy 48.510 Loss 0.0593
+* VALID - Accuracy 44.200 Loss 0.0940
+Epoch:10
+LR: 0.001
+* TRAIN - Accuracy 48.420 Loss 0.0540
+* VALID - Accuracy 48.500 Loss 0.0591
+Epoch:11
+LR: 0.001
+* TRAIN - Accuracy 53.290 Loss 0.0508
+* VALID - Accuracy 49.450 Loss 0.0678
+validation split name: 1
+* VALID - Accuracy 49.450 Loss 0.0678
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 65.470 Loss 0.6958
+* VALID - Accuracy 76.100 Loss 0.4986
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 77.800 Loss 0.4759
+* VALID - Accuracy 78.650 Loss 0.4461
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 80.910 Loss 0.4238
+* VALID - Accuracy 81.700 Loss 0.4055
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 82.900 Loss 0.3814
+* VALID - Accuracy 82.300 Loss 0.3916
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 84.010 Loss 0.3659
+* VALID - Accuracy 84.850 Loss 0.3548
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 85.190 Loss 0.3398
+* VALID - Accuracy 84.750 Loss 0.3546
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 86.260 Loss 0.3196
+* VALID - Accuracy 85.250 Loss 0.3419
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 87.120 Loss 0.3069
+* VALID - Accuracy 86.200 Loss 0.3445
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 87.860 Loss 0.2881
+* VALID - Accuracy 87.250 Loss 0.3207
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 87.720 Loss 0.2826
+* VALID - Accuracy 86.900 Loss 0.3078
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 88.930 Loss 0.2620
+* VALID - Accuracy 86.650 Loss 0.3440
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 89.460 Loss 0.2512
+* VALID - Accuracy 85.950 Loss 0.3429
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 14.5849
+validation split name: 2
+* VALID - Accuracy 85.950 Loss 0.3429
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 61.040 Loss 1.3991
+* VALID - Accuracy 84.400 Loss 0.3766
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 85.610 Loss 0.3412
+* VALID - Accuracy 87.850 Loss 0.2895
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 88.440 Loss 0.2819
+* VALID - Accuracy 89.850 Loss 0.2592
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 90.110 Loss 0.2533
+* VALID - Accuracy 90.150 Loss 0.2366
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 90.730 Loss 0.2325
+* VALID - Accuracy 91.100 Loss 0.2256
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 91.300 Loss 0.2205
+* VALID - Accuracy 88.500 Loss 0.3030
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 91.410 Loss 0.2166
+* VALID - Accuracy 92.050 Loss 0.2086
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 92.290 Loss 0.1995
+* VALID - Accuracy 92.000 Loss 0.2025
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 92.270 Loss 0.1929
+* VALID - Accuracy 92.050 Loss 0.2072
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 92.880 Loss 0.1863
+* VALID - Accuracy 92.400 Loss 0.1925
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 93.600 Loss 0.1750
+* VALID - Accuracy 92.250 Loss 0.1950
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 92.980 Loss 0.1747
+* VALID - Accuracy 92.750 Loss 0.1907
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 9.4410
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 9.3383
+validation split name: 3
+* VALID - Accuracy 92.750 Loss 0.1907
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 65.830 Loss 1.0801
+* VALID - Accuracy 89.300 Loss 0.3471
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 91.870 Loss 0.2526
+* VALID - Accuracy 93.600 Loss 0.1831
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 93.960 Loss 0.1648
+* VALID - Accuracy 94.300 Loss 0.1434
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 95.010 Loss 0.1341
+* VALID - Accuracy 95.050 Loss 0.1337
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 95.590 Loss 0.1145
+* VALID - Accuracy 94.700 Loss 0.1382
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 96.210 Loss 0.1034
+* VALID - Accuracy 96.150 Loss 0.1013
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 96.450 Loss 0.0903
+* VALID - Accuracy 96.450 Loss 0.0949
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 96.550 Loss 0.0858
+* VALID - Accuracy 96.450 Loss 0.0951
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 97.200 Loss 0.0781
+* VALID - Accuracy 95.250 Loss 0.1284
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 97.250 Loss 0.0753
+* VALID - Accuracy 97.100 Loss 0.0808
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.210 Loss 0.0712
+* VALID - Accuracy 96.800 Loss 0.0900
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.540 Loss 0.0649
+* VALID - Accuracy 96.550 Loss 0.0912
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 14.6957
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 12.6502
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 9.2669
+validation split name: 4
+* VALID - Accuracy 96.550 Loss 0.0912
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 45.590 Loss 2.4257
+* VALID - Accuracy 83.350 Loss 0.4371
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 87.370 Loss 0.3313
+* VALID - Accuracy 91.150 Loss 0.2429
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 91.520 Loss 0.2255
+* VALID - Accuracy 92.500 Loss 0.1977
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 93.850 Loss 0.1723
+* VALID - Accuracy 94.300 Loss 0.1607
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 94.360 Loss 0.1487
+* VALID - Accuracy 95.300 Loss 0.1308
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 94.730 Loss 0.1365
+* VALID - Accuracy 95.500 Loss 0.1206
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 95.520 Loss 0.1222
+* VALID - Accuracy 94.200 Loss 0.1492
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 95.740 Loss 0.1141
+* VALID - Accuracy 96.350 Loss 0.1040
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 96.240 Loss 0.1024
+* VALID - Accuracy 96.450 Loss 0.0980
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 96.360 Loss 0.0960
+* VALID - Accuracy 96.750 Loss 0.0947
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 96.560 Loss 0.0906
+* VALID - Accuracy 96.850 Loss 0.0886
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 96.690 Loss 0.0845
+* VALID - Accuracy 96.200 Loss 0.1024
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 17.3882
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 9.5621
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 7.6326
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 9.8490
+validation split name: 5
+* VALID - Accuracy 96.200 Loss 0.1024
+OrderedDict([('1', OrderedDict([('1', 49.45), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 85.95), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 92.75), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 96.55), ('5', 0.0)])), ('5', OrderedDict([('5', 96.2)]))])
+Task 1 average acc: 49.45
+Task 2 average acc: 42.975
+Task 3 average acc: 30.916666666666668
+Task 4 average acc: 24.1375
+Task 5 average acc: 19.240000000000002
+===Summary of experiment repeats: 1 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.24  0.    0.    0.    0.    0.    0.    0.    0.    0.  ]
+mean: 1.9240000000000002 std: 5.772
+Files already downloaded and verified
+Files already downloaded and verified
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+CNN(
+  (c1): Sequential(
+    (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU()
+    (9): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c2): Sequential(
+    (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c3): Sequential(
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc1): Sequential(
+    (0): Linear(in_features=2048, out_features=256, bias=True)
+    (1): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 962858
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 76.660 Loss 0.4131
+* VALID - Accuracy 87.500 Loss 0.2568
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 86.660 Loss 0.2355
+* VALID - Accuracy 75.400 Loss 0.3842
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 86.680 Loss 0.1935
+* VALID - Accuracy 90.050 Loss 0.1555
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 91.570 Loss 0.1510
+* VALID - Accuracy 91.150 Loss 0.1435
+Epoch:4
+LR: 0.001
+* TRAIN - Accuracy 90.840 Loss 0.1316
+* VALID - Accuracy 87.450 Loss 0.1776
+Epoch:5
+LR: 0.001
+* TRAIN - Accuracy 92.340 Loss 0.0913
+* VALID - Accuracy 94.400 Loss 0.0679
+Epoch:6
+LR: 0.001
+* TRAIN - Accuracy 93.780 Loss 0.0788
+* VALID - Accuracy 93.950 Loss 0.0831
+Epoch:7
+LR: 0.001
+* TRAIN - Accuracy 94.140 Loss 0.0880
+* VALID - Accuracy 94.600 Loss 0.0713
+Epoch:8
+LR: 0.001
+* TRAIN - Accuracy 96.070 Loss 0.0631
+* VALID - Accuracy 96.850 Loss 0.0456
+Epoch:9
+LR: 0.001
+* TRAIN - Accuracy 96.630 Loss 0.0540
+* VALID - Accuracy 96.550 Loss 0.0702
+Epoch:10
+LR: 0.001
+* TRAIN - Accuracy 96.550 Loss 0.0528
+* VALID - Accuracy 93.250 Loss 0.1218
+Epoch:11
+LR: 0.001
+* TRAIN - Accuracy 96.590 Loss 0.0491
+* VALID - Accuracy 95.350 Loss 0.0842
+validation split name: 1
+* VALID - Accuracy 95.350 Loss 0.0842
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 63.110 Loss 0.7236
+* VALID - Accuracy 74.350 Loss 0.5202
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 78.580 Loss 0.4593
+* VALID - Accuracy 79.850 Loss 0.4265
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 81.510 Loss 0.4069
+* VALID - Accuracy 82.200 Loss 0.3864
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 83.660 Loss 0.3690
+* VALID - Accuracy 82.350 Loss 0.3811
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 85.300 Loss 0.3423
+* VALID - Accuracy 84.250 Loss 0.3542
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 86.020 Loss 0.3207
+* VALID - Accuracy 84.400 Loss 0.3562
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 86.750 Loss 0.3057
+* VALID - Accuracy 85.150 Loss 0.3452
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 88.320 Loss 0.2843
+* VALID - Accuracy 85.950 Loss 0.3218
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 88.500 Loss 0.2753
+* VALID - Accuracy 87.250 Loss 0.2944
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 89.730 Loss 0.2616
+* VALID - Accuracy 87.450 Loss 0.3044
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 89.800 Loss 0.2527
+* VALID - Accuracy 87.000 Loss 0.3111
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 90.440 Loss 0.2411
+* VALID - Accuracy 88.450 Loss 0.2820
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 12.9953
+validation split name: 2
+* VALID - Accuracy 88.450 Loss 0.2820
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 59.810 Loss 1.3581
+* VALID - Accuracy 77.300 Loss 0.4702
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 83.750 Loss 0.3743
+* VALID - Accuracy 85.150 Loss 0.3333
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 87.570 Loss 0.2981
+* VALID - Accuracy 87.450 Loss 0.2945
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 89.370 Loss 0.2633
+* VALID - Accuracy 89.400 Loss 0.2569
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 90.280 Loss 0.2402
+* VALID - Accuracy 91.400 Loss 0.2285
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 90.980 Loss 0.2249
+* VALID - Accuracy 91.900 Loss 0.2173
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 91.950 Loss 0.2040
+* VALID - Accuracy 91.200 Loss 0.2194
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 91.920 Loss 0.2000
+* VALID - Accuracy 92.000 Loss 0.2050
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 92.420 Loss 0.1893
+* VALID - Accuracy 92.200 Loss 0.1981
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 92.770 Loss 0.1838
+* VALID - Accuracy 91.100 Loss 0.2297
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 93.040 Loss 0.1715
+* VALID - Accuracy 93.000 Loss 0.1899
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 93.260 Loss 0.1693
+* VALID - Accuracy 92.500 Loss 0.1987
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 13.5476
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.6029
+validation split name: 3
+* VALID - Accuracy 92.500 Loss 0.1987
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 63.760 Loss 1.3575
+* VALID - Accuracy 87.250 Loss 0.3027
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 92.190 Loss 0.1990
+* VALID - Accuracy 91.550 Loss 0.2123
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 94.360 Loss 0.1472
+* VALID - Accuracy 93.450 Loss 0.1705
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 95.460 Loss 0.1205
+* VALID - Accuracy 94.950 Loss 0.1384
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 96.060 Loss 0.1053
+* VALID - Accuracy 96.050 Loss 0.1134
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 96.480 Loss 0.0933
+* VALID - Accuracy 96.850 Loss 0.0920
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 96.600 Loss 0.0904
+* VALID - Accuracy 96.750 Loss 0.0896
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 96.860 Loss 0.0807
+* VALID - Accuracy 96.550 Loss 0.0882
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 97.150 Loss 0.0725
+* VALID - Accuracy 97.000 Loss 0.0787
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 97.260 Loss 0.0715
+* VALID - Accuracy 97.200 Loss 0.0792
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.650 Loss 0.0626
+* VALID - Accuracy 97.450 Loss 0.0760
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.770 Loss 0.0588
+* VALID - Accuracy 97.050 Loss 0.0819
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 11.5977
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.5316
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 10.4283
+validation split name: 4
+* VALID - Accuracy 97.050 Loss 0.0819
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 55.890 Loss 1.6574
+* VALID - Accuracy 83.700 Loss 0.3997
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 87.520 Loss 0.3159
+* VALID - Accuracy 91.100 Loss 0.2234
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 92.080 Loss 0.2037
+* VALID - Accuracy 92.750 Loss 0.1803
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 93.810 Loss 0.1625
+* VALID - Accuracy 94.200 Loss 0.1460
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 94.600 Loss 0.1418
+* VALID - Accuracy 94.400 Loss 0.1305
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 95.450 Loss 0.1163
+* VALID - Accuracy 95.050 Loss 0.1209
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 95.760 Loss 0.1089
+* VALID - Accuracy 95.750 Loss 0.1101
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 96.200 Loss 0.1039
+* VALID - Accuracy 95.300 Loss 0.1223
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 96.260 Loss 0.0981
+* VALID - Accuracy 95.700 Loss 0.1052
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 96.750 Loss 0.0871
+* VALID - Accuracy 96.100 Loss 0.1071
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 96.890 Loss 0.0818
+* VALID - Accuracy 95.750 Loss 0.1108
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.190 Loss 0.0765
+* VALID - Accuracy 96.200 Loss 0.0998
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 15.5374
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 12.9924
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 10.9557
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 8.3451
+validation split name: 5
+* VALID - Accuracy 96.200 Loss 0.0998
+OrderedDict([('1', OrderedDict([('1', 95.35), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 88.45), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 92.5), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 97.05), ('5', 0.0)])), ('5', OrderedDict([('5', 96.2)]))])
+Task 1 average acc: 95.35
+Task 2 average acc: 44.225
+Task 3 average acc: 30.833333333333332
+Task 4 average acc: 24.2625
+Task 5 average acc: 19.240000000000002
+===Summary of experiment repeats: 2 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.24 19.24  0.    0.    0.    0.    0.    0.    0.    0.  ]
+mean: 3.8480000000000003 std: 7.696000000000001
+Files already downloaded and verified
+Files already downloaded and verified
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+CNN(
+  (c1): Sequential(
+    (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU()
+    (9): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c2): Sequential(
+    (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c3): Sequential(
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc1): Sequential(
+    (0): Linear(in_features=2048, out_features=256, bias=True)
+    (1): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 962858
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 71.130 Loss 0.4467
+* VALID - Accuracy 73.750 Loss 0.3608
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 80.210 Loss 0.2594
+* VALID - Accuracy 78.650 Loss 0.2612
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 78.990 Loss 0.1970
+* VALID - Accuracy 86.650 Loss 0.1899
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 87.590 Loss 0.1485
+* VALID - Accuracy 87.650 Loss 0.1942
+Epoch:4
+LR: 0.001
+* TRAIN - Accuracy 90.350 Loss 0.1201
+* VALID - Accuracy 91.850 Loss 0.0953
+Epoch:5
+LR: 0.001
+* TRAIN - Accuracy 91.590 Loss 0.1007
+* VALID - Accuracy 94.600 Loss 0.0696
+Epoch:6
+LR: 0.001
+* TRAIN - Accuracy 93.610 Loss 0.0762
+* VALID - Accuracy 95.700 Loss 0.0663
+Epoch:7
+LR: 0.001
+* TRAIN - Accuracy 94.360 Loss 0.0747
+* VALID - Accuracy 96.450 Loss 0.0599
+Epoch:8
+LR: 0.001
+* TRAIN - Accuracy 95.030 Loss 0.0656
+* VALID - Accuracy 93.350 Loss 0.0898
+Epoch:9
+LR: 0.001
+* TRAIN - Accuracy 94.840 Loss 0.0650
+* VALID - Accuracy 97.000 Loss 0.0572
+Epoch:10
+LR: 0.001
+* TRAIN - Accuracy 93.370 Loss 0.0564
+* VALID - Accuracy 96.400 Loss 0.0547
+Epoch:11
+LR: 0.001
+* TRAIN - Accuracy 96.160 Loss 0.0541
+* VALID - Accuracy 96.400 Loss 0.0679
+validation split name: 1
+* VALID - Accuracy 96.400 Loss 0.0679
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 63.080 Loss 0.6829
+* VALID - Accuracy 76.700 Loss 0.4832
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 79.710 Loss 0.4351
+* VALID - Accuracy 79.500 Loss 0.4358
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 82.230 Loss 0.3958
+* VALID - Accuracy 82.200 Loss 0.3964
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 83.240 Loss 0.3682
+* VALID - Accuracy 83.450 Loss 0.3717
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 84.930 Loss 0.3452
+* VALID - Accuracy 84.400 Loss 0.3642
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 85.960 Loss 0.3198
+* VALID - Accuracy 84.700 Loss 0.3558
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 86.740 Loss 0.3065
+* VALID - Accuracy 86.250 Loss 0.3306
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 87.620 Loss 0.2950
+* VALID - Accuracy 86.050 Loss 0.3312
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 88.420 Loss 0.2810
+* VALID - Accuracy 86.250 Loss 0.3220
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 88.910 Loss 0.2644
+* VALID - Accuracy 86.700 Loss 0.3237
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 89.330 Loss 0.2559
+* VALID - Accuracy 86.450 Loss 0.3471
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 90.290 Loss 0.2395
+* VALID - Accuracy 87.000 Loss 0.3323
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 16.3442
+validation split name: 2
+* VALID - Accuracy 87.000 Loss 0.3323
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 70.230 Loss 0.9570
+* VALID - Accuracy 86.950 Loss 0.2978
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 87.620 Loss 0.2954
+* VALID - Accuracy 88.700 Loss 0.2518
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 89.610 Loss 0.2569
+* VALID - Accuracy 91.000 Loss 0.2238
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 90.590 Loss 0.2320
+* VALID - Accuracy 91.950 Loss 0.2023
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 90.790 Loss 0.2214
+* VALID - Accuracy 86.250 Loss 0.3114
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 91.780 Loss 0.2035
+* VALID - Accuracy 92.650 Loss 0.1905
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 92.340 Loss 0.1911
+* VALID - Accuracy 93.600 Loss 0.1786
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 92.830 Loss 0.1879
+* VALID - Accuracy 93.800 Loss 0.1749
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 93.360 Loss 0.1724
+* VALID - Accuracy 93.600 Loss 0.1818
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 93.280 Loss 0.1731
+* VALID - Accuracy 93.000 Loss 0.2003
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 93.520 Loss 0.1664
+* VALID - Accuracy 93.300 Loss 0.1763
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 93.980 Loss 0.1531
+* VALID - Accuracy 93.250 Loss 0.1855
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 12.3249
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.1922
+validation split name: 3
+* VALID - Accuracy 93.250 Loss 0.1855
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 71.880 Loss 0.9074
+* VALID - Accuracy 92.100 Loss 0.2103
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 92.760 Loss 0.1882
+* VALID - Accuracy 94.000 Loss 0.1593
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 94.580 Loss 0.1383
+* VALID - Accuracy 94.950 Loss 0.1355
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 95.610 Loss 0.1142
+* VALID - Accuracy 95.650 Loss 0.1135
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 95.940 Loss 0.1025
+* VALID - Accuracy 96.700 Loss 0.0913
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 96.300 Loss 0.0951
+* VALID - Accuracy 96.350 Loss 0.0967
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 96.590 Loss 0.0885
+* VALID - Accuracy 96.550 Loss 0.0880
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 97.000 Loss 0.0773
+* VALID - Accuracy 96.900 Loss 0.0835
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 97.190 Loss 0.0730
+* VALID - Accuracy 95.900 Loss 0.0966
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 97.290 Loss 0.0703
+* VALID - Accuracy 96.900 Loss 0.0749
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.620 Loss 0.0637
+* VALID - Accuracy 97.100 Loss 0.0743
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.680 Loss 0.0636
+* VALID - Accuracy 96.600 Loss 0.0868
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 14.2593
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 11.7741
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 10.2958
+validation split name: 4
+* VALID - Accuracy 96.600 Loss 0.0868
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 64.790 Loss 1.7006
+* VALID - Accuracy 89.500 Loss 0.2803
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 91.680 Loss 0.2203
+* VALID - Accuracy 93.600 Loss 0.1676
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 93.980 Loss 0.1638
+* VALID - Accuracy 94.900 Loss 0.1361
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 94.870 Loss 0.1385
+* VALID - Accuracy 95.150 Loss 0.1240
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 95.450 Loss 0.1194
+* VALID - Accuracy 95.750 Loss 0.1101
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 96.040 Loss 0.1065
+* VALID - Accuracy 96.050 Loss 0.1036
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 96.460 Loss 0.0938
+* VALID - Accuracy 96.300 Loss 0.1053
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 96.640 Loss 0.0889
+* VALID - Accuracy 96.500 Loss 0.0949
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 96.760 Loss 0.0865
+* VALID - Accuracy 96.500 Loss 0.0978
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 97.160 Loss 0.0784
+* VALID - Accuracy 96.850 Loss 0.0914
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.340 Loss 0.0731
+* VALID - Accuracy 97.050 Loss 0.0849
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.350 Loss 0.0671
+* VALID - Accuracy 96.800 Loss 0.0986
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 17.4747
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 11.5226
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 10.3308
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 9.5656
+validation split name: 5
+* VALID - Accuracy 96.800 Loss 0.0986
+OrderedDict([('1', OrderedDict([('1', 96.4), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 87.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 93.25), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 96.6), ('5', 0.0)])), ('5', OrderedDict([('5', 96.8)]))])
+Task 1 average acc: 96.4
+Task 2 average acc: 43.5
+Task 3 average acc: 31.083333333333332
+Task 4 average acc: 24.15
+Task 5 average acc: 19.36
+===Summary of experiment repeats: 3 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.24 19.24 19.36  0.    0.    0.    0.    0.    0.    0.  ]
+mean: 5.784000000000001 std: 8.83526026781328
+Files already downloaded and verified
+Files already downloaded and verified
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+CNN(
+  (c1): Sequential(
+    (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU()
+    (9): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c2): Sequential(
+    (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c3): Sequential(
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc1): Sequential(
+    (0): Linear(in_features=2048, out_features=256, bias=True)
+    (1): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 962858
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 65.500 Loss 0.5129
+* VALID - Accuracy 73.150 Loss 0.4615
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 84.290 Loss 0.2812
+* VALID - Accuracy 87.100 Loss 0.2228
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 89.310 Loss 0.2082
+* VALID - Accuracy 90.700 Loss 0.1836
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 90.790 Loss 0.1712
+* VALID - Accuracy 89.800 Loss 0.1773
+Epoch:4
+LR: 0.001
+* TRAIN - Accuracy 92.070 Loss 0.1390
+* VALID - Accuracy 93.300 Loss 0.1524
+Epoch:5
+LR: 0.001
+* TRAIN - Accuracy 94.890 Loss 0.1015
+* VALID - Accuracy 91.650 Loss 0.1345
+Epoch:6
+LR: 0.001
+* TRAIN - Accuracy 94.620 Loss 0.0911
+* VALID - Accuracy 95.200 Loss 0.0725
+Epoch:7
+LR: 0.001
+* TRAIN - Accuracy 95.990 Loss 0.0751
+* VALID - Accuracy 95.350 Loss 0.0827
+Epoch:8
+LR: 0.001
+* TRAIN - Accuracy 96.170 Loss 0.0702
+* VALID - Accuracy 95.200 Loss 0.1040
+Epoch:9
+LR: 0.001
+* TRAIN - Accuracy 96.600 Loss 0.0614
+* VALID - Accuracy 96.350 Loss 0.0742
+Epoch:10
+LR: 0.001
+* TRAIN - Accuracy 97.050 Loss 0.0520
+* VALID - Accuracy 95.700 Loss 0.1053
+Epoch:11
+LR: 0.001
+* TRAIN - Accuracy 97.120 Loss 0.0526
+* VALID - Accuracy 93.750 Loss 0.1910
+validation split name: 1
+* VALID - Accuracy 93.750 Loss 0.1910
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 55.850 Loss 0.8978
+* VALID - Accuracy 69.500 Loss 0.5787
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 74.540 Loss 0.5150
+* VALID - Accuracy 77.950 Loss 0.4696
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 78.990 Loss 0.4496
+* VALID - Accuracy 80.200 Loss 0.4358
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 81.260 Loss 0.4095
+* VALID - Accuracy 82.350 Loss 0.4054
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 83.150 Loss 0.3826
+* VALID - Accuracy 83.500 Loss 0.3915
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 83.910 Loss 0.3610
+* VALID - Accuracy 84.350 Loss 0.3644
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 85.540 Loss 0.3362
+* VALID - Accuracy 84.050 Loss 0.3865
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 85.620 Loss 0.3257
+* VALID - Accuracy 85.000 Loss 0.3516
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 86.800 Loss 0.3051
+* VALID - Accuracy 86.200 Loss 0.3482
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 87.920 Loss 0.2892
+* VALID - Accuracy 85.650 Loss 0.3509
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 88.140 Loss 0.2818
+* VALID - Accuracy 87.300 Loss 0.3113
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 88.980 Loss 0.2679
+* VALID - Accuracy 86.800 Loss 0.3214
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 11.0721
+validation split name: 2
+* VALID - Accuracy 86.800 Loss 0.3214
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 53.840 Loss 1.2371
+* VALID - Accuracy 78.250 Loss 0.4774
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 81.400 Loss 0.4190
+* VALID - Accuracy 85.450 Loss 0.3350
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 86.070 Loss 0.3266
+* VALID - Accuracy 88.000 Loss 0.2844
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 88.570 Loss 0.2806
+* VALID - Accuracy 89.150 Loss 0.2598
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 89.450 Loss 0.2589
+* VALID - Accuracy 90.700 Loss 0.2339
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 90.530 Loss 0.2346
+* VALID - Accuracy 91.400 Loss 0.2162
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 91.060 Loss 0.2213
+* VALID - Accuracy 91.700 Loss 0.2113
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 92.130 Loss 0.2050
+* VALID - Accuracy 90.650 Loss 0.2257
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 92.170 Loss 0.1945
+* VALID - Accuracy 92.450 Loss 0.1984
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 93.100 Loss 0.1828
+* VALID - Accuracy 91.450 Loss 0.1952
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 93.250 Loss 0.1751
+* VALID - Accuracy 92.650 Loss 0.1899
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 93.370 Loss 0.1704
+* VALID - Accuracy 93.100 Loss 0.1803
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 12.6398
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 9.3540
+validation split name: 3
+* VALID - Accuracy 93.100 Loss 0.1803
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 48.590 Loss 2.2976
+* VALID - Accuracy 85.050 Loss 0.3966
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 87.780 Loss 0.3247
+* VALID - Accuracy 92.550 Loss 0.2101
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 92.210 Loss 0.2015
+* VALID - Accuracy 93.950 Loss 0.1624
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 94.260 Loss 0.1530
+* VALID - Accuracy 94.600 Loss 0.1446
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 95.220 Loss 0.1251
+* VALID - Accuracy 94.450 Loss 0.1391
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 95.520 Loss 0.1143
+* VALID - Accuracy 94.650 Loss 0.1404
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 96.000 Loss 0.1020
+* VALID - Accuracy 95.900 Loss 0.0944
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 96.150 Loss 0.0987
+* VALID - Accuracy 96.000 Loss 0.1000
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 96.810 Loss 0.0861
+* VALID - Accuracy 94.850 Loss 0.1421
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 96.690 Loss 0.0865
+* VALID - Accuracy 96.850 Loss 0.0772
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.220 Loss 0.0730
+* VALID - Accuracy 97.000 Loss 0.0776
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.350 Loss 0.0708
+* VALID - Accuracy 96.550 Loss 0.0862
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 11.7811
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.1128
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 11.9380
+validation split name: 4
+* VALID - Accuracy 96.550 Loss 0.0862
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 65.930 Loss 1.2201
+* VALID - Accuracy 86.700 Loss 0.3221
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 89.750 Loss 0.2569
+* VALID - Accuracy 92.350 Loss 0.2056
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 92.600 Loss 0.1894
+* VALID - Accuracy 93.800 Loss 0.1593
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 94.190 Loss 0.1530
+* VALID - Accuracy 94.250 Loss 0.1457
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 94.520 Loss 0.1392
+* VALID - Accuracy 95.050 Loss 0.1304
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 94.880 Loss 0.1298
+* VALID - Accuracy 95.350 Loss 0.1192
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 95.710 Loss 0.1155
+* VALID - Accuracy 95.900 Loss 0.1111
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 96.200 Loss 0.1054
+* VALID - Accuracy 96.200 Loss 0.1085
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 96.360 Loss 0.0968
+* VALID - Accuracy 96.150 Loss 0.1065
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 96.710 Loss 0.0911
+* VALID - Accuracy 96.150 Loss 0.1061
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 96.790 Loss 0.0837
+* VALID - Accuracy 95.950 Loss 0.1060
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 96.770 Loss 0.0814
+* VALID - Accuracy 96.300 Loss 0.1014
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 17.5514
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 12.1883
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 10.3186
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 9.8060
+validation split name: 5
+* VALID - Accuracy 96.300 Loss 0.1014
+OrderedDict([('1', OrderedDict([('1', 93.75), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 86.8), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 93.1), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 96.55), ('5', 0.0)])), ('5', OrderedDict([('5', 96.3)]))])
+Task 1 average acc: 93.75
+Task 2 average acc: 43.4
+Task 3 average acc: 31.03333333333333
+Task 4 average acc: 24.1375
+Task 5 average acc: 19.259999999999998
+===Summary of experiment repeats: 4 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.24 19.24 19.36 19.26  0.    0.    0.    0.    0.    0.  ]
+mean: 7.709999999999999 std: 9.44283537927036
+Files already downloaded and verified
+Files already downloaded and verified
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+CNN(
+  (c1): Sequential(
+    (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU()
+    (9): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c2): Sequential(
+    (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c3): Sequential(
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc1): Sequential(
+    (0): Linear(in_features=2048, out_features=256, bias=True)
+    (1): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 962858
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 68.820 Loss 0.4227
+* VALID - Accuracy 76.100 Loss 0.3382
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 80.080 Loss 0.2771
+* VALID - Accuracy 80.900 Loss 0.2679
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 80.140 Loss 0.2072
+* VALID - Accuracy 84.700 Loss 0.1888
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 87.310 Loss 0.1586
+* VALID - Accuracy 88.850 Loss 0.1455
+Epoch:4
+LR: 0.001
+* TRAIN - Accuracy 88.930 Loss 0.1320
+* VALID - Accuracy 88.450 Loss 0.1340
+Epoch:5
+LR: 0.001
+* TRAIN - Accuracy 91.330 Loss 0.1090
+* VALID - Accuracy 89.100 Loss 0.1481
+Epoch:6
+LR: 0.001
+* TRAIN - Accuracy 91.790 Loss 0.0875
+* VALID - Accuracy 92.350 Loss 0.0892
+Epoch:7
+LR: 0.001
+* TRAIN - Accuracy 93.370 Loss 0.0785
+* VALID - Accuracy 94.750 Loss 0.0649
+Epoch:8
+LR: 0.001
+* TRAIN - Accuracy 94.190 Loss 0.0763
+* VALID - Accuracy 95.400 Loss 0.0552
+Epoch:9
+LR: 0.001
+* TRAIN - Accuracy 94.740 Loss 0.0573
+* VALID - Accuracy 91.750 Loss 0.1427
+Epoch:10
+LR: 0.001
+* TRAIN - Accuracy 94.310 Loss 0.0674
+* VALID - Accuracy 96.700 Loss 0.0703
+Epoch:11
+LR: 0.001
+* TRAIN - Accuracy 95.400 Loss 0.0587
+* VALID - Accuracy 96.300 Loss 0.0644
+validation split name: 1
+* VALID - Accuracy 96.300 Loss 0.0644
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 61.190 Loss 0.7448
+* VALID - Accuracy 73.750 Loss 0.5156
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 77.930 Loss 0.4752
+* VALID - Accuracy 79.600 Loss 0.4359
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 81.070 Loss 0.4211
+* VALID - Accuracy 80.900 Loss 0.4111
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 82.810 Loss 0.3833
+* VALID - Accuracy 82.450 Loss 0.3783
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 84.170 Loss 0.3570
+* VALID - Accuracy 83.650 Loss 0.3638
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 85.860 Loss 0.3305
+* VALID - Accuracy 84.350 Loss 0.3498
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 86.580 Loss 0.3085
+* VALID - Accuracy 86.350 Loss 0.3251
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 87.500 Loss 0.2936
+* VALID - Accuracy 86.350 Loss 0.3181
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 87.870 Loss 0.2830
+* VALID - Accuracy 86.900 Loss 0.3019
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 88.310 Loss 0.2746
+* VALID - Accuracy 87.150 Loss 0.3043
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 89.100 Loss 0.2607
+* VALID - Accuracy 87.800 Loss 0.2868
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 90.000 Loss 0.2444
+* VALID - Accuracy 88.650 Loss 0.2697
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 11.1524
+validation split name: 2
+* VALID - Accuracy 88.650 Loss 0.2697
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 67.670 Loss 0.9123
+* VALID - Accuracy 85.550 Loss 0.3561
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 86.520 Loss 0.3209
+* VALID - Accuracy 88.200 Loss 0.2836
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 89.110 Loss 0.2699
+* VALID - Accuracy 90.500 Loss 0.2528
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 90.430 Loss 0.2427
+* VALID - Accuracy 89.150 Loss 0.2723
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 90.740 Loss 0.2277
+* VALID - Accuracy 91.500 Loss 0.2246
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 91.130 Loss 0.2234
+* VALID - Accuracy 92.300 Loss 0.2133
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 91.770 Loss 0.2045
+* VALID - Accuracy 92.700 Loss 0.2031
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 91.930 Loss 0.1968
+* VALID - Accuracy 91.550 Loss 0.2068
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 92.590 Loss 0.1867
+* VALID - Accuracy 92.850 Loss 0.1955
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 92.700 Loss 0.1882
+* VALID - Accuracy 93.100 Loss 0.1916
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 93.250 Loss 0.1725
+* VALID - Accuracy 92.100 Loss 0.1944
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 93.520 Loss 0.1694
+* VALID - Accuracy 92.650 Loss 0.1992
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 13.3180
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 9.7130
+validation split name: 3
+* VALID - Accuracy 92.650 Loss 0.1992
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 68.400 Loss 1.3092
+* VALID - Accuracy 92.150 Loss 0.1993
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 93.900 Loss 0.1619
+* VALID - Accuracy 94.800 Loss 0.1351
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 95.030 Loss 0.1290
+* VALID - Accuracy 96.000 Loss 0.1076
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 96.100 Loss 0.1080
+* VALID - Accuracy 96.300 Loss 0.0982
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 96.220 Loss 0.0995
+* VALID - Accuracy 97.350 Loss 0.0783
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 96.610 Loss 0.0889
+* VALID - Accuracy 97.150 Loss 0.0763
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 96.950 Loss 0.0821
+* VALID - Accuracy 97.800 Loss 0.0681
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 97.310 Loss 0.0720
+* VALID - Accuracy 97.500 Loss 0.0663
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 97.440 Loss 0.0697
+* VALID - Accuracy 97.250 Loss 0.0690
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 97.480 Loss 0.0664
+* VALID - Accuracy 97.850 Loss 0.0619
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.620 Loss 0.0624
+* VALID - Accuracy 97.900 Loss 0.0614
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.790 Loss 0.0571
+* VALID - Accuracy 97.900 Loss 0.0598
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 11.2936
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 9.0253
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 10.9291
+validation split name: 4
+* VALID - Accuracy 97.900 Loss 0.0598
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 61.970 Loss 1.4213
+* VALID - Accuracy 87.500 Loss 0.3136
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 89.790 Loss 0.2636
+* VALID - Accuracy 92.700 Loss 0.1892
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 92.930 Loss 0.1829
+* VALID - Accuracy 94.500 Loss 0.1446
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 94.950 Loss 0.1378
+* VALID - Accuracy 94.500 Loss 0.1398
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 95.350 Loss 0.1218
+* VALID - Accuracy 95.850 Loss 0.1092
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 96.040 Loss 0.1067
+* VALID - Accuracy 96.250 Loss 0.0976
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 96.240 Loss 0.1010
+* VALID - Accuracy 96.550 Loss 0.0930
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 96.390 Loss 0.0940
+* VALID - Accuracy 96.850 Loss 0.0860
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 96.880 Loss 0.0851
+* VALID - Accuracy 96.650 Loss 0.0896
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 97.140 Loss 0.0822
+* VALID - Accuracy 97.100 Loss 0.0792
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.240 Loss 0.0714
+* VALID - Accuracy 96.900 Loss 0.0887
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.430 Loss 0.0709
+* VALID - Accuracy 96.750 Loss 0.0924
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 13.8660
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.8804
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 10.8171
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 9.8846
+validation split name: 5
+* VALID - Accuracy 96.750 Loss 0.0924
+OrderedDict([('1', OrderedDict([('1', 96.3), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 88.65), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 92.65), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 97.9), ('5', 0.0)])), ('5', OrderedDict([('5', 96.75)]))])
+Task 1 average acc: 96.3
+Task 2 average acc: 44.325
+Task 3 average acc: 30.883333333333336
+Task 4 average acc: 24.475
+Task 5 average acc: 19.35
+===Summary of experiment repeats: 5 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.24 19.24 19.36 19.26 19.35  0.    0.    0.    0.    0.  ]
+mean: 9.645 std: 9.645074649788876
+Files already downloaded and verified
+Files already downloaded and verified
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+CNN(
+  (c1): Sequential(
+    (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU()
+    (9): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c2): Sequential(
+    (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c3): Sequential(
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc1): Sequential(
+    (0): Linear(in_features=2048, out_features=256, bias=True)
+    (1): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 962858
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 75.220 Loss 0.4220
+* VALID - Accuracy 69.650 Loss 0.6570
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 81.170 Loss 0.2661
+* VALID - Accuracy 83.650 Loss 0.2379
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 84.330 Loss 0.2069
+* VALID - Accuracy 88.850 Loss 0.1880
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 89.490 Loss 0.1571
+* VALID - Accuracy 89.400 Loss 0.1948
+Epoch:4
+LR: 0.001
+* TRAIN - Accuracy 92.000 Loss 0.1327
+* VALID - Accuracy 93.650 Loss 0.1335
+Epoch:5
+LR: 0.001
+* TRAIN - Accuracy 94.450 Loss 0.0997
+* VALID - Accuracy 95.150 Loss 0.0877
+Epoch:6
+LR: 0.001
+* TRAIN - Accuracy 95.010 Loss 0.0924
+* VALID - Accuracy 94.650 Loss 0.0873
+Epoch:7
+LR: 0.001
+* TRAIN - Accuracy 95.560 Loss 0.0737
+* VALID - Accuracy 95.850 Loss 0.0655
+Epoch:8
+LR: 0.001
+* TRAIN - Accuracy 95.680 Loss 0.0647
+* VALID - Accuracy 92.600 Loss 0.1131
+Epoch:9
+LR: 0.001
+* TRAIN - Accuracy 95.640 Loss 0.0681
+* VALID - Accuracy 95.750 Loss 0.0662
+Epoch:10
+LR: 0.001
+* TRAIN - Accuracy 96.810 Loss 0.0532
+* VALID - Accuracy 97.250 Loss 0.0536
+Epoch:11
+LR: 0.001
+* TRAIN - Accuracy 97.050 Loss 0.0489
+* VALID - Accuracy 96.600 Loss 0.0657
+validation split name: 1
+* VALID - Accuracy 96.600 Loss 0.0657
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 62.530 Loss 0.7542
+* VALID - Accuracy 77.200 Loss 0.4853
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 78.430 Loss 0.4660
+* VALID - Accuracy 80.750 Loss 0.4216
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 81.540 Loss 0.4109
+* VALID - Accuracy 82.550 Loss 0.3870
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 83.120 Loss 0.3713
+* VALID - Accuracy 84.150 Loss 0.3622
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 84.950 Loss 0.3445
+* VALID - Accuracy 84.800 Loss 0.3468
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 86.120 Loss 0.3268
+* VALID - Accuracy 85.250 Loss 0.3417
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 86.750 Loss 0.3095
+* VALID - Accuracy 85.700 Loss 0.3233
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 87.240 Loss 0.2930
+* VALID - Accuracy 86.750 Loss 0.3128
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 88.210 Loss 0.2824
+* VALID - Accuracy 85.750 Loss 0.3275
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 89.010 Loss 0.2698
+* VALID - Accuracy 86.750 Loss 0.3148
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 89.260 Loss 0.2599
+* VALID - Accuracy 87.400 Loss 0.2918
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 89.880 Loss 0.2437
+* VALID - Accuracy 87.900 Loss 0.2878
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 11.7843
+validation split name: 2
+* VALID - Accuracy 87.900 Loss 0.2878
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 72.120 Loss 0.9220
+* VALID - Accuracy 86.650 Loss 0.3243
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 88.180 Loss 0.2874
+* VALID - Accuracy 89.300 Loss 0.2700
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 89.310 Loss 0.2547
+* VALID - Accuracy 90.900 Loss 0.2330
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 90.670 Loss 0.2317
+* VALID - Accuracy 91.050 Loss 0.2192
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 91.720 Loss 0.2113
+* VALID - Accuracy 91.700 Loss 0.2140
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 91.960 Loss 0.2007
+* VALID - Accuracy 91.750 Loss 0.2187
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 92.270 Loss 0.1901
+* VALID - Accuracy 93.150 Loss 0.1956
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 92.910 Loss 0.1831
+* VALID - Accuracy 93.100 Loss 0.1926
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 92.970 Loss 0.1809
+* VALID - Accuracy 93.100 Loss 0.1859
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 93.320 Loss 0.1699
+* VALID - Accuracy 92.950 Loss 0.1930
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 93.440 Loss 0.1703
+* VALID - Accuracy 92.950 Loss 0.1849
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 93.740 Loss 0.1596
+* VALID - Accuracy 93.100 Loss 0.1910
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 11.3838
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.3444
+validation split name: 3
+* VALID - Accuracy 93.100 Loss 0.1910
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 69.810 Loss 1.0817
+* VALID - Accuracy 92.650 Loss 0.2106
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 92.940 Loss 0.1846
+* VALID - Accuracy 95.100 Loss 0.1363
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 95.160 Loss 0.1278
+* VALID - Accuracy 95.900 Loss 0.1113
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 95.970 Loss 0.1105
+* VALID - Accuracy 96.450 Loss 0.0967
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 96.600 Loss 0.0941
+* VALID - Accuracy 96.900 Loss 0.0848
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 96.810 Loss 0.0868
+* VALID - Accuracy 96.000 Loss 0.1104
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 97.170 Loss 0.0751
+* VALID - Accuracy 96.750 Loss 0.0926
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 97.130 Loss 0.0705
+* VALID - Accuracy 97.350 Loss 0.0726
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 97.430 Loss 0.0670
+* VALID - Accuracy 97.400 Loss 0.0670
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 97.820 Loss 0.0597
+* VALID - Accuracy 97.450 Loss 0.0657
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.900 Loss 0.0576
+* VALID - Accuracy 97.300 Loss 0.0692
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.950 Loss 0.0563
+* VALID - Accuracy 97.400 Loss 0.0662
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 15.0081
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 14.1078
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 10.6999
+validation split name: 4
+* VALID - Accuracy 97.400 Loss 0.0662
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 66.600 Loss 1.4824
+* VALID - Accuracy 89.000 Loss 0.2615
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 90.940 Loss 0.2363
+* VALID - Accuracy 92.700 Loss 0.1916
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 93.110 Loss 0.1821
+* VALID - Accuracy 94.300 Loss 0.1549
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 94.410 Loss 0.1515
+* VALID - Accuracy 94.650 Loss 0.1398
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 94.870 Loss 0.1317
+* VALID - Accuracy 94.900 Loss 0.1298
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 95.460 Loss 0.1188
+* VALID - Accuracy 94.650 Loss 0.1334
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 96.070 Loss 0.1073
+* VALID - Accuracy 95.800 Loss 0.1107
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 96.170 Loss 0.0995
+* VALID - Accuracy 95.800 Loss 0.1162
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 96.570 Loss 0.0895
+* VALID - Accuracy 96.300 Loss 0.0944
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 96.840 Loss 0.0875
+* VALID - Accuracy 96.800 Loss 0.0862
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 96.790 Loss 0.0872
+* VALID - Accuracy 96.750 Loss 0.0884
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.260 Loss 0.0736
+* VALID - Accuracy 96.650 Loss 0.0857
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 12.8356
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.3104
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 10.7813
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 9.5210
+validation split name: 5
+* VALID - Accuracy 96.650 Loss 0.0857
+OrderedDict([('1', OrderedDict([('1', 96.6), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 87.9), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 93.1), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 97.4), ('5', 0.0)])), ('5', OrderedDict([('5', 96.65)]))])
+Task 1 average acc: 96.6
+Task 2 average acc: 43.95
+Task 3 average acc: 31.03333333333333
+Task 4 average acc: 24.35
+Task 5 average acc: 19.330000000000002
+===Summary of experiment repeats: 6 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.24 19.24 19.36 19.26 19.35 19.33  0.    0.    0.    0.  ]
+mean: 11.578 std: 9.45348062884777
+Files already downloaded and verified
+Files already downloaded and verified
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+CNN(
+  (c1): Sequential(
+    (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU()
+    (9): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c2): Sequential(
+    (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c3): Sequential(
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc1): Sequential(
+    (0): Linear(in_features=2048, out_features=256, bias=True)
+    (1): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 962858
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 63.630 Loss 0.4481
+* VALID - Accuracy 77.100 Loss 0.2574
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 74.360 Loss 0.2498
+* VALID - Accuracy 81.000 Loss 0.1900
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 81.970 Loss 0.1918
+* VALID - Accuracy 81.450 Loss 0.1797
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 85.800 Loss 0.1501
+* VALID - Accuracy 92.350 Loss 0.1023
+Epoch:4
+LR: 0.001
+* TRAIN - Accuracy 91.070 Loss 0.1168
+* VALID - Accuracy 90.700 Loss 0.1504
+Epoch:5
+LR: 0.001
+* TRAIN - Accuracy 92.020 Loss 0.1008
+* VALID - Accuracy 90.200 Loss 0.0893
+Epoch:6
+LR: 0.001
+* TRAIN - Accuracy 90.450 Loss 0.0847
+* VALID - Accuracy 90.850 Loss 0.0968
+Epoch:7
+LR: 0.001
+* TRAIN - Accuracy 91.290 Loss 0.0717
+* VALID - Accuracy 91.900 Loss 0.0880
+Epoch:8
+LR: 0.001
+* TRAIN - Accuracy 91.520 Loss 0.0641
+* VALID - Accuracy 94.600 Loss 0.0519
+Epoch:9
+LR: 0.001
+* TRAIN - Accuracy 92.050 Loss 0.0573
+* VALID - Accuracy 88.850 Loss 0.0744
+Epoch:10
+LR: 0.001
+* TRAIN - Accuracy 91.150 Loss 0.0526
+* VALID - Accuracy 93.600 Loss 0.0579
+Epoch:11
+LR: 0.001
+* TRAIN - Accuracy 93.110 Loss 0.0538
+* VALID - Accuracy 94.400 Loss 0.0469
+validation split name: 1
+* VALID - Accuracy 94.400 Loss 0.0469
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 63.640 Loss 0.7361
+* VALID - Accuracy 73.800 Loss 0.5264
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 77.720 Loss 0.4742
+* VALID - Accuracy 80.100 Loss 0.4402
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 80.390 Loss 0.4286
+* VALID - Accuracy 81.150 Loss 0.4150
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 82.500 Loss 0.3904
+* VALID - Accuracy 83.050 Loss 0.3977
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 84.260 Loss 0.3595
+* VALID - Accuracy 83.650 Loss 0.3757
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 85.360 Loss 0.3407
+* VALID - Accuracy 85.450 Loss 0.3551
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 86.450 Loss 0.3173
+* VALID - Accuracy 83.600 Loss 0.3898
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 87.160 Loss 0.3027
+* VALID - Accuracy 83.300 Loss 0.3840
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 87.510 Loss 0.2932
+* VALID - Accuracy 86.400 Loss 0.3128
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 88.150 Loss 0.2823
+* VALID - Accuracy 87.150 Loss 0.3233
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 89.040 Loss 0.2633
+* VALID - Accuracy 86.200 Loss 0.3107
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 89.480 Loss 0.2581
+* VALID - Accuracy 88.550 Loss 0.2952
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 12.6387
+validation split name: 2
+* VALID - Accuracy 88.550 Loss 0.2952
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 66.970 Loss 0.9805
+* VALID - Accuracy 84.400 Loss 0.3713
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 86.590 Loss 0.3207
+* VALID - Accuracy 88.550 Loss 0.2771
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 89.410 Loss 0.2676
+* VALID - Accuracy 89.650 Loss 0.2599
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 90.150 Loss 0.2399
+* VALID - Accuracy 90.850 Loss 0.2273
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 90.910 Loss 0.2248
+* VALID - Accuracy 91.200 Loss 0.2185
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 91.620 Loss 0.2107
+* VALID - Accuracy 91.650 Loss 0.2109
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 92.390 Loss 0.1963
+* VALID - Accuracy 91.200 Loss 0.2093
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 92.460 Loss 0.1851
+* VALID - Accuracy 91.700 Loss 0.2024
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 93.220 Loss 0.1756
+* VALID - Accuracy 92.250 Loss 0.1912
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 93.550 Loss 0.1693
+* VALID - Accuracy 92.550 Loss 0.1958
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 93.510 Loss 0.1651
+* VALID - Accuracy 92.150 Loss 0.1953
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 93.760 Loss 0.1627
+* VALID - Accuracy 93.000 Loss 0.1769
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 11.6115
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 9.6309
+validation split name: 3
+* VALID - Accuracy 93.000 Loss 0.1769
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 63.190 Loss 1.3552
+* VALID - Accuracy 87.900 Loss 0.3025
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 91.970 Loss 0.2133
+* VALID - Accuracy 93.750 Loss 0.1613
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 94.560 Loss 0.1446
+* VALID - Accuracy 94.350 Loss 0.1471
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 95.440 Loss 0.1235
+* VALID - Accuracy 95.700 Loss 0.1095
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 95.630 Loss 0.1124
+* VALID - Accuracy 96.350 Loss 0.1000
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 96.330 Loss 0.0998
+* VALID - Accuracy 96.550 Loss 0.0918
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 97.020 Loss 0.0832
+* VALID - Accuracy 96.900 Loss 0.0757
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 97.050 Loss 0.0799
+* VALID - Accuracy 96.700 Loss 0.0860
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 97.290 Loss 0.0743
+* VALID - Accuracy 97.500 Loss 0.0665
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 97.500 Loss 0.0670
+* VALID - Accuracy 97.400 Loss 0.0679
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.570 Loss 0.0639
+* VALID - Accuracy 96.800 Loss 0.0805
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.720 Loss 0.0611
+* VALID - Accuracy 97.000 Loss 0.0883
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 12.9169
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.9194
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 9.4430
+validation split name: 4
+* VALID - Accuracy 97.000 Loss 0.0883
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 66.400 Loss 1.3543
+* VALID - Accuracy 89.350 Loss 0.2691
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 90.830 Loss 0.2336
+* VALID - Accuracy 93.300 Loss 0.1836
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 93.260 Loss 0.1674
+* VALID - Accuracy 94.350 Loss 0.1462
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 94.600 Loss 0.1434
+* VALID - Accuracy 95.150 Loss 0.1300
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 95.430 Loss 0.1208
+* VALID - Accuracy 95.600 Loss 0.1168
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 95.880 Loss 0.1064
+* VALID - Accuracy 95.550 Loss 0.1176
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 96.160 Loss 0.0996
+* VALID - Accuracy 95.700 Loss 0.1070
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 96.650 Loss 0.0907
+* VALID - Accuracy 96.000 Loss 0.1039
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 96.560 Loss 0.0876
+* VALID - Accuracy 96.500 Loss 0.0980
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 97.100 Loss 0.0783
+* VALID - Accuracy 95.650 Loss 0.1052
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.210 Loss 0.0746
+* VALID - Accuracy 95.950 Loss 0.0976
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.280 Loss 0.0697
+* VALID - Accuracy 96.850 Loss 0.0867
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 14.7862
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 9.8537
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 8.7297
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 8.5471
+validation split name: 5
+* VALID - Accuracy 96.850 Loss 0.0867
+OrderedDict([('1', OrderedDict([('1', 94.4), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 88.55), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 93.0), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 97.0), ('5', 0.0)])), ('5', OrderedDict([('5', 96.85)]))])
+Task 1 average acc: 94.4
+Task 2 average acc: 44.275
+Task 3 average acc: 31.0
+Task 4 average acc: 24.25
+Task 5 average acc: 19.369999999999997
+===Summary of experiment repeats: 7 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.24 19.24 19.36 19.26 19.35 19.33 19.37  0.    0.    0.  ]
+mean: 13.515 std: 8.847759320867628
+Files already downloaded and verified
+Files already downloaded and verified
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+CNN(
+  (c1): Sequential(
+    (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU()
+    (9): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c2): Sequential(
+    (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c3): Sequential(
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc1): Sequential(
+    (0): Linear(in_features=2048, out_features=256, bias=True)
+    (1): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 962858
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 67.500 Loss 0.4068
+* VALID - Accuracy 81.500 Loss 0.2424
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 83.710 Loss 0.2372
+* VALID - Accuracy 80.700 Loss 0.3034
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 83.360 Loss 0.1841
+* VALID - Accuracy 78.250 Loss 0.1734
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 82.190 Loss 0.1567
+* VALID - Accuracy 86.650 Loss 0.1386
+Epoch:4
+LR: 0.001
+* TRAIN - Accuracy 86.050 Loss 0.0977
+* VALID - Accuracy 89.400 Loss 0.0778
+Epoch:5
+LR: 0.001
+* TRAIN - Accuracy 85.340 Loss 0.0730
+* VALID - Accuracy 90.150 Loss 0.0635
+Epoch:6
+LR: 0.001
+* TRAIN - Accuracy 87.080 Loss 0.0699
+* VALID - Accuracy 90.400 Loss 0.0704
+Epoch:7
+LR: 0.001
+* TRAIN - Accuracy 90.400 Loss 0.0637
+* VALID - Accuracy 88.200 Loss 0.1418
+Epoch:8
+LR: 0.001
+* TRAIN - Accuracy 92.580 Loss 0.0585
+* VALID - Accuracy 94.050 Loss 0.0574
+Epoch:9
+LR: 0.001
+* TRAIN - Accuracy 93.310 Loss 0.0530
+* VALID - Accuracy 84.100 Loss 0.1969
+Epoch:10
+LR: 0.001
+* TRAIN - Accuracy 94.500 Loss 0.0558
+* VALID - Accuracy 97.100 Loss 0.0353
+Epoch:11
+LR: 0.001
+* TRAIN - Accuracy 94.820 Loss 0.0473
+* VALID - Accuracy 95.200 Loss 0.0551
+validation split name: 1
+* VALID - Accuracy 95.200 Loss 0.0551
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 65.460 Loss 0.6855
+* VALID - Accuracy 75.650 Loss 0.5078
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 78.900 Loss 0.4547
+* VALID - Accuracy 80.250 Loss 0.4123
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 82.210 Loss 0.3983
+* VALID - Accuracy 83.650 Loss 0.3783
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 83.900 Loss 0.3645
+* VALID - Accuracy 84.050 Loss 0.3593
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 85.270 Loss 0.3311
+* VALID - Accuracy 85.050 Loss 0.3441
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 86.220 Loss 0.3170
+* VALID - Accuracy 84.800 Loss 0.3362
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 86.960 Loss 0.3020
+* VALID - Accuracy 85.850 Loss 0.3477
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 87.950 Loss 0.2837
+* VALID - Accuracy 84.850 Loss 0.3327
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 88.430 Loss 0.2765
+* VALID - Accuracy 86.600 Loss 0.3148
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 89.100 Loss 0.2642
+* VALID - Accuracy 86.400 Loss 0.2944
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 88.950 Loss 0.2606
+* VALID - Accuracy 86.000 Loss 0.3178
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 89.850 Loss 0.2451
+* VALID - Accuracy 87.900 Loss 0.2809
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 13.4763
+validation split name: 2
+* VALID - Accuracy 87.900 Loss 0.2809
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 67.210 Loss 0.8483
+* VALID - Accuracy 83.050 Loss 0.3856
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 85.000 Loss 0.3509
+* VALID - Accuracy 88.200 Loss 0.2857
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 87.760 Loss 0.2924
+* VALID - Accuracy 88.750 Loss 0.2810
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 89.390 Loss 0.2580
+* VALID - Accuracy 88.200 Loss 0.2875
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 90.760 Loss 0.2337
+* VALID - Accuracy 90.850 Loss 0.2324
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 91.140 Loss 0.2207
+* VALID - Accuracy 90.050 Loss 0.2510
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 91.780 Loss 0.2084
+* VALID - Accuracy 91.250 Loss 0.2237
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 92.720 Loss 0.1908
+* VALID - Accuracy 92.050 Loss 0.2014
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 92.510 Loss 0.1838
+* VALID - Accuracy 91.900 Loss 0.2013
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 93.040 Loss 0.1766
+* VALID - Accuracy 92.650 Loss 0.1900
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 93.650 Loss 0.1666
+* VALID - Accuracy 92.750 Loss 0.1848
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 93.800 Loss 0.1629
+* VALID - Accuracy 93.350 Loss 0.1816
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 16.9962
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.1230
+validation split name: 3
+* VALID - Accuracy 93.350 Loss 0.1816
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 73.480 Loss 0.9315
+* VALID - Accuracy 92.750 Loss 0.1784
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 94.350 Loss 0.1479
+* VALID - Accuracy 94.800 Loss 0.1249
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 95.360 Loss 0.1187
+* VALID - Accuracy 95.350 Loss 0.1225
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 95.970 Loss 0.1052
+* VALID - Accuracy 96.000 Loss 0.0999
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 96.450 Loss 0.0924
+* VALID - Accuracy 95.950 Loss 0.1041
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 96.530 Loss 0.0887
+* VALID - Accuracy 96.200 Loss 0.0930
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 97.170 Loss 0.0728
+* VALID - Accuracy 96.700 Loss 0.0783
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 97.450 Loss 0.0689
+* VALID - Accuracy 97.300 Loss 0.0673
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 97.640 Loss 0.0659
+* VALID - Accuracy 97.000 Loss 0.0730
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 97.580 Loss 0.0614
+* VALID - Accuracy 96.500 Loss 0.0900
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.760 Loss 0.0587
+* VALID - Accuracy 97.400 Loss 0.0642
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.810 Loss 0.0585
+* VALID - Accuracy 97.700 Loss 0.0633
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 16.5137
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 15.5330
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 13.4508
+validation split name: 4
+* VALID - Accuracy 97.700 Loss 0.0633
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 63.650 Loss 1.4805
+* VALID - Accuracy 84.450 Loss 0.3492
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 88.140 Loss 0.2853
+* VALID - Accuracy 89.900 Loss 0.2435
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 91.490 Loss 0.2113
+* VALID - Accuracy 92.850 Loss 0.1779
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 93.790 Loss 0.1613
+* VALID - Accuracy 93.850 Loss 0.1602
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 95.120 Loss 0.1312
+* VALID - Accuracy 94.800 Loss 0.1455
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 95.280 Loss 0.1215
+* VALID - Accuracy 95.300 Loss 0.1226
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 95.850 Loss 0.1110
+* VALID - Accuracy 95.200 Loss 0.1223
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 95.950 Loss 0.1040
+* VALID - Accuracy 95.850 Loss 0.1039
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 96.590 Loss 0.0919
+* VALID - Accuracy 96.000 Loss 0.1004
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 96.640 Loss 0.0892
+* VALID - Accuracy 96.400 Loss 0.1028
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.130 Loss 0.0820
+* VALID - Accuracy 96.400 Loss 0.0990
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 96.970 Loss 0.0757
+* VALID - Accuracy 96.550 Loss 0.0982
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 14.0623
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 13.6663
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 11.5286
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 9.2510
+validation split name: 5
+* VALID - Accuracy 96.550 Loss 0.0982
+OrderedDict([('1', OrderedDict([('1', 95.2), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 87.9), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 93.35), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 97.7), ('5', 0.0)])), ('5', OrderedDict([('5', 96.55)]))])
+Task 1 average acc: 95.2
+Task 2 average acc: 43.95
+Task 3 average acc: 31.116666666666664
+Task 4 average acc: 24.425
+Task 5 average acc: 19.31
+===Summary of experiment repeats: 8 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.24 19.24 19.36 19.26 19.35 19.33 19.37 19.31  0.    0.  ]
+mean: 15.445999999999998 std: 7.723131748196454
+Files already downloaded and verified
+Files already downloaded and verified
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+CNN(
+  (c1): Sequential(
+    (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU()
+    (9): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c2): Sequential(
+    (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c3): Sequential(
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc1): Sequential(
+    (0): Linear(in_features=2048, out_features=256, bias=True)
+    (1): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 962858
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 60.200 Loss 0.4096
+* VALID - Accuracy 73.850 Loss 0.3397
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 79.340 Loss 0.2135
+* VALID - Accuracy 84.900 Loss 0.1514
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 84.150 Loss 0.1398
+* VALID - Accuracy 89.050 Loss 0.1130
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 87.110 Loss 0.1070
+* VALID - Accuracy 91.400 Loss 0.0901
+Epoch:4
+LR: 0.001
+* TRAIN - Accuracy 90.450 Loss 0.0966
+* VALID - Accuracy 93.900 Loss 0.0707
+Epoch:5
+LR: 0.001
+* TRAIN - Accuracy 93.560 Loss 0.0763
+* VALID - Accuracy 87.700 Loss 0.1885
+Epoch:6
+LR: 0.001
+* TRAIN - Accuracy 89.670 Loss 0.1038
+* VALID - Accuracy 93.150 Loss 0.0629
+Epoch:7
+LR: 0.001
+* TRAIN - Accuracy 92.800 Loss 0.0665
+* VALID - Accuracy 94.550 Loss 0.0621
+Epoch:8
+LR: 0.001
+* TRAIN - Accuracy 93.540 Loss 0.0592
+* VALID - Accuracy 93.950 Loss 0.0989
+Epoch:9
+LR: 0.001
+* TRAIN - Accuracy 93.570 Loss 0.0560
+* VALID - Accuracy 94.150 Loss 0.0666
+Epoch:10
+LR: 0.001
+* TRAIN - Accuracy 92.440 Loss 0.0547
+* VALID - Accuracy 86.250 Loss 0.0996
+Epoch:11
+LR: 0.001
+* TRAIN - Accuracy 91.620 Loss 0.0445
+* VALID - Accuracy 91.900 Loss 0.0576
+validation split name: 1
+* VALID - Accuracy 91.900 Loss 0.0576
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 60.560 Loss 0.7818
+* VALID - Accuracy 74.050 Loss 0.5235
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 77.200 Loss 0.4827
+* VALID - Accuracy 79.600 Loss 0.4439
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 81.000 Loss 0.4256
+* VALID - Accuracy 82.200 Loss 0.3993
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 83.450 Loss 0.3805
+* VALID - Accuracy 84.350 Loss 0.3603
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 85.050 Loss 0.3460
+* VALID - Accuracy 85.400 Loss 0.3401
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 86.040 Loss 0.3257
+* VALID - Accuracy 85.850 Loss 0.3245
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 86.960 Loss 0.3113
+* VALID - Accuracy 86.250 Loss 0.3236
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 87.470 Loss 0.2946
+* VALID - Accuracy 87.000 Loss 0.3039
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 88.350 Loss 0.2774
+* VALID - Accuracy 86.800 Loss 0.3168
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 88.640 Loss 0.2661
+* VALID - Accuracy 87.500 Loss 0.2978
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 89.330 Loss 0.2567
+* VALID - Accuracy 88.150 Loss 0.2909
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 89.670 Loss 0.2425
+* VALID - Accuracy 86.000 Loss 0.3397
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 11.8337
+validation split name: 2
+* VALID - Accuracy 86.000 Loss 0.3397
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 66.410 Loss 1.0100
+* VALID - Accuracy 85.500 Loss 0.3486
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 86.440 Loss 0.3276
+* VALID - Accuracy 88.100 Loss 0.2785
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 88.140 Loss 0.2779
+* VALID - Accuracy 90.250 Loss 0.2377
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 89.850 Loss 0.2500
+* VALID - Accuracy 89.900 Loss 0.2407
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 90.780 Loss 0.2316
+* VALID - Accuracy 91.600 Loss 0.2098
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 91.510 Loss 0.2131
+* VALID - Accuracy 92.400 Loss 0.1978
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 92.600 Loss 0.1953
+* VALID - Accuracy 92.050 Loss 0.2069
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 92.830 Loss 0.1879
+* VALID - Accuracy 92.700 Loss 0.1837
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 92.940 Loss 0.1849
+* VALID - Accuracy 93.150 Loss 0.1841
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 93.410 Loss 0.1734
+* VALID - Accuracy 93.650 Loss 0.1742
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 93.570 Loss 0.1690
+* VALID - Accuracy 92.950 Loss 0.1841
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 94.040 Loss 0.1566
+* VALID - Accuracy 93.500 Loss 0.1781
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 11.5923
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.2689
+validation split name: 3
+* VALID - Accuracy 93.500 Loss 0.1781
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 66.170 Loss 1.0344
+* VALID - Accuracy 90.300 Loss 0.2476
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 92.220 Loss 0.1997
+* VALID - Accuracy 92.150 Loss 0.2005
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 94.450 Loss 0.1461
+* VALID - Accuracy 95.150 Loss 0.1314
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 95.080 Loss 0.1253
+* VALID - Accuracy 95.750 Loss 0.1051
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 96.030 Loss 0.1030
+* VALID - Accuracy 95.500 Loss 0.1142
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 96.390 Loss 0.0919
+* VALID - Accuracy 96.350 Loss 0.0939
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 96.900 Loss 0.0839
+* VALID - Accuracy 96.850 Loss 0.0802
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 97.040 Loss 0.0773
+* VALID - Accuracy 96.600 Loss 0.0789
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 97.500 Loss 0.0708
+* VALID - Accuracy 96.400 Loss 0.0884
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 97.400 Loss 0.0721
+* VALID - Accuracy 97.000 Loss 0.0738
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.470 Loss 0.0655
+* VALID - Accuracy 97.150 Loss 0.0715
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.800 Loss 0.0585
+* VALID - Accuracy 97.850 Loss 0.0587
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 14.9203
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 13.6964
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 8.6835
+validation split name: 4
+* VALID - Accuracy 97.850 Loss 0.0587
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 61.920 Loss 1.6364
+* VALID - Accuracy 88.350 Loss 0.3247
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 90.570 Loss 0.2517
+* VALID - Accuracy 93.250 Loss 0.1864
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 93.340 Loss 0.1746
+* VALID - Accuracy 94.300 Loss 0.1455
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 94.720 Loss 0.1385
+* VALID - Accuracy 94.200 Loss 0.1509
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 95.500 Loss 0.1214
+* VALID - Accuracy 95.500 Loss 0.1133
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 95.860 Loss 0.1061
+* VALID - Accuracy 95.800 Loss 0.1135
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 96.460 Loss 0.0963
+* VALID - Accuracy 95.650 Loss 0.1103
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 96.560 Loss 0.0908
+* VALID - Accuracy 96.350 Loss 0.1011
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 96.790 Loss 0.0874
+* VALID - Accuracy 96.550 Loss 0.0923
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 97.180 Loss 0.0743
+* VALID - Accuracy 96.850 Loss 0.0907
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.110 Loss 0.0741
+* VALID - Accuracy 94.450 Loss 0.1541
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.350 Loss 0.0718
+* VALID - Accuracy 96.600 Loss 0.0934
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 16.3307
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 12.6795
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 8.6731
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 8.2801
+validation split name: 5
+* VALID - Accuracy 96.600 Loss 0.0934
+OrderedDict([('1', OrderedDict([('1', 91.9), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 86.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 93.5), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 97.85), ('5', 0.0)])), ('5', OrderedDict([('5', 96.6)]))])
+Task 1 average acc: 91.9
+Task 2 average acc: 43.0
+Task 3 average acc: 31.166666666666668
+Task 4 average acc: 24.4625
+Task 5 average acc: 19.32
+===Summary of experiment repeats: 9 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.24 19.24 19.36 19.26 19.35 19.33 19.37 19.31 19.32  0.  ]
+mean: 17.377999999999997 std: 5.792843515925491
+Files already downloaded and verified
+Files already downloaded and verified
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+CNN(
+  (c1): Sequential(
+    (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU()
+    (9): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c2): Sequential(
+    (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c3): Sequential(
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU()
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc1): Sequential(
+    (0): Linear(in_features=2048, out_features=256, bias=True)
+    (1): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 962858
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 57.290 Loss 0.4889
+* VALID - Accuracy 77.900 Loss 0.3051
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 76.180 Loss 0.2677
+* VALID - Accuracy 83.650 Loss 0.2403
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 83.280 Loss 0.1861
+* VALID - Accuracy 87.500 Loss 0.1311
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 81.210 Loss 0.1579
+* VALID - Accuracy 85.400 Loss 0.1192
+Epoch:4
+LR: 0.001
+* TRAIN - Accuracy 85.920 Loss 0.1019
+* VALID - Accuracy 86.600 Loss 0.1429
+Epoch:5
+LR: 0.001
+* TRAIN - Accuracy 87.420 Loss 0.0937
+* VALID - Accuracy 91.150 Loss 0.0651
+Epoch:6
+LR: 0.001
+* TRAIN - Accuracy 89.400 Loss 0.0814
+* VALID - Accuracy 91.750 Loss 0.0599
+Epoch:7
+LR: 0.001
+* TRAIN - Accuracy 90.390 Loss 0.0778
+* VALID - Accuracy 87.350 Loss 0.1281
+Epoch:8
+LR: 0.001
+* TRAIN - Accuracy 90.290 Loss 0.0645
+* VALID - Accuracy 91.100 Loss 0.0567
+Epoch:9
+LR: 0.001
+* TRAIN - Accuracy 91.080 Loss 0.0565
+* VALID - Accuracy 90.700 Loss 0.0666
+Epoch:10
+LR: 0.001
+* TRAIN - Accuracy 92.070 Loss 0.0564
+* VALID - Accuracy 91.550 Loss 0.0472
+Epoch:11
+LR: 0.001
+* TRAIN - Accuracy 92.370 Loss 0.0505
+* VALID - Accuracy 95.350 Loss 0.0469
+validation split name: 1
+* VALID - Accuracy 95.350 Loss 0.0469
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 60.950 Loss 0.7752
+* VALID - Accuracy 75.300 Loss 0.5128
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 76.970 Loss 0.4866
+* VALID - Accuracy 78.150 Loss 0.4558
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 79.590 Loss 0.4485
+* VALID - Accuracy 79.900 Loss 0.4265
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 81.980 Loss 0.4108
+* VALID - Accuracy 81.050 Loss 0.3948
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 82.600 Loss 0.3838
+* VALID - Accuracy 82.850 Loss 0.3743
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 84.520 Loss 0.3536
+* VALID - Accuracy 84.600 Loss 0.3465
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 85.530 Loss 0.3388
+* VALID - Accuracy 83.700 Loss 0.3667
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 86.270 Loss 0.3183
+* VALID - Accuracy 86.150 Loss 0.3265
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 87.120 Loss 0.3052
+* VALID - Accuracy 85.700 Loss 0.3223
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 87.950 Loss 0.2875
+* VALID - Accuracy 85.850 Loss 0.3298
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 88.060 Loss 0.2841
+* VALID - Accuracy 87.300 Loss 0.3135
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 88.790 Loss 0.2686
+* VALID - Accuracy 87.500 Loss 0.3035
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 11.1729
+validation split name: 2
+* VALID - Accuracy 87.500 Loss 0.3035
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 57.420 Loss 1.2793
+* VALID - Accuracy 83.500 Loss 0.4068
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 84.900 Loss 0.3576
+* VALID - Accuracy 88.300 Loss 0.2902
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 87.910 Loss 0.2903
+* VALID - Accuracy 88.300 Loss 0.2754
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 89.210 Loss 0.2644
+* VALID - Accuracy 89.000 Loss 0.2539
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 90.130 Loss 0.2409
+* VALID - Accuracy 89.850 Loss 0.2415
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 90.900 Loss 0.2273
+* VALID - Accuracy 91.450 Loss 0.2198
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 91.100 Loss 0.2139
+* VALID - Accuracy 88.200 Loss 0.2771
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 92.010 Loss 0.2017
+* VALID - Accuracy 92.650 Loss 0.1958
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 92.250 Loss 0.1921
+* VALID - Accuracy 92.300 Loss 0.1986
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 92.630 Loss 0.1869
+* VALID - Accuracy 92.600 Loss 0.1917
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 92.910 Loss 0.1800
+* VALID - Accuracy 92.500 Loss 0.1932
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 93.370 Loss 0.1714
+* VALID - Accuracy 93.350 Loss 0.1793
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 13.4667
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 11.2547
+validation split name: 3
+* VALID - Accuracy 93.350 Loss 0.1793
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 61.330 Loss 1.2899
+* VALID - Accuracy 89.950 Loss 0.3087
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 92.110 Loss 0.2334
+* VALID - Accuracy 92.700 Loss 0.1913
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 93.970 Loss 0.1572
+* VALID - Accuracy 94.750 Loss 0.1375
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 95.070 Loss 0.1331
+* VALID - Accuracy 94.900 Loss 0.1428
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 95.460 Loss 0.1169
+* VALID - Accuracy 95.850 Loss 0.1192
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 96.150 Loss 0.1026
+* VALID - Accuracy 96.000 Loss 0.1078
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 96.420 Loss 0.0955
+* VALID - Accuracy 96.400 Loss 0.0943
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 96.750 Loss 0.0877
+* VALID - Accuracy 96.950 Loss 0.0906
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 96.910 Loss 0.0827
+* VALID - Accuracy 96.450 Loss 0.0929
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 97.130 Loss 0.0761
+* VALID - Accuracy 96.600 Loss 0.0920
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 97.170 Loss 0.0736
+* VALID - Accuracy 96.100 Loss 0.1115
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 97.400 Loss 0.0701
+* VALID - Accuracy 97.300 Loss 0.0771
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 14.3562
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 14.1245
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 9.2411
+validation split name: 4
+* VALID - Accuracy 97.300 Loss 0.0771
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 42.350 Loss 2.6317
+* VALID - Accuracy 81.400 Loss 0.4954
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 88.680 Loss 0.2989
+* VALID - Accuracy 90.900 Loss 0.2448
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 91.630 Loss 0.2239
+* VALID - Accuracy 93.050 Loss 0.1858
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 92.970 Loss 0.1798
+* VALID - Accuracy 93.650 Loss 0.1627
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 94.090 Loss 0.1553
+* VALID - Accuracy 94.850 Loss 0.1375
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 94.820 Loss 0.1372
+* VALID - Accuracy 95.150 Loss 0.1223
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 95.020 Loss 0.1263
+* VALID - Accuracy 95.550 Loss 0.1139
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 95.650 Loss 0.1137
+* VALID - Accuracy 96.100 Loss 0.1079
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 95.850 Loss 0.1076
+* VALID - Accuracy 96.200 Loss 0.1061
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 96.540 Loss 0.0957
+* VALID - Accuracy 96.800 Loss 0.0921
+Epoch:10
+LR: 0.0001
+* TRAIN - Accuracy 96.630 Loss 0.0890
+* VALID - Accuracy 96.300 Loss 0.0968
+Epoch:11
+LR: 0.0001
+* TRAIN - Accuracy 96.820 Loss 0.0854
+* VALID - Accuracy 97.000 Loss 0.0815
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 17.4734
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 11.1267
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 9.9365
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 9.4087
+validation split name: 5
+* VALID - Accuracy 97.000 Loss 0.0815
+OrderedDict([('1', OrderedDict([('1', 95.35), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 87.5), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 93.35), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 97.3), ('5', 0.0)])), ('5', OrderedDict([('5', 97.0)]))])
+Task 1 average acc: 95.35
+Task 2 average acc: 43.75
+Task 3 average acc: 31.116666666666664
+Task 4 average acc: 24.325
+Task 5 average acc: 19.4
+===Summary of experiment repeats: 10 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [19.24 19.24 19.36 19.26 19.35 19.33 19.37 19.31 19.32 19.4 ]
+mean: 19.317999999999998 std: 0.05287721626560841
+reg_coef: 0.0 mean: 19.317999999999998 std: 0.05287721626560841

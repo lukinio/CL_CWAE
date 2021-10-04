@@ -1,0 +1,1681 @@
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.350 Loss 0.0278
+* VALID - Accuracy 99.527 Loss 0.0089
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.874 Loss 0.0033
+* VALID - Accuracy 99.905 Loss 0.0016
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.968 Loss 0.0016
+* VALID - Accuracy 99.953 Loss 0.0018
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.866 Loss 0.0035
+* VALID - Accuracy 99.764 Loss 0.0045
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 99.764 Loss 0.0045
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 85.201 Loss 0.3661
+* VALID - Accuracy 97.943 Loss 0.0509
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.271 Loss 0.0510
+* VALID - Accuracy 98.874 Loss 0.0298
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 98.867 Loss 0.0333
+* VALID - Accuracy 99.216 Loss 0.0241
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.272 Loss 0.0212
+* VALID - Accuracy 99.216 Loss 0.0182
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 18.5595
+validation split name: 2
+* VALID - Accuracy 99.216 Loss 0.0180
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 84.622 Loss 0.6542
+* VALID - Accuracy 99.466 Loss 0.0357
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.432 Loss 0.0330
+* VALID - Accuracy 99.840 Loss 0.0212
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.689 Loss 0.0219
+* VALID - Accuracy 99.947 Loss 0.0159
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.822 Loss 0.0159
+* VALID - Accuracy 99.947 Loss 0.0131
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 27.0554
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 14.9515
+validation split name: 3
+* VALID - Accuracy 99.947 Loss 0.0045
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 82.459 Loss 0.8902
+* VALID - Accuracy 99.446 Loss 0.0337
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.860 Loss 0.0222
+* VALID - Accuracy 99.597 Loss 0.0257
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.951 Loss 0.0176
+* VALID - Accuracy 99.698 Loss 0.0206
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.967 Loss 0.0143
+* VALID - Accuracy 99.698 Loss 0.0173
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 20.6734
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 13.4497
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 13.2034
+validation split name: 4
+* VALID - Accuracy 99.698 Loss 0.0054
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 72.610 Loss 1.4954
+* VALID - Accuracy 97.882 Loss 0.0722
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.475 Loss 0.0524
+* VALID - Accuracy 98.437 Loss 0.0446
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.203 Loss 0.0345
+* VALID - Accuracy 98.991 Loss 0.0324
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.466 Loss 0.0256
+* VALID - Accuracy 99.546 Loss 0.0256
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 15.3488
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 11.7327
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 12.4381
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 11.9407
+validation split name: 5
+* VALID - Accuracy 99.546 Loss 0.0172
+OrderedDict([('1', OrderedDict([('1', 99.76359338061465), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 99.21645445641528), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.94663820704376), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.69788519637463), ('5', 0.0)])), ('5', OrderedDict([('5', 99.54614220877458)]))])
+Task 1 average acc: 99.76359338061465
+Task 2 average acc: 49.60822722820764
+Task 3 average acc: 33.31554606901459
+Task 4 average acc: 24.924471299093657
+Task 5 average acc: 19.909228441754916
+===Summary of experiment repeats: 1 / 10 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.90922844  0.          0.          0.          0.          0.
+  0.          0.          0.          0.        ]
+mean: 1.9909228441754916 std: 5.972768532526476
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.429 Loss 0.0300
+* VALID - Accuracy 99.480 Loss 0.0081
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.858 Loss 0.0029
+* VALID - Accuracy 99.811 Loss 0.0033
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.913 Loss 0.0015
+* VALID - Accuracy 99.953 Loss 0.0033
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.945 Loss 0.0011
+* VALID - Accuracy 99.905 Loss 0.0026
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 99.905 Loss 0.0026
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 87.683 Loss 0.3590
+* VALID - Accuracy 98.188 Loss 0.0460
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.222 Loss 0.0543
+* VALID - Accuracy 98.923 Loss 0.0285
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.007 Loss 0.0328
+* VALID - Accuracy 99.119 Loss 0.0228
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.297 Loss 0.0215
+* VALID - Accuracy 99.412 Loss 0.0159
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 19.4661
+validation split name: 2
+* VALID - Accuracy 99.412 Loss 0.0158
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 83.965 Loss 0.7980
+* VALID - Accuracy 99.200 Loss 0.0519
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.378 Loss 0.0419
+* VALID - Accuracy 99.680 Loss 0.0297
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.680 Loss 0.0267
+* VALID - Accuracy 99.840 Loss 0.0206
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.858 Loss 0.0188
+* VALID - Accuracy 99.893 Loss 0.0158
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 19.2571
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 12.6951
+validation split name: 3
+* VALID - Accuracy 99.893 Loss 0.0043
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 86.785 Loss 0.5847
+* VALID - Accuracy 99.144 Loss 0.0334
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.787 Loss 0.0192
+* VALID - Accuracy 99.446 Loss 0.0243
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.869 Loss 0.0151
+* VALID - Accuracy 99.648 Loss 0.0220
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.934 Loss 0.0123
+* VALID - Accuracy 99.547 Loss 0.0192
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 19.2924
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 12.7407
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 10.3338
+validation split name: 4
+* VALID - Accuracy 99.547 Loss 0.0101
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 76.169 Loss 1.1052
+* VALID - Accuracy 97.378 Loss 0.0733
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.407 Loss 0.0547
+* VALID - Accuracy 98.437 Loss 0.0462
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.136 Loss 0.0369
+* VALID - Accuracy 98.941 Loss 0.0349
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.449 Loss 0.0288
+* VALID - Accuracy 99.344 Loss 0.0264
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 17.7531
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 13.1265
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 14.2782
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 13.5941
+validation split name: 5
+* VALID - Accuracy 99.344 Loss 0.0165
+OrderedDict([('1', OrderedDict([('1', 99.90543735224587), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 99.41234084231147), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.89327641408751), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.54682779456193), ('5', 0.0)])), ('5', OrderedDict([('5', 99.34442763489662)]))])
+Task 1 average acc: 99.90543735224587
+Task 2 average acc: 49.70617042115573
+Task 3 average acc: 33.29775880469584
+Task 4 average acc: 24.886706948640484
+Task 5 average acc: 19.868885526979323
+===Summary of experiment repeats: 2 / 10 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.90922844 19.86888553  0.          0.          0.          0.
+  0.          0.          0.          0.        ]
+mean: 3.977811396873424 std: 7.955627908212087
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.681 Loss 0.0254
+* VALID - Accuracy 99.811 Loss 0.0014
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.874 Loss 0.0030
+* VALID - Accuracy 99.905 Loss 0.0020
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.889 Loss 0.0022
+* VALID - Accuracy 99.953 Loss 0.0039
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.945 Loss 0.0016
+* VALID - Accuracy 99.905 Loss 0.0039
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 99.905 Loss 0.0039
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 83.522 Loss 0.5510
+* VALID - Accuracy 97.943 Loss 0.0560
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.106 Loss 0.0573
+* VALID - Accuracy 98.678 Loss 0.0350
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 98.767 Loss 0.0369
+* VALID - Accuracy 98.874 Loss 0.0311
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.272 Loss 0.0238
+* VALID - Accuracy 99.461 Loss 0.0167
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 15.1821
+validation split name: 2
+* VALID - Accuracy 99.461 Loss 0.0164
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 77.812 Loss 0.7967
+* VALID - Accuracy 98.719 Loss 0.0531
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.254 Loss 0.0397
+* VALID - Accuracy 99.680 Loss 0.0245
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.600 Loss 0.0248
+* VALID - Accuracy 99.680 Loss 0.0196
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.822 Loss 0.0170
+* VALID - Accuracy 99.840 Loss 0.0144
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 19.2835
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 13.2521
+validation split name: 3
+* VALID - Accuracy 99.840 Loss 0.0053
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 83.805 Loss 0.8605
+* VALID - Accuracy 99.245 Loss 0.0331
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.737 Loss 0.0211
+* VALID - Accuracy 99.547 Loss 0.0245
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.885 Loss 0.0161
+* VALID - Accuracy 99.648 Loss 0.0204
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.918 Loss 0.0134
+* VALID - Accuracy 99.748 Loss 0.0172
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 16.7976
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 11.1092
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 10.5461
+validation split name: 4
+* VALID - Accuracy 99.748 Loss 0.0074
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 77.068 Loss 1.2203
+* VALID - Accuracy 97.882 Loss 0.0750
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.475 Loss 0.0542
+* VALID - Accuracy 98.538 Loss 0.0454
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.068 Loss 0.0366
+* VALID - Accuracy 98.588 Loss 0.0457
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.381 Loss 0.0284
+* VALID - Accuracy 99.042 Loss 0.0281
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 14.4509
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 11.2538
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 11.5090
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 9.6622
+validation split name: 5
+* VALID - Accuracy 99.042 Loss 0.0193
+OrderedDict([('1', OrderedDict([('1', 99.90543735224587), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 99.4613124387855), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.83991462113127), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.74823766364553), ('5', 0.0)])), ('5', OrderedDict([('5', 99.04185577407968)]))])
+Task 1 average acc: 99.90543735224587
+Task 2 average acc: 49.73065621939275
+Task 3 average acc: 33.27997154037709
+Task 4 average acc: 24.93705941591138
+Task 5 average acc: 19.808371154815937
+===Summary of experiment repeats: 3 / 10 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.90922844 19.86888553 19.80837115  0.          0.          0.
+  0.          0.          0.          0.        ]
+mean: 5.958648512355017 std: 9.102014261135984
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.413 Loss 0.0285
+* VALID - Accuracy 99.905 Loss 0.0025
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.913 Loss 0.0023
+* VALID - Accuracy 99.905 Loss 0.0032
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.889 Loss 0.0016
+* VALID - Accuracy 99.858 Loss 0.0023
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.921 Loss 0.0016
+* VALID - Accuracy 99.953 Loss 0.0015
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 99.953 Loss 0.0015
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 81.132 Loss 0.4506
+* VALID - Accuracy 97.062 Loss 0.0707
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.164 Loss 0.0556
+* VALID - Accuracy 98.874 Loss 0.0291
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 98.883 Loss 0.0329
+* VALID - Accuracy 99.314 Loss 0.0218
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.297 Loss 0.0220
+* VALID - Accuracy 99.461 Loss 0.0160
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 14.6244
+validation split name: 2
+* VALID - Accuracy 99.461 Loss 0.0159
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 79.224 Loss 0.7379
+* VALID - Accuracy 99.146 Loss 0.0462
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.254 Loss 0.0402
+* VALID - Accuracy 99.573 Loss 0.0275
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.618 Loss 0.0259
+* VALID - Accuracy 99.840 Loss 0.0198
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.680 Loss 0.0200
+* VALID - Accuracy 99.840 Loss 0.0156
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 20.9430
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 13.0121
+validation split name: 3
+* VALID - Accuracy 99.840 Loss 0.0054
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 83.026 Loss 0.9552
+* VALID - Accuracy 99.345 Loss 0.0354
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.803 Loss 0.0238
+* VALID - Accuracy 99.547 Loss 0.0268
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.885 Loss 0.0184
+* VALID - Accuracy 99.597 Loss 0.0218
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.959 Loss 0.0148
+* VALID - Accuracy 99.648 Loss 0.0191
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 16.2087
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 13.2892
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 12.2664
+validation split name: 4
+* VALID - Accuracy 99.648 Loss 0.0074
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 77.610 Loss 1.0526
+* VALID - Accuracy 97.529 Loss 0.0771
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.644 Loss 0.0497
+* VALID - Accuracy 98.437 Loss 0.0458
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.161 Loss 0.0353
+* VALID - Accuracy 99.143 Loss 0.0329
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.492 Loss 0.0265
+* VALID - Accuracy 99.344 Loss 0.0248
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 15.8682
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 12.3677
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 12.4458
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 10.4012
+validation split name: 5
+* VALID - Accuracy 99.344 Loss 0.0167
+OrderedDict([('1', OrderedDict([('1', 99.95271867612293), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 99.4613124387855), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.83991462113127), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.64753272910373), ('5', 0.0)])), ('5', OrderedDict([('5', 99.34442763489662)]))])
+Task 1 average acc: 99.95271867612293
+Task 2 average acc: 49.73065621939275
+Task 3 average acc: 33.27997154037709
+Task 4 average acc: 24.911883182275933
+Task 5 average acc: 19.868885526979323
+===Summary of experiment repeats: 4 / 10 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.90922844 19.86888553 19.80837115 19.86888553  0.          0.
+  0.          0.          0.          0.        ]
+mean: 7.945537065052949 std: 9.731282426278879
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 97.600 Loss 0.0309
+* VALID - Accuracy 99.953 Loss 0.0017
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.929 Loss 0.0020
+* VALID - Accuracy 99.953 Loss 0.0007
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.945 Loss 0.0015
+* VALID - Accuracy 99.953 Loss 0.0019
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.937 Loss 0.0013
+* VALID - Accuracy 99.905 Loss 0.0042
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 99.905 Loss 0.0042
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 82.439 Loss 0.4257
+* VALID - Accuracy 97.600 Loss 0.0599
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.031 Loss 0.0591
+* VALID - Accuracy 98.482 Loss 0.0470
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 98.817 Loss 0.0371
+* VALID - Accuracy 99.119 Loss 0.0274
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.280 Loss 0.0230
+* VALID - Accuracy 99.461 Loss 0.0183
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 17.3713
+validation split name: 2
+* VALID - Accuracy 99.461 Loss 0.0181
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 82.669 Loss 0.8226
+* VALID - Accuracy 99.360 Loss 0.0558
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.325 Loss 0.0476
+* VALID - Accuracy 99.520 Loss 0.0343
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.565 Loss 0.0323
+* VALID - Accuracy 99.840 Loss 0.0242
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.716 Loss 0.0245
+* VALID - Accuracy 99.840 Loss 0.0193
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 19.1959
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 13.9629
+validation split name: 3
+* VALID - Accuracy 99.840 Loss 0.0056
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 79.471 Loss 0.8601
+* VALID - Accuracy 99.295 Loss 0.0335
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.860 Loss 0.0217
+* VALID - Accuracy 99.446 Loss 0.0262
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.943 Loss 0.0167
+* VALID - Accuracy 99.597 Loss 0.0221
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.959 Loss 0.0138
+* VALID - Accuracy 99.748 Loss 0.0175
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 16.9818
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 12.6757
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 12.4438
+validation split name: 4
+* VALID - Accuracy 99.748 Loss 0.0063
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 79.466 Loss 0.9568
+* VALID - Accuracy 97.832 Loss 0.0680
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.619 Loss 0.0476
+* VALID - Accuracy 98.891 Loss 0.0401
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.195 Loss 0.0308
+* VALID - Accuracy 98.941 Loss 0.0307
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.475 Loss 0.0229
+* VALID - Accuracy 99.344 Loss 0.0236
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 15.6262
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.7823
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 14.4985
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 11.5105
+validation split name: 5
+* VALID - Accuracy 99.344 Loss 0.0172
+OrderedDict([('1', OrderedDict([('1', 99.90543735224587), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 99.4613124387855), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.83991462113127), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.74823766364553), ('5', 0.0)])), ('5', OrderedDict([('5', 99.34442763489662)]))])
+Task 1 average acc: 99.90543735224587
+Task 2 average acc: 49.73065621939275
+Task 3 average acc: 33.27997154037709
+Task 4 average acc: 24.93705941591138
+Task 5 average acc: 19.868885526979323
+===Summary of experiment repeats: 5 / 10 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.90922844 19.86888553 19.80837115 19.86888553 19.86888553  0.
+  0.          0.          0.          0.        ]
+mean: 9.932425617750882 std: 9.932451835695012
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.689 Loss 0.0283
+* VALID - Accuracy 99.953 Loss 0.0010
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.858 Loss 0.0035
+* VALID - Accuracy 99.764 Loss 0.0049
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.882 Loss 0.0032
+* VALID - Accuracy 99.905 Loss 0.0017
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.929 Loss 0.0017
+* VALID - Accuracy 99.905 Loss 0.0014
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 99.905 Loss 0.0014
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 79.725 Loss 0.5504
+* VALID - Accuracy 97.796 Loss 0.0614
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 97.849 Loss 0.0640
+* VALID - Accuracy 98.384 Loss 0.0378
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 98.693 Loss 0.0410
+* VALID - Accuracy 99.167 Loss 0.0251
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.173 Loss 0.0263
+* VALID - Accuracy 99.363 Loss 0.0193
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 15.4222
+validation split name: 2
+* VALID - Accuracy 99.363 Loss 0.0192
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 79.375 Loss 0.9116
+* VALID - Accuracy 99.253 Loss 0.0498
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.423 Loss 0.0426
+* VALID - Accuracy 99.787 Loss 0.0298
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.760 Loss 0.0270
+* VALID - Accuracy 99.733 Loss 0.0277
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.805 Loss 0.0208
+* VALID - Accuracy 99.840 Loss 0.0182
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 16.4844
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.3127
+validation split name: 3
+* VALID - Accuracy 99.840 Loss 0.0055
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 79.504 Loss 0.8997
+* VALID - Accuracy 99.547 Loss 0.0265
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.828 Loss 0.0195
+* VALID - Accuracy 99.648 Loss 0.0214
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.934 Loss 0.0153
+* VALID - Accuracy 99.748 Loss 0.0185
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.992 Loss 0.0128
+* VALID - Accuracy 99.849 Loss 0.0151
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 14.2486
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 11.1796
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 12.7527
+validation split name: 4
+* VALID - Accuracy 99.849 Loss 0.0043
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 78.466 Loss 0.9734
+* VALID - Accuracy 97.832 Loss 0.0666
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.602 Loss 0.0474
+* VALID - Accuracy 98.588 Loss 0.0427
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.254 Loss 0.0315
+* VALID - Accuracy 99.193 Loss 0.0298
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.525 Loss 0.0235
+* VALID - Accuracy 99.344 Loss 0.0226
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 13.6224
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 12.2710
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 12.9022
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 8.7885
+validation split name: 5
+* VALID - Accuracy 99.344 Loss 0.0159
+OrderedDict([('1', OrderedDict([('1', 99.90543735224587), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 99.36336924583742), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.83991462113127), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.8489425981873), ('5', 0.0)])), ('5', OrderedDict([('5', 99.34442763489662)]))])
+Task 1 average acc: 99.90543735224587
+Task 2 average acc: 49.68168462291871
+Task 3 average acc: 33.27997154037709
+Task 4 average acc: 24.962235649546827
+Task 5 average acc: 19.868885526979323
+===Summary of experiment repeats: 6 / 10 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.90922844 19.86888553 19.80837115 19.86888553 19.86888553 19.86888553
+  0.          0.          0.          0.        ]
+mean: 11.919314170448814 std: 9.732106094526207
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.350 Loss 0.0270
+* VALID - Accuracy 99.858 Loss 0.0068
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.882 Loss 0.0026
+* VALID - Accuracy 99.905 Loss 0.0037
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.937 Loss 0.0017
+* VALID - Accuracy 99.905 Loss 0.0027
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.953 Loss 0.0009
+* VALID - Accuracy 99.905 Loss 0.0061
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 99.905 Loss 0.0061
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 80.991 Loss 0.5158
+* VALID - Accuracy 97.992 Loss 0.0552
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.197 Loss 0.0578
+* VALID - Accuracy 98.923 Loss 0.0322
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 98.801 Loss 0.0377
+* VALID - Accuracy 99.119 Loss 0.0220
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.214 Loss 0.0252
+* VALID - Accuracy 99.412 Loss 0.0196
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 13.4979
+validation split name: 2
+* VALID - Accuracy 99.412 Loss 0.0195
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 80.476 Loss 0.8572
+* VALID - Accuracy 99.360 Loss 0.0514
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.441 Loss 0.0425
+* VALID - Accuracy 99.733 Loss 0.0301
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.636 Loss 0.0278
+* VALID - Accuracy 99.840 Loss 0.0223
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.805 Loss 0.0195
+* VALID - Accuracy 99.893 Loss 0.0159
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 17.6545
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.0025
+validation split name: 3
+* VALID - Accuracy 99.893 Loss 0.0045
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 81.827 Loss 0.7862
+* VALID - Accuracy 99.194 Loss 0.0370
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.762 Loss 0.0214
+* VALID - Accuracy 99.597 Loss 0.0266
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.893 Loss 0.0163
+* VALID - Accuracy 99.648 Loss 0.0219
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.934 Loss 0.0134
+* VALID - Accuracy 99.597 Loss 0.0190
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 16.4244
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 11.2881
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 11.4061
+validation split name: 4
+* VALID - Accuracy 99.597 Loss 0.0086
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 76.686 Loss 1.2436
+* VALID - Accuracy 97.680 Loss 0.0697
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.585 Loss 0.0495
+* VALID - Accuracy 98.840 Loss 0.0419
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.305 Loss 0.0331
+* VALID - Accuracy 99.294 Loss 0.0302
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.500 Loss 0.0252
+* VALID - Accuracy 99.445 Loss 0.0260
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 15.3893
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 12.6820
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 15.3961
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 10.8215
+validation split name: 5
+* VALID - Accuracy 99.445 Loss 0.0171
+OrderedDict([('1', OrderedDict([('1', 99.90543735224587), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 99.41234084231147), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.89327641408751), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.59718026183283), ('5', 0.0)])), ('5', OrderedDict([('5', 99.44528492183561)]))])
+Task 1 average acc: 99.90543735224587
+Task 2 average acc: 49.70617042115573
+Task 3 average acc: 33.29775880469584
+Task 4 average acc: 24.899295065458208
+Task 5 average acc: 19.889056984367123
+===Summary of experiment repeats: 7 / 10 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.90922844 19.86888553 19.80837115 19.86888553 19.86888553 19.86888553
+ 19.88905698  0.          0.          0.        ]
+mean: 13.908219868885528 std: 9.105098471760433
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.650 Loss 0.0279
+* VALID - Accuracy 99.953 Loss 0.0020
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.905 Loss 0.0023
+* VALID - Accuracy 99.905 Loss 0.0020
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.921 Loss 0.0017
+* VALID - Accuracy 99.858 Loss 0.0094
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.921 Loss 0.0020
+* VALID - Accuracy 99.905 Loss 0.0026
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 99.905 Loss 0.0026
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 77.748 Loss 0.5561
+* VALID - Accuracy 97.551 Loss 0.0696
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 97.593 Loss 0.0660
+* VALID - Accuracy 98.335 Loss 0.0431
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 98.652 Loss 0.0420
+* VALID - Accuracy 99.070 Loss 0.0279
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.082 Loss 0.0287
+* VALID - Accuracy 99.265 Loss 0.0221
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 13.6317
+validation split name: 2
+* VALID - Accuracy 99.265 Loss 0.0220
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 80.005 Loss 0.7038
+* VALID - Accuracy 99.253 Loss 0.0459
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.245 Loss 0.0419
+* VALID - Accuracy 99.787 Loss 0.0258
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.547 Loss 0.0262
+* VALID - Accuracy 99.893 Loss 0.0176
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.751 Loss 0.0189
+* VALID - Accuracy 99.840 Loss 0.0146
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 17.1108
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.8042
+validation split name: 3
+* VALID - Accuracy 99.840 Loss 0.0052
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 82.779 Loss 0.8082
+* VALID - Accuracy 99.396 Loss 0.0328
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.819 Loss 0.0211
+* VALID - Accuracy 99.648 Loss 0.0247
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.885 Loss 0.0164
+* VALID - Accuracy 99.748 Loss 0.0196
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.934 Loss 0.0130
+* VALID - Accuracy 99.799 Loss 0.0166
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 15.4992
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 12.5230
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 13.4310
+validation split name: 4
+* VALID - Accuracy 99.799 Loss 0.0067
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 78.000 Loss 1.1649
+* VALID - Accuracy 97.529 Loss 0.0861
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.483 Loss 0.0555
+* VALID - Accuracy 98.386 Loss 0.0515
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.085 Loss 0.0379
+* VALID - Accuracy 98.941 Loss 0.0367
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.492 Loss 0.0288
+* VALID - Accuracy 99.294 Loss 0.0312
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 15.4986
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 13.2822
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 14.2695
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 12.3422
+validation split name: 5
+* VALID - Accuracy 99.294 Loss 0.0216
+OrderedDict([('1', OrderedDict([('1', 99.90543735224587), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 99.26542605288932), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.83991462113127), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.79859013091641), ('5', 0.0)])), ('5', OrderedDict([('5', 99.29399899142713)]))])
+Task 1 average acc: 99.90543735224587
+Task 2 average acc: 49.63271302644466
+Task 3 average acc: 33.27997154037709
+Task 4 average acc: 24.949647532729102
+Task 5 average acc: 19.858799798285425
+===Summary of experiment repeats: 8 / 10 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.90922844 19.86888553 19.80837115 19.86888553 19.86888553 19.86888553
+ 19.88905698 19.8587998   0.          0.        ]
+mean: 15.894099848714069 std: 7.947086324160689
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.366 Loss 0.0452
+* VALID - Accuracy 99.764 Loss 0.0036
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 98.887 Loss 0.0023
+* VALID - Accuracy 99.811 Loss 0.0031
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.779 Loss 0.0026
+* VALID - Accuracy 99.764 Loss 0.0030
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.929 Loss 0.0015
+* VALID - Accuracy 99.905 Loss 0.0039
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 99.905 Loss 0.0039
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 84.134 Loss 0.4268
+* VALID - Accuracy 97.551 Loss 0.0628
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 97.957 Loss 0.0599
+* VALID - Accuracy 98.237 Loss 0.0501
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 98.610 Loss 0.0403
+* VALID - Accuracy 99.265 Loss 0.0251
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.214 Loss 0.0269
+* VALID - Accuracy 99.461 Loss 0.0203
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 17.5174
+validation split name: 2
+* VALID - Accuracy 99.461 Loss 0.0202
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 84.800 Loss 0.6051
+* VALID - Accuracy 99.360 Loss 0.0477
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.290 Loss 0.0426
+* VALID - Accuracy 99.733 Loss 0.0273
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.592 Loss 0.0280
+* VALID - Accuracy 99.787 Loss 0.0209
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.689 Loss 0.0206
+* VALID - Accuracy 99.840 Loss 0.0159
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 20.8124
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 13.9196
+validation split name: 3
+* VALID - Accuracy 99.840 Loss 0.0051
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 81.909 Loss 0.8046
+* VALID - Accuracy 99.345 Loss 0.0356
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.844 Loss 0.0228
+* VALID - Accuracy 99.446 Loss 0.0286
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.910 Loss 0.0180
+* VALID - Accuracy 99.648 Loss 0.0227
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.951 Loss 0.0146
+* VALID - Accuracy 99.799 Loss 0.0181
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 17.1181
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 13.7644
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 12.1189
+validation split name: 4
+* VALID - Accuracy 99.799 Loss 0.0064
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 75.763 Loss 1.3083
+* VALID - Accuracy 97.680 Loss 0.0801
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.551 Loss 0.0522
+* VALID - Accuracy 98.487 Loss 0.0469
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.068 Loss 0.0377
+* VALID - Accuracy 98.790 Loss 0.0424
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.458 Loss 0.0298
+* VALID - Accuracy 99.143 Loss 0.0317
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 13.3047
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 12.5188
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 11.7604
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 10.2655
+validation split name: 5
+* VALID - Accuracy 99.143 Loss 0.0229
+OrderedDict([('1', OrderedDict([('1', 99.90543735224587), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 99.4613124387855), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.83991462113127), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.79859013091641), ('5', 0.0)])), ('5', OrderedDict([('5', 99.14271306101865)]))])
+Task 1 average acc: 99.90543735224587
+Task 2 average acc: 49.73065621939275
+Task 3 average acc: 33.27997154037709
+Task 4 average acc: 24.949647532729102
+Task 5 average acc: 19.82854261220373
+===Summary of experiment repeats: 9 / 10 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.90922844 19.86888553 19.80837115 19.86888553 19.86888553 19.86888553
+ 19.88905698 19.8587998  19.82854261  0.        ]
+mean: 17.87695410993444 std: 5.959044638887211
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+============================== Task: 1 ==============================
+Incremental class: Old valid output dimension: ALL
+Incremental class: New Valid output dimension: 2
+#reg_term: 0
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.413 Loss 0.0347
+* VALID - Accuracy 99.905 Loss 0.0015
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.953 Loss 0.0022
+* VALID - Accuracy 99.905 Loss 0.0022
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.929 Loss 0.0016
+* VALID - Accuracy 99.905 Loss 0.0016
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.961 Loss 0.0010
+* VALID - Accuracy 99.905 Loss 0.0021
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 99.905 Loss 0.0021
+============================== Task: 2 ==============================
+Incremental class: Old valid output dimension: 2
+Incremental class: New Valid output dimension: 4
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 81.512 Loss 0.5131
+* VALID - Accuracy 97.600 Loss 0.0626
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 97.709 Loss 0.0670
+* VALID - Accuracy 98.580 Loss 0.0375
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 98.594 Loss 0.0430
+* VALID - Accuracy 98.874 Loss 0.0262
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.040 Loss 0.0293
+* VALID - Accuracy 98.972 Loss 0.0260
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 14.0572
+validation split name: 2
+* VALID - Accuracy 98.972 Loss 0.0259
+============================== Task: 3 ==============================
+Incremental class: Old valid output dimension: 4
+Incremental class: New Valid output dimension: 6
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 75.779 Loss 0.8844
+* VALID - Accuracy 99.200 Loss 0.0489
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.467 Loss 0.0412
+* VALID - Accuracy 99.733 Loss 0.0283
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.716 Loss 0.0263
+* VALID - Accuracy 99.787 Loss 0.0204
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.814 Loss 0.0191
+* VALID - Accuracy 99.840 Loss 0.0158
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 15.6402
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 10.8258
+validation split name: 3
+* VALID - Accuracy 99.840 Loss 0.0047
+============================== Task: 4 ==============================
+Incremental class: Old valid output dimension: 6
+Incremental class: New Valid output dimension: 8
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 85.217 Loss 0.6388
+* VALID - Accuracy 99.245 Loss 0.0347
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 99.762 Loss 0.0203
+* VALID - Accuracy 99.496 Loss 0.0253
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.910 Loss 0.0157
+* VALID - Accuracy 99.597 Loss 0.0213
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.951 Loss 0.0131
+* VALID - Accuracy 99.648 Loss 0.0184
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 15.2864
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 13.7623
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 11.2670
+validation split name: 4
+* VALID - Accuracy 99.648 Loss 0.0081
+============================== Task: 5 ==============================
+Incremental class: Old valid output dimension: 8
+Incremental class: New Valid output dimension: 10
+#reg_term: 1
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 80.280 Loss 1.1117
+* VALID - Accuracy 97.630 Loss 0.0792
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 98.508 Loss 0.0536
+* VALID - Accuracy 98.588 Loss 0.0491
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 99.178 Loss 0.0382
+* VALID - Accuracy 98.840 Loss 0.0433
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 99.483 Loss 0.0284
+* VALID - Accuracy 99.244 Loss 0.0291
+Computing EWC
+Sample 60000 for estimating the F matrix.
+validation split name: 1
+* VALID - Accuracy 0.000 Loss 13.9435
+validation split name: 2
+* VALID - Accuracy 0.000 Loss 12.7014
+validation split name: 3
+* VALID - Accuracy 0.000 Loss 12.6693
+validation split name: 4
+* VALID - Accuracy 0.000 Loss 9.8909
+validation split name: 5
+* VALID - Accuracy 99.244 Loss 0.0194
+OrderedDict([('1', OrderedDict([('1', 99.90543735224587), ('2', 0.0), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('2', OrderedDict([('2', 98.97159647404506), ('3', 0.0), ('4', 0.0), ('5', 0.0)])), ('3', OrderedDict([('3', 99.83991462113127), ('4', 0.0), ('5', 0.0)])), ('4', OrderedDict([('4', 99.64753272910373), ('5', 0.0)])), ('5', OrderedDict([('5', 99.24357034795764)]))])
+Task 1 average acc: 99.90543735224587
+Task 2 average acc: 49.48579823702253
+Task 3 average acc: 33.27997154037709
+Task 4 average acc: 24.911883182275933
+Task 5 average acc: 19.84871406959153
+===Summary of experiment repeats: 10 / 10 ===
+The regularization coefficient: 100.0
+The last avg acc of all repeats: [19.90922844 19.86888553 19.80837115 19.86888553 19.86888553 19.86888553
+ 19.88905698 19.8587998  19.82854261 19.84871407]
+mean: 19.861825516893596 std: 0.027081637079369496
+reg_coef: 100.0 mean: 19.861825516893596 std: 0.027081637079369496

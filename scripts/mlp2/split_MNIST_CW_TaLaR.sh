@@ -23,7 +23,7 @@ python -u iBatchLearn.py --gpuid "${GPUID}" --repeat "${REPEAT}" --dataroot /sha
        --exp_tag ID_latent8_best \
        --schedule 4 --batch_size 128 --optimizer Adam --lr 1e-4 \
        --generator_epoch 10 --generator_lr 1e-4 --latent_size 8 \
-       --reg_coef 100 --reg_coef_2 0 \
+       --reg_coef 10 --reg_coef_2 0 \
        | tee ${OUTDIR}/ID_CW_TaLaR.log
 
 

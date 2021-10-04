@@ -1,0 +1,441 @@
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=256, out_features=2, bias=True)
+    (2): Linear(in_features=256, out_features=2, bias=True)
+    (3): Linear(in_features=256, out_features=2, bias=True)
+    (4): Linear(in_features=256, out_features=2, bias=True)
+    (5): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.530 Loss 0.0421
+* VALID - Accuracy 99.280 Loss 0.0190
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.465 Loss 0.0169
+* VALID - Accuracy 99.600 Loss 0.0119
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.558 Loss 0.0128
+* VALID - Accuracy 99.340 Loss 0.0194
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.655 Loss 0.0101
+* VALID - Accuracy 99.370 Loss 0.0251
+* VALID - Accuracy 99.370 Loss 0.0251
+OrderedDict([('All', {'All': 99.37})])
+Task All average acc: 99.37
+===Summary of experiment repeats: 1 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.37  0.    0.    0.    0.    0.    0.    0.    0.    0.  ]
+mean: 9.937000000000001 std: 29.811
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=256, out_features=2, bias=True)
+    (2): Linear(in_features=256, out_features=2, bias=True)
+    (3): Linear(in_features=256, out_features=2, bias=True)
+    (4): Linear(in_features=256, out_features=2, bias=True)
+    (5): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.542 Loss 0.0411
+* VALID - Accuracy 99.510 Loss 0.0114
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.345 Loss 0.0186
+* VALID - Accuracy 99.380 Loss 0.0199
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.573 Loss 0.0127
+* VALID - Accuracy 99.700 Loss 0.0091
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.732 Loss 0.0086
+* VALID - Accuracy 99.710 Loss 0.0091
+* VALID - Accuracy 99.710 Loss 0.0091
+OrderedDict([('All', {'All': 99.71})])
+Task All average acc: 99.71
+===Summary of experiment repeats: 2 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.37 99.71  0.    0.    0.    0.    0.    0.    0.    0.  ]
+mean: 19.907999999999998 std: 39.81607258381971
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=256, out_features=2, bias=True)
+    (2): Linear(in_features=256, out_features=2, bias=True)
+    (3): Linear(in_features=256, out_features=2, bias=True)
+    (4): Linear(in_features=256, out_features=2, bias=True)
+    (5): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.507 Loss 0.0422
+* VALID - Accuracy 99.020 Loss 0.0264
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.395 Loss 0.0183
+* VALID - Accuracy 99.600 Loss 0.0112
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.628 Loss 0.0124
+* VALID - Accuracy 99.510 Loss 0.0142
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.702 Loss 0.0102
+* VALID - Accuracy 99.550 Loss 0.0187
+* VALID - Accuracy 99.550 Loss 0.0187
+OrderedDict([('All', {'All': 99.55})])
+Task All average acc: 99.55
+===Summary of experiment repeats: 3 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.37 99.71 99.55  0.    0.    0.    0.    0.    0.    0.  ]
+mean: 29.863 std: 45.61654942013918
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=256, out_features=2, bias=True)
+    (2): Linear(in_features=256, out_features=2, bias=True)
+    (3): Linear(in_features=256, out_features=2, bias=True)
+    (4): Linear(in_features=256, out_features=2, bias=True)
+    (5): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.582 Loss 0.0416
+* VALID - Accuracy 99.520 Loss 0.0141
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.435 Loss 0.0174
+* VALID - Accuracy 99.450 Loss 0.0127
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.537 Loss 0.0144
+* VALID - Accuracy 99.610 Loss 0.0141
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.743 Loss 0.0081
+* VALID - Accuracy 99.720 Loss 0.0097
+* VALID - Accuracy 99.720 Loss 0.0097
+OrderedDict([('All', {'All': 99.72})])
+Task All average acc: 99.72
+===Summary of experiment repeats: 4 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.37 99.71 99.55 99.72  0.    0.    0.    0.    0.    0.  ]
+mean: 39.834999999999994 std: 48.787795246352346
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=256, out_features=2, bias=True)
+    (2): Linear(in_features=256, out_features=2, bias=True)
+    (3): Linear(in_features=256, out_features=2, bias=True)
+    (4): Linear(in_features=256, out_features=2, bias=True)
+    (5): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.502 Loss 0.0433
+* VALID - Accuracy 99.320 Loss 0.0161
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.440 Loss 0.0166
+* VALID - Accuracy 99.500 Loss 0.0156
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.608 Loss 0.0128
+* VALID - Accuracy 99.680 Loss 0.0095
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.717 Loss 0.0093
+* VALID - Accuracy 99.570 Loss 0.0108
+* VALID - Accuracy 99.570 Loss 0.0108
+OrderedDict([('All', {'All': 99.57})])
+Task All average acc: 99.57
+===Summary of experiment repeats: 5 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.37 99.71 99.55 99.72 99.57  0.    0.    0.    0.    0.  ]
+mean: 49.791999999999994 std: 49.79208186047256
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=256, out_features=2, bias=True)
+    (2): Linear(in_features=256, out_features=2, bias=True)
+    (3): Linear(in_features=256, out_features=2, bias=True)
+    (4): Linear(in_features=256, out_features=2, bias=True)
+    (5): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.532 Loss 0.0423
+* VALID - Accuracy 98.890 Loss 0.0281
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.415 Loss 0.0186
+* VALID - Accuracy 99.410 Loss 0.0177
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.597 Loss 0.0129
+* VALID - Accuracy 99.580 Loss 0.0117
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.708 Loss 0.0094
+* VALID - Accuracy 99.670 Loss 0.0104
+* VALID - Accuracy 99.670 Loss 0.0104
+OrderedDict([('All', {'All': 99.67})])
+Task All average acc: 99.67
+===Summary of experiment repeats: 6 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.37 99.71 99.55 99.72 99.57 99.67  0.    0.    0.    0.  ]
+mean: 59.75899999999999 std: 48.793109031911456
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=256, out_features=2, bias=True)
+    (2): Linear(in_features=256, out_features=2, bias=True)
+    (3): Linear(in_features=256, out_features=2, bias=True)
+    (4): Linear(in_features=256, out_features=2, bias=True)
+    (5): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.535 Loss 0.0425
+* VALID - Accuracy 99.480 Loss 0.0139
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.408 Loss 0.0179
+* VALID - Accuracy 99.550 Loss 0.0122
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.543 Loss 0.0136
+* VALID - Accuracy 99.210 Loss 0.0250
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.660 Loss 0.0112
+* VALID - Accuracy 99.600 Loss 0.0136
+* VALID - Accuracy 99.600 Loss 0.0136
+OrderedDict([('All', {'All': 99.6})])
+Task All average acc: 99.6
+===Summary of experiment repeats: 7 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.37 99.71 99.55 99.72 99.57 99.67 99.6   0.    0.    0.  ]
+mean: 69.71900000000001 std: 45.64189532655278
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=256, out_features=2, bias=True)
+    (2): Linear(in_features=256, out_features=2, bias=True)
+    (3): Linear(in_features=256, out_features=2, bias=True)
+    (4): Linear(in_features=256, out_features=2, bias=True)
+    (5): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.537 Loss 0.0421
+* VALID - Accuracy 99.360 Loss 0.0172
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.472 Loss 0.0172
+* VALID - Accuracy 99.390 Loss 0.0173
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.573 Loss 0.0133
+* VALID - Accuracy 99.240 Loss 0.0350
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.670 Loss 0.0099
+* VALID - Accuracy 99.640 Loss 0.0115
+* VALID - Accuracy 99.640 Loss 0.0115
+OrderedDict([('All', {'All': 99.64})])
+Task All average acc: 99.64
+===Summary of experiment repeats: 8 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.37 99.71 99.55 99.72 99.57 99.67 99.6  99.64  0.    0.  ]
+mean: 79.68299999999999 std: 39.84161192773204
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=256, out_features=2, bias=True)
+    (2): Linear(in_features=256, out_features=2, bias=True)
+    (3): Linear(in_features=256, out_features=2, bias=True)
+    (4): Linear(in_features=256, out_features=2, bias=True)
+    (5): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.555 Loss 0.0428
+* VALID - Accuracy 98.970 Loss 0.0286
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.382 Loss 0.0184
+* VALID - Accuracy 99.460 Loss 0.0159
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.605 Loss 0.0116
+* VALID - Accuracy 99.730 Loss 0.0092
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.683 Loss 0.0092
+* VALID - Accuracy 99.560 Loss 0.0124
+* VALID - Accuracy 99.560 Loss 0.0124
+OrderedDict([('All', {'All': 99.56})])
+Task All average acc: 99.56
+===Summary of experiment repeats: 9 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.37 99.71 99.55 99.72 99.57 99.67 99.6  99.64 99.56  0.  ]
+mean: 89.63899999999998 std: 29.879818757817123
+split_boundaries: [0, 2, 4, 6, 8, 10]
+{'1': [0, 1], '2': [2, 3], '3': [4, 5], '4': [6, 7], '5': [8, 9]}
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (1): Linear(in_features=256, out_features=2, bias=True)
+    (2): Linear(in_features=256, out_features=2, bias=True)
+    (3): Linear(in_features=256, out_features=2, bias=True)
+    (4): Linear(in_features=256, out_features=2, bias=True)
+    (5): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5']
+Epoch:0
+LR: 0.001
+* TRAIN - Accuracy 98.605 Loss 0.0424
+* VALID - Accuracy 99.390 Loss 0.0200
+Epoch:1
+LR: 0.001
+* TRAIN - Accuracy 99.437 Loss 0.0177
+* VALID - Accuracy 99.600 Loss 0.0119
+Epoch:2
+LR: 0.001
+* TRAIN - Accuracy 99.577 Loss 0.0128
+* VALID - Accuracy 99.600 Loss 0.0142
+Epoch:3
+LR: 0.001
+* TRAIN - Accuracy 99.682 Loss 0.0093
+* VALID - Accuracy 99.590 Loss 0.0144
+* VALID - Accuracy 99.590 Loss 0.0144
+OrderedDict([('All', {'All': 99.59})])
+Task All average acc: 99.59
+===Summary of experiment repeats: 10 / 10 ===
+The regularization coefficient: 0.0
+The last avg acc of all repeats: [99.37 99.71 99.55 99.72 99.57 99.67 99.6  99.64 99.56 99.59]
+mean: 99.59799999999998 std: 0.09537295214052931
+reg_coef: 0.0 mean: 99.59799999999998 std: 0.09537295214052931

@@ -1,3 +1,15 @@
+# CW-TaLaR 
+## How to run
+The scripts for reproducing the results of this paper are under the scripts folder.
+
+- Example: Run all algorithms in the all scenarios with split MNIST.
+```bash
+./scripts/mlp2/split_MNIST_CW_TaLaR.sh 0
+# The last number is gpuid
+# Outputs will be saved in ./outputs
+```
+
+
 # Continual-Learning-Benchmark
 Evaluate three types of task shifting with popular continual learning algorithms.
 

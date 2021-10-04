@@ -1,0 +1,5701 @@
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 88.182 Loss 0.4427
+* VALID - Accuracy 93.760 Loss 0.2052
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 95.120 Loss 0.1665
+* VALID - Accuracy 95.900 Loss 0.1354
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.677 Loss 0.1127
+* VALID - Accuracy 96.810 Loss 0.1063
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.512 Loss 0.0830
+* VALID - Accuracy 97.300 Loss 0.0831
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 98.122 Loss 0.0627
+* VALID - Accuracy 97.630 Loss 0.0732
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 98.502 Loss 0.0493
+* VALID - Accuracy 97.970 Loss 0.0638
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 98.883 Loss 0.0375
+* VALID - Accuracy 97.850 Loss 0.0688
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 99.175 Loss 0.0293
+* VALID - Accuracy 98.060 Loss 0.0617
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 99.360 Loss 0.0225
+* VALID - Accuracy 98.080 Loss 0.0617
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 99.462 Loss 0.0185
+* VALID - Accuracy 97.400 Loss 0.0911
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.400 Loss 0.0911
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.710 Loss 0.5800
+* VALID - Accuracy 90.970 Loss 0.3041
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 92.150 Loss 0.2765
+* VALID - Accuracy 93.020 Loss 0.2451
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.733 Loss 0.2312
+* VALID - Accuracy 93.950 Loss 0.2181
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.608 Loss 0.2045
+* VALID - Accuracy 94.590 Loss 0.1978
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 95.213 Loss 0.1867
+* VALID - Accuracy 95.000 Loss 0.1860
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.782 Loss 0.1727
+* VALID - Accuracy 95.380 Loss 0.1756
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 96.123 Loss 0.1618
+* VALID - Accuracy 95.590 Loss 0.1682
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 96.458 Loss 0.1527
+* VALID - Accuracy 95.880 Loss 0.1628
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.700 Loss 0.1452
+* VALID - Accuracy 95.940 Loss 0.1576
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 96.980 Loss 0.1388
+* VALID - Accuracy 96.270 Loss 0.1527
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.510 Loss 0.0835
+validation split name: 2
+* VALID - Accuracy 96.270 Loss 0.1220
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.245 Loss 0.6341
+* VALID - Accuracy 90.840 Loss 0.3484
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.747 Loss 0.3266
+* VALID - Accuracy 92.690 Loss 0.2939
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.198 Loss 0.2850
+* VALID - Accuracy 93.580 Loss 0.2711
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.003 Loss 0.2625
+* VALID - Accuracy 94.100 Loss 0.2562
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.622 Loss 0.2468
+* VALID - Accuracy 94.500 Loss 0.2443
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.035 Loss 0.2354
+* VALID - Accuracy 94.740 Loss 0.2352
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 95.310 Loss 0.2268
+* VALID - Accuracy 95.010 Loss 0.2288
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 95.642 Loss 0.2190
+* VALID - Accuracy 95.170 Loss 0.2239
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 95.858 Loss 0.2133
+* VALID - Accuracy 95.320 Loss 0.2199
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 96.065 Loss 0.2084
+* VALID - Accuracy 95.440 Loss 0.2184
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 96.580 Loss 0.1113
+validation split name: 2
+* VALID - Accuracy 95.140 Loss 0.1559
+validation split name: 3
+* VALID - Accuracy 95.440 Loss 0.1491
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.078 Loss 0.6838
+* VALID - Accuracy 90.650 Loss 0.3963
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.245 Loss 0.3785
+* VALID - Accuracy 92.160 Loss 0.3498
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.527 Loss 0.3415
+* VALID - Accuracy 92.850 Loss 0.3306
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 93.248 Loss 0.3212
+* VALID - Accuracy 93.330 Loss 0.3171
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.807 Loss 0.3086
+* VALID - Accuracy 93.640 Loss 0.3078
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 94.157 Loss 0.2998
+* VALID - Accuracy 93.890 Loss 0.3011
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 94.432 Loss 0.2924
+* VALID - Accuracy 94.250 Loss 0.2969
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 94.673 Loss 0.2870
+* VALID - Accuracy 94.210 Loss 0.2953
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 94.862 Loss 0.2829
+* VALID - Accuracy 94.490 Loss 0.2897
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 94.968 Loss 0.2789
+* VALID - Accuracy 94.510 Loss 0.2862
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 95.700 Loss 0.1520
+validation split name: 2
+* VALID - Accuracy 94.320 Loss 0.1707
+validation split name: 3
+* VALID - Accuracy 94.970 Loss 0.1602
+validation split name: 4
+* VALID - Accuracy 94.510 Loss 0.1794
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.560 Loss 0.6838
+* VALID - Accuracy 90.260 Loss 0.4371
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 90.683 Loss 0.4280
+* VALID - Accuracy 91.920 Loss 0.3971
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 91.880 Loss 0.3960
+* VALID - Accuracy 92.550 Loss 0.3783
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 92.550 Loss 0.3795
+* VALID - Accuracy 93.120 Loss 0.3682
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.000 Loss 0.3687
+* VALID - Accuracy 93.320 Loss 0.3621
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 93.227 Loss 0.3616
+* VALID - Accuracy 93.390 Loss 0.3562
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 93.450 Loss 0.3565
+* VALID - Accuracy 93.540 Loss 0.3529
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 93.650 Loss 0.3527
+* VALID - Accuracy 93.660 Loss 0.3500
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 93.790 Loss 0.3493
+* VALID - Accuracy 93.800 Loss 0.3488
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 93.862 Loss 0.3466
+* VALID - Accuracy 93.820 Loss 0.3458
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 94.610 Loss 0.1894
+validation split name: 2
+* VALID - Accuracy 93.640 Loss 0.1974
+validation split name: 3
+* VALID - Accuracy 93.880 Loss 0.1939
+validation split name: 4
+* VALID - Accuracy 94.210 Loss 0.1914
+validation split name: 5
+* VALID - Accuracy 93.820 Loss 0.2071
+============================== Task: 6 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.970 Loss 0.7488
+* VALID - Accuracy 89.940 Loss 0.4902
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 90.272 Loss 0.4871
+* VALID - Accuracy 91.310 Loss 0.4556
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 91.308 Loss 0.4581
+* VALID - Accuracy 91.710 Loss 0.4394
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 91.860 Loss 0.4434
+* VALID - Accuracy 92.100 Loss 0.4310
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 92.190 Loss 0.4351
+* VALID - Accuracy 92.400 Loss 0.4248
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 92.465 Loss 0.4292
+* VALID - Accuracy 92.530 Loss 0.4220
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 92.658 Loss 0.4251
+* VALID - Accuracy 92.700 Loss 0.4175
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 92.748 Loss 0.4221
+* VALID - Accuracy 92.620 Loss 0.4168
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 92.837 Loss 0.4192
+* VALID - Accuracy 92.890 Loss 0.4140
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 92.902 Loss 0.4171
+* VALID - Accuracy 92.760 Loss 0.4157
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 91.300 Loss 0.3136
+validation split name: 2
+* VALID - Accuracy 90.980 Loss 0.2867
+validation split name: 3
+* VALID - Accuracy 90.810 Loss 0.2894
+validation split name: 4
+* VALID - Accuracy 91.440 Loss 0.2676
+validation split name: 5
+* VALID - Accuracy 92.660 Loss 0.2487
+validation split name: 6
+* VALID - Accuracy 92.760 Loss 0.2429
+============================== Task: 7 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.965 Loss 0.7909
+* VALID - Accuracy 88.820 Loss 0.5498
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 89.208 Loss 0.5396
+* VALID - Accuracy 90.030 Loss 0.5140
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 90.253 Loss 0.5139
+* VALID - Accuracy 90.640 Loss 0.4993
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 90.627 Loss 0.5023
+* VALID - Accuracy 91.030 Loss 0.4930
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 90.958 Loss 0.4958
+* VALID - Accuracy 91.400 Loss 0.4905
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 91.147 Loss 0.4918
+* VALID - Accuracy 91.400 Loss 0.4860
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 91.257 Loss 0.4888
+* VALID - Accuracy 91.620 Loss 0.4824
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 91.398 Loss 0.4868
+* VALID - Accuracy 91.730 Loss 0.4811
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 91.527 Loss 0.4849
+* VALID - Accuracy 91.730 Loss 0.4791
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 91.537 Loss 0.4840
+* VALID - Accuracy 91.780 Loss 0.4780
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 89.660 Loss 0.3764
+validation split name: 2
+* VALID - Accuracy 89.400 Loss 0.3384
+validation split name: 3
+* VALID - Accuracy 89.080 Loss 0.3527
+validation split name: 4
+* VALID - Accuracy 89.520 Loss 0.3327
+validation split name: 5
+* VALID - Accuracy 92.080 Loss 0.2592
+validation split name: 6
+* VALID - Accuracy 91.870 Loss 0.2710
+validation split name: 7
+* VALID - Accuracy 91.780 Loss 0.2779
+============================== Task: 8 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.743 Loss 0.8479
+* VALID - Accuracy 88.250 Loss 0.6053
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 88.607 Loss 0.6050
+* VALID - Accuracy 89.560 Loss 0.5745
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 89.352 Loss 0.5830
+* VALID - Accuracy 89.870 Loss 0.5644
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 89.733 Loss 0.5738
+* VALID - Accuracy 90.190 Loss 0.5591
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 89.938 Loss 0.5685
+* VALID - Accuracy 90.260 Loss 0.5566
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 90.112 Loss 0.5657
+* VALID - Accuracy 90.300 Loss 0.5542
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 90.210 Loss 0.5633
+* VALID - Accuracy 90.250 Loss 0.5520
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 90.318 Loss 0.5617
+* VALID - Accuracy 90.290 Loss 0.5526
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 90.398 Loss 0.5609
+* VALID - Accuracy 90.700 Loss 0.5504
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 90.442 Loss 0.5597
+* VALID - Accuracy 90.490 Loss 0.5508
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 88.450 Loss 0.4245
+validation split name: 2
+* VALID - Accuracy 88.580 Loss 0.3558
+validation split name: 3
+* VALID - Accuracy 89.720 Loss 0.3231
+validation split name: 4
+* VALID - Accuracy 88.280 Loss 0.3716
+validation split name: 5
+* VALID - Accuracy 90.730 Loss 0.3036
+validation split name: 6
+* VALID - Accuracy 91.040 Loss 0.2948
+validation split name: 7
+* VALID - Accuracy 90.860 Loss 0.3060
+validation split name: 8
+* VALID - Accuracy 90.490 Loss 0.3159
+============================== Task: 9 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 79.278 Loss 0.9137
+* VALID - Accuracy 87.200 Loss 0.6771
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 87.203 Loss 0.6793
+* VALID - Accuracy 88.400 Loss 0.6473
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 87.948 Loss 0.6594
+* VALID - Accuracy 88.780 Loss 0.6360
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 88.273 Loss 0.6513
+* VALID - Accuracy 89.160 Loss 0.6325
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 88.515 Loss 0.6471
+* VALID - Accuracy 89.100 Loss 0.6321
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 88.628 Loss 0.6443
+* VALID - Accuracy 89.310 Loss 0.6291
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 88.688 Loss 0.6422
+* VALID - Accuracy 89.440 Loss 0.6239
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 88.895 Loss 0.6404
+* VALID - Accuracy 89.350 Loss 0.6240
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 88.920 Loss 0.6394
+* VALID - Accuracy 89.380 Loss 0.6242
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 88.857 Loss 0.6383
+* VALID - Accuracy 89.520 Loss 0.6223
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 86.110 Loss 0.4998
+validation split name: 2
+* VALID - Accuracy 89.090 Loss 0.3318
+validation split name: 3
+* VALID - Accuracy 88.210 Loss 0.3696
+validation split name: 4
+* VALID - Accuracy 87.610 Loss 0.3769
+validation split name: 5
+* VALID - Accuracy 88.120 Loss 0.3846
+validation split name: 6
+* VALID - Accuracy 88.740 Loss 0.3601
+validation split name: 7
+* VALID - Accuracy 89.900 Loss 0.3257
+validation split name: 8
+* VALID - Accuracy 89.820 Loss 0.3321
+validation split name: 9
+* VALID - Accuracy 89.520 Loss 0.3491
+============================== Task: 10 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 79.617 Loss 0.9075
+* VALID - Accuracy 86.150 Loss 0.7005
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 86.457 Loss 0.7105
+* VALID - Accuracy 87.400 Loss 0.6769
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 87.247 Loss 0.6954
+* VALID - Accuracy 87.750 Loss 0.6696
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 87.488 Loss 0.6899
+* VALID - Accuracy 87.850 Loss 0.6680
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 87.587 Loss 0.6876
+* VALID - Accuracy 87.950 Loss 0.6653
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 87.685 Loss 0.6852
+* VALID - Accuracy 87.990 Loss 0.6639
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 87.817 Loss 0.6847
+* VALID - Accuracy 88.110 Loss 0.6637
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 87.812 Loss 0.6839
+* VALID - Accuracy 88.200 Loss 0.6613
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 87.963 Loss 0.6831
+* VALID - Accuracy 88.190 Loss 0.6627
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 87.977 Loss 0.6831
+* VALID - Accuracy 88.210 Loss 0.6601
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 86.390 Loss 0.4826
+validation split name: 2
+* VALID - Accuracy 86.730 Loss 0.4060
+validation split name: 3
+* VALID - Accuracy 86.480 Loss 0.4247
+validation split name: 4
+* VALID - Accuracy 87.320 Loss 0.3854
+validation split name: 5
+* VALID - Accuracy 87.290 Loss 0.3944
+validation split name: 6
+* VALID - Accuracy 88.630 Loss 0.3606
+validation split name: 7
+* VALID - Accuracy 88.910 Loss 0.3458
+validation split name: 8
+* VALID - Accuracy 89.340 Loss 0.3537
+validation split name: 9
+* VALID - Accuracy 88.650 Loss 0.3660
+validation split name: 10
+* VALID - Accuracy 88.210 Loss 0.3739
+OrderedDict([('1', OrderedDict([('1', 97.4), ('2', 97.51), ('3', 96.58), ('4', 95.7), ('5', 94.61), ('6', 91.3), ('7', 89.66), ('8', 88.45), ('9', 86.11), ('10', 86.39)])), ('2', OrderedDict([('2', 96.27), ('3', 95.14), ('4', 94.32), ('5', 93.64), ('6', 90.98), ('7', 89.4), ('8', 88.58), ('9', 89.09), ('10', 86.73)])), ('3', OrderedDict([('3', 95.44), ('4', 94.97), ('5', 93.88), ('6', 90.81), ('7', 89.08), ('8', 89.72), ('9', 88.21), ('10', 86.48)])), ('4', OrderedDict([('4', 94.51), ('5', 94.21), ('6', 91.44), ('7', 89.52), ('8', 88.28), ('9', 87.61), ('10', 87.32)])), ('5', OrderedDict([('5', 93.82), ('6', 92.66), ('7', 92.08), ('8', 90.73), ('9', 88.12), ('10', 87.29)])), ('6', OrderedDict([('6', 92.76), ('7', 91.87), ('8', 91.04), ('9', 88.74), ('10', 88.63)])), ('7', OrderedDict([('7', 91.78), ('8', 90.86), ('9', 89.9), ('10', 88.91)])), ('8', OrderedDict([('8', 90.49), ('9', 89.82), ('10', 89.34)])), ('9', OrderedDict([('9', 89.52), ('10', 88.65)])), ('10', OrderedDict([('10', 88.21)]))])
+Task 1 average acc: 97.4
+Task 2 average acc: 96.89
+Task 3 average acc: 95.71999999999998
+Task 4 average acc: 94.875
+Task 5 average acc: 94.032
+Task 6 average acc: 91.65833333333335
+Task 7 average acc: 90.48428571428569
+Task 8 average acc: 89.76875
+Task 9 average acc: 88.56888888888888
+Task 10 average acc: 87.795
+===Summary of experiment repeats: 1 / 10 ===
+The regularization coefficient: 250.0
+The last avg acc of all repeats: [87.795  0.     0.     0.     0.     0.     0.     0.     0.     0.   ]
+mean: 8.7795 std: 26.3385
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 88.175 Loss 0.4434
+* VALID - Accuracy 93.990 Loss 0.1998
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 95.040 Loss 0.1670
+* VALID - Accuracy 95.870 Loss 0.1418
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.570 Loss 0.1150
+* VALID - Accuracy 96.830 Loss 0.1064
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.485 Loss 0.0846
+* VALID - Accuracy 97.070 Loss 0.0930
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 98.092 Loss 0.0639
+* VALID - Accuracy 97.610 Loss 0.0776
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 98.495 Loss 0.0493
+* VALID - Accuracy 97.440 Loss 0.0771
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 98.792 Loss 0.0390
+* VALID - Accuracy 97.920 Loss 0.0663
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 99.140 Loss 0.0297
+* VALID - Accuracy 97.640 Loss 0.0749
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 99.298 Loss 0.0239
+* VALID - Accuracy 98.010 Loss 0.0654
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 99.503 Loss 0.0177
+* VALID - Accuracy 97.820 Loss 0.0694
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.820 Loss 0.0694
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.858 Loss 0.5754
+* VALID - Accuracy 90.940 Loss 0.2964
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 92.117 Loss 0.2677
+* VALID - Accuracy 93.080 Loss 0.2300
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.732 Loss 0.2190
+* VALID - Accuracy 94.200 Loss 0.1999
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.700 Loss 0.1910
+* VALID - Accuracy 94.680 Loss 0.1830
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 95.340 Loss 0.1720
+* VALID - Accuracy 95.280 Loss 0.1684
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.857 Loss 0.1575
+* VALID - Accuracy 95.600 Loss 0.1590
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 96.277 Loss 0.1459
+* VALID - Accuracy 95.710 Loss 0.1517
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 96.592 Loss 0.1363
+* VALID - Accuracy 96.050 Loss 0.1445
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.872 Loss 0.1283
+* VALID - Accuracy 96.220 Loss 0.1387
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 97.127 Loss 0.1213
+* VALID - Accuracy 96.420 Loss 0.1347
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.490 Loss 0.0846
+validation split name: 2
+* VALID - Accuracy 96.420 Loss 0.1149
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.715 Loss 0.6428
+* VALID - Accuracy 90.520 Loss 0.3337
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.752 Loss 0.3115
+* VALID - Accuracy 92.750 Loss 0.2766
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.397 Loss 0.2680
+* VALID - Accuracy 93.790 Loss 0.2514
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.268 Loss 0.2434
+* VALID - Accuracy 94.300 Loss 0.2375
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.842 Loss 0.2270
+* VALID - Accuracy 94.770 Loss 0.2257
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.243 Loss 0.2153
+* VALID - Accuracy 95.130 Loss 0.2173
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 95.595 Loss 0.2054
+* VALID - Accuracy 95.370 Loss 0.2107
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 95.945 Loss 0.1978
+* VALID - Accuracy 95.620 Loss 0.2068
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.203 Loss 0.1914
+* VALID - Accuracy 95.720 Loss 0.2029
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 96.367 Loss 0.1860
+* VALID - Accuracy 95.840 Loss 0.1982
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 96.750 Loss 0.1086
+validation split name: 2
+* VALID - Accuracy 95.770 Loss 0.1293
+validation split name: 3
+* VALID - Accuracy 95.840 Loss 0.1393
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.367 Loss 0.6477
+* VALID - Accuracy 90.790 Loss 0.3787
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.472 Loss 0.3611
+* VALID - Accuracy 92.270 Loss 0.3324
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.940 Loss 0.3238
+* VALID - Accuracy 93.130 Loss 0.3131
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 93.622 Loss 0.3035
+* VALID - Accuracy 93.710 Loss 0.2992
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.072 Loss 0.2904
+* VALID - Accuracy 93.860 Loss 0.2922
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 94.497 Loss 0.2807
+* VALID - Accuracy 94.340 Loss 0.2835
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 94.765 Loss 0.2735
+* VALID - Accuracy 94.500 Loss 0.2786
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 94.987 Loss 0.2677
+* VALID - Accuracy 94.650 Loss 0.2755
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 95.145 Loss 0.2632
+* VALID - Accuracy 94.650 Loss 0.2732
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 95.325 Loss 0.2594
+* VALID - Accuracy 94.890 Loss 0.2705
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 94.760 Loss 0.1893
+validation split name: 2
+* VALID - Accuracy 95.060 Loss 0.1549
+validation split name: 3
+* VALID - Accuracy 95.160 Loss 0.1631
+validation split name: 4
+* VALID - Accuracy 94.890 Loss 0.1722
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.330 Loss 0.6690
+* VALID - Accuracy 90.340 Loss 0.4203
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.073 Loss 0.4075
+* VALID - Accuracy 92.040 Loss 0.3786
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.215 Loss 0.3758
+* VALID - Accuracy 92.700 Loss 0.3614
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 92.870 Loss 0.3587
+* VALID - Accuracy 93.050 Loss 0.3528
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.227 Loss 0.3482
+* VALID - Accuracy 93.330 Loss 0.3440
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 93.593 Loss 0.3406
+* VALID - Accuracy 93.510 Loss 0.3413
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 93.765 Loss 0.3353
+* VALID - Accuracy 93.690 Loss 0.3359
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 93.903 Loss 0.3315
+* VALID - Accuracy 94.040 Loss 0.3338
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 94.030 Loss 0.3278
+* VALID - Accuracy 93.880 Loss 0.3313
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 94.242 Loss 0.3252
+* VALID - Accuracy 93.880 Loss 0.3296
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 90.970 Loss 0.3214
+validation split name: 2
+* VALID - Accuracy 94.800 Loss 0.1653
+validation split name: 3
+* VALID - Accuracy 94.320 Loss 0.1861
+validation split name: 4
+* VALID - Accuracy 94.510 Loss 0.1822
+validation split name: 5
+* VALID - Accuracy 93.880 Loss 0.2008
+============================== Task: 6 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.802 Loss 0.7555
+* VALID - Accuracy 88.990 Loss 0.4986
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 89.885 Loss 0.4789
+* VALID - Accuracy 90.610 Loss 0.4570
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 91.060 Loss 0.4470
+* VALID - Accuracy 91.210 Loss 0.4390
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 91.733 Loss 0.4313
+* VALID - Accuracy 91.580 Loss 0.4296
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 92.180 Loss 0.4219
+* VALID - Accuracy 91.870 Loss 0.4224
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 92.332 Loss 0.4156
+* VALID - Accuracy 92.240 Loss 0.4155
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 92.517 Loss 0.4109
+* VALID - Accuracy 92.260 Loss 0.4147
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 92.768 Loss 0.4071
+* VALID - Accuracy 92.440 Loss 0.4125
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 92.773 Loss 0.4049
+* VALID - Accuracy 92.530 Loss 0.4088
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 92.907 Loss 0.4027
+* VALID - Accuracy 92.610 Loss 0.4069
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 88.280 Loss 0.4216
+validation split name: 2
+* VALID - Accuracy 93.860 Loss 0.1858
+validation split name: 3
+* VALID - Accuracy 93.860 Loss 0.1944
+validation split name: 4
+* VALID - Accuracy 93.890 Loss 0.1908
+validation split name: 5
+* VALID - Accuracy 92.900 Loss 0.2307
+validation split name: 6
+* VALID - Accuracy 92.610 Loss 0.2413
+============================== Task: 7 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.423 Loss 0.7626
+* VALID - Accuracy 88.890 Loss 0.5457
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 89.327 Loss 0.5356
+* VALID - Accuracy 90.220 Loss 0.5112
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 90.338 Loss 0.5109
+* VALID - Accuracy 90.560 Loss 0.4965
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 90.753 Loss 0.4996
+* VALID - Accuracy 90.950 Loss 0.4900
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 91.062 Loss 0.4935
+* VALID - Accuracy 91.200 Loss 0.4868
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 91.225 Loss 0.4894
+* VALID - Accuracy 91.230 Loss 0.4835
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 91.370 Loss 0.4871
+* VALID - Accuracy 91.320 Loss 0.4829
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 91.568 Loss 0.4847
+* VALID - Accuracy 91.410 Loss 0.4819
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 91.623 Loss 0.4836
+* VALID - Accuracy 91.480 Loss 0.4795
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 91.703 Loss 0.4823
+* VALID - Accuracy 91.440 Loss 0.4778
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 85.190 Loss 0.5332
+validation split name: 2
+* VALID - Accuracy 92.900 Loss 0.2198
+validation split name: 3
+* VALID - Accuracy 93.740 Loss 0.2008
+validation split name: 4
+* VALID - Accuracy 93.850 Loss 0.1998
+validation split name: 5
+* VALID - Accuracy 92.220 Loss 0.2584
+validation split name: 6
+* VALID - Accuracy 91.640 Loss 0.2740
+validation split name: 7
+* VALID - Accuracy 91.440 Loss 0.2724
+============================== Task: 8 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.218 Loss 0.7891
+* VALID - Accuracy 88.290 Loss 0.5803
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 88.735 Loss 0.5771
+* VALID - Accuracy 89.500 Loss 0.5511
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 89.647 Loss 0.5577
+* VALID - Accuracy 90.030 Loss 0.5417
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 89.970 Loss 0.5489
+* VALID - Accuracy 90.220 Loss 0.5378
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 90.212 Loss 0.5452
+* VALID - Accuracy 90.400 Loss 0.5314
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 90.303 Loss 0.5420
+* VALID - Accuracy 90.410 Loss 0.5310
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 90.502 Loss 0.5404
+* VALID - Accuracy 90.580 Loss 0.5293
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 90.505 Loss 0.5392
+* VALID - Accuracy 90.690 Loss 0.5292
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 90.555 Loss 0.5383
+* VALID - Accuracy 90.780 Loss 0.5272
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 90.687 Loss 0.5377
+* VALID - Accuracy 90.610 Loss 0.5296
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 81.840 Loss 0.6707
+validation split name: 2
+* VALID - Accuracy 89.150 Loss 0.3336
+validation split name: 3
+* VALID - Accuracy 91.720 Loss 0.2519
+validation split name: 4
+* VALID - Accuracy 92.680 Loss 0.2295
+validation split name: 5
+* VALID - Accuracy 90.830 Loss 0.2868
+validation split name: 6
+* VALID - Accuracy 90.400 Loss 0.3003
+validation split name: 7
+* VALID - Accuracy 90.170 Loss 0.3136
+validation split name: 8
+* VALID - Accuracy 90.610 Loss 0.3043
+============================== Task: 9 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.080 Loss 0.8280
+* VALID - Accuracy 87.920 Loss 0.6285
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 88.117 Loss 0.6307
+* VALID - Accuracy 89.100 Loss 0.6028
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 88.738 Loss 0.6148
+* VALID - Accuracy 89.320 Loss 0.5969
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 89.053 Loss 0.6087
+* VALID - Accuracy 89.780 Loss 0.5921
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 89.282 Loss 0.6052
+* VALID - Accuracy 89.840 Loss 0.5904
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 89.460 Loss 0.6038
+* VALID - Accuracy 89.630 Loss 0.5895
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 89.428 Loss 0.6025
+* VALID - Accuracy 89.730 Loss 0.5881
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 89.558 Loss 0.6022
+* VALID - Accuracy 89.810 Loss 0.5864
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 89.503 Loss 0.6015
+* VALID - Accuracy 89.870 Loss 0.5899
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 89.640 Loss 0.6013
+* VALID - Accuracy 90.030 Loss 0.5859
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 72.110 Loss 1.0646
+validation split name: 2
+* VALID - Accuracy 88.730 Loss 0.3348
+validation split name: 3
+* VALID - Accuracy 90.000 Loss 0.3025
+validation split name: 4
+* VALID - Accuracy 90.460 Loss 0.2966
+validation split name: 5
+* VALID - Accuracy 89.030 Loss 0.3340
+validation split name: 6
+* VALID - Accuracy 89.470 Loss 0.3293
+validation split name: 7
+* VALID - Accuracy 90.960 Loss 0.2995
+validation split name: 8
+* VALID - Accuracy 89.660 Loss 0.3362
+validation split name: 9
+* VALID - Accuracy 90.030 Loss 0.3287
+============================== Task: 10 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 79.790 Loss 0.8849
+* VALID - Accuracy 86.210 Loss 0.6891
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 86.368 Loss 0.6968
+* VALID - Accuracy 87.270 Loss 0.6675
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 87.027 Loss 0.6830
+* VALID - Accuracy 87.780 Loss 0.6605
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 87.263 Loss 0.6777
+* VALID - Accuracy 87.860 Loss 0.6589
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 87.482 Loss 0.6748
+* VALID - Accuracy 88.000 Loss 0.6554
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 87.608 Loss 0.6729
+* VALID - Accuracy 88.000 Loss 0.6551
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 87.637 Loss 0.6721
+* VALID - Accuracy 87.910 Loss 0.6549
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 87.730 Loss 0.6710
+* VALID - Accuracy 88.440 Loss 0.6542
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 87.683 Loss 0.6702
+* VALID - Accuracy 88.090 Loss 0.6544
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 87.727 Loss 0.6703
+* VALID - Accuracy 88.260 Loss 0.6510
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 70.710 Loss 1.1655
+validation split name: 2
+* VALID - Accuracy 86.150 Loss 0.4212
+validation split name: 3
+* VALID - Accuracy 84.680 Loss 0.4537
+validation split name: 4
+* VALID - Accuracy 86.230 Loss 0.4106
+validation split name: 5
+* VALID - Accuracy 86.480 Loss 0.4143
+validation split name: 6
+* VALID - Accuracy 86.810 Loss 0.4104
+validation split name: 7
+* VALID - Accuracy 88.590 Loss 0.3698
+validation split name: 8
+* VALID - Accuracy 87.760 Loss 0.3896
+validation split name: 9
+* VALID - Accuracy 88.320 Loss 0.3666
+validation split name: 10
+* VALID - Accuracy 88.260 Loss 0.3762
+OrderedDict([('1', OrderedDict([('1', 97.82), ('2', 97.49), ('3', 96.75), ('4', 94.76), ('5', 90.97), ('6', 88.28), ('7', 85.19), ('8', 81.84), ('9', 72.11), ('10', 70.71)])), ('2', OrderedDict([('2', 96.42), ('3', 95.77), ('4', 95.06), ('5', 94.8), ('6', 93.86), ('7', 92.9), ('8', 89.15), ('9', 88.73), ('10', 86.15)])), ('3', OrderedDict([('3', 95.84), ('4', 95.16), ('5', 94.32), ('6', 93.86), ('7', 93.74), ('8', 91.72), ('9', 90.0), ('10', 84.68)])), ('4', OrderedDict([('4', 94.89), ('5', 94.51), ('6', 93.89), ('7', 93.85), ('8', 92.68), ('9', 90.46), ('10', 86.23)])), ('5', OrderedDict([('5', 93.88), ('6', 92.9), ('7', 92.22), ('8', 90.83), ('9', 89.03), ('10', 86.48)])), ('6', OrderedDict([('6', 92.61), ('7', 91.64), ('8', 90.4), ('9', 89.47), ('10', 86.81)])), ('7', OrderedDict([('7', 91.44), ('8', 90.17), ('9', 90.96), ('10', 88.59)])), ('8', OrderedDict([('8', 90.61), ('9', 89.66), ('10', 87.76)])), ('9', OrderedDict([('9', 90.03), ('10', 88.32)])), ('10', OrderedDict([('10', 88.26)]))])
+Task 1 average acc: 97.82
+Task 2 average acc: 96.955
+Task 3 average acc: 96.12
+Task 4 average acc: 94.9675
+Task 5 average acc: 93.696
+Task 6 average acc: 92.56666666666666
+Task 7 average acc: 91.56857142857143
+Task 8 average acc: 89.675
+Task 9 average acc: 87.82777777777778
+Task 10 average acc: 85.399
+===Summary of experiment repeats: 2 / 10 ===
+The regularization coefficient: 250.0
+The last avg acc of all repeats: [87.795 85.399  0.     0.     0.     0.     0.     0.     0.     0.   ]
+mean: 17.3194 std: 34.64294309437349
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 88.565 Loss 0.4402
+* VALID - Accuracy 93.840 Loss 0.2051
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 95.027 Loss 0.1685
+* VALID - Accuracy 95.720 Loss 0.1385
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.592 Loss 0.1152
+* VALID - Accuracy 96.680 Loss 0.1056
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.473 Loss 0.0854
+* VALID - Accuracy 97.360 Loss 0.0862
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 98.027 Loss 0.0645
+* VALID - Accuracy 97.400 Loss 0.0804
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 98.510 Loss 0.0498
+* VALID - Accuracy 97.780 Loss 0.0712
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 98.793 Loss 0.0391
+* VALID - Accuracy 97.920 Loss 0.0658
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 99.105 Loss 0.0307
+* VALID - Accuracy 97.890 Loss 0.0673
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 99.345 Loss 0.0229
+* VALID - Accuracy 97.670 Loss 0.0731
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 99.507 Loss 0.0183
+* VALID - Accuracy 97.910 Loss 0.0661
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.910 Loss 0.0661
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 83.362 Loss 0.5547
+* VALID - Accuracy 91.500 Loss 0.2898
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 92.307 Loss 0.2620
+* VALID - Accuracy 93.160 Loss 0.2308
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.840 Loss 0.2158
+* VALID - Accuracy 94.090 Loss 0.2021
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.742 Loss 0.1885
+* VALID - Accuracy 94.690 Loss 0.1840
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 95.405 Loss 0.1693
+* VALID - Accuracy 95.340 Loss 0.1701
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.897 Loss 0.1548
+* VALID - Accuracy 95.520 Loss 0.1592
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 96.362 Loss 0.1429
+* VALID - Accuracy 95.740 Loss 0.1517
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 96.622 Loss 0.1331
+* VALID - Accuracy 96.050 Loss 0.1447
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.903 Loss 0.1248
+* VALID - Accuracy 96.340 Loss 0.1386
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 97.155 Loss 0.1176
+* VALID - Accuracy 96.390 Loss 0.1337
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.370 Loss 0.0850
+validation split name: 2
+* VALID - Accuracy 96.390 Loss 0.1159
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.692 Loss 0.6837
+* VALID - Accuracy 90.260 Loss 0.3621
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.427 Loss 0.3235
+* VALID - Accuracy 92.420 Loss 0.3004
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.098 Loss 0.2774
+* VALID - Accuracy 93.340 Loss 0.2726
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.008 Loss 0.2518
+* VALID - Accuracy 93.860 Loss 0.2554
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.603 Loss 0.2349
+* VALID - Accuracy 94.510 Loss 0.2415
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.093 Loss 0.2220
+* VALID - Accuracy 94.750 Loss 0.2322
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 95.483 Loss 0.2119
+* VALID - Accuracy 95.020 Loss 0.2262
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 95.790 Loss 0.2040
+* VALID - Accuracy 95.160 Loss 0.2192
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.012 Loss 0.1971
+* VALID - Accuracy 95.350 Loss 0.2159
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 96.165 Loss 0.1915
+* VALID - Accuracy 95.460 Loss 0.2117
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 95.980 Loss 0.1346
+validation split name: 2
+* VALID - Accuracy 96.020 Loss 0.1217
+validation split name: 3
+* VALID - Accuracy 95.460 Loss 0.1504
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.627 Loss 0.6274
+* VALID - Accuracy 90.900 Loss 0.3706
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.535 Loss 0.3572
+* VALID - Accuracy 92.570 Loss 0.3271
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.765 Loss 0.3219
+* VALID - Accuracy 93.440 Loss 0.3025
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 93.575 Loss 0.3022
+* VALID - Accuracy 94.000 Loss 0.2898
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.018 Loss 0.2892
+* VALID - Accuracy 94.220 Loss 0.2805
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 94.377 Loss 0.2800
+* VALID - Accuracy 94.460 Loss 0.2740
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 94.628 Loss 0.2730
+* VALID - Accuracy 94.710 Loss 0.2683
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 94.887 Loss 0.2674
+* VALID - Accuracy 94.730 Loss 0.2673
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 95.113 Loss 0.2628
+* VALID - Accuracy 94.940 Loss 0.2632
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 95.218 Loss 0.2590
+* VALID - Accuracy 95.070 Loss 0.2594
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 93.740 Loss 0.2189
+validation split name: 2
+* VALID - Accuracy 95.630 Loss 0.1353
+validation split name: 3
+* VALID - Accuracy 94.480 Loss 0.1783
+validation split name: 4
+* VALID - Accuracy 95.070 Loss 0.1631
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.137 Loss 0.7347
+* VALID - Accuracy 89.770 Loss 0.4432
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 90.693 Loss 0.4275
+* VALID - Accuracy 91.550 Loss 0.3966
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.152 Loss 0.3919
+* VALID - Accuracy 92.290 Loss 0.3783
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 92.785 Loss 0.3738
+* VALID - Accuracy 92.740 Loss 0.3655
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.217 Loss 0.3626
+* VALID - Accuracy 92.890 Loss 0.3594
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 93.500 Loss 0.3547
+* VALID - Accuracy 93.190 Loss 0.3534
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 93.775 Loss 0.3485
+* VALID - Accuracy 93.340 Loss 0.3486
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 93.910 Loss 0.3440
+* VALID - Accuracy 93.450 Loss 0.3475
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 94.057 Loss 0.3407
+* VALID - Accuracy 93.690 Loss 0.3446
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 94.243 Loss 0.3376
+* VALID - Accuracy 93.510 Loss 0.3426
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 89.770 Loss 0.3720
+validation split name: 2
+* VALID - Accuracy 94.780 Loss 0.1597
+validation split name: 3
+* VALID - Accuracy 94.330 Loss 0.1873
+validation split name: 4
+* VALID - Accuracy 94.430 Loss 0.1791
+validation split name: 5
+* VALID - Accuracy 93.510 Loss 0.2044
+============================== Task: 6 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.528 Loss 0.7459
+* VALID - Accuracy 89.050 Loss 0.5072
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 90.088 Loss 0.4841
+* VALID - Accuracy 90.760 Loss 0.4652
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 91.170 Loss 0.4543
+* VALID - Accuracy 91.260 Loss 0.4485
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 91.753 Loss 0.4403
+* VALID - Accuracy 91.820 Loss 0.4389
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 92.122 Loss 0.4316
+* VALID - Accuracy 92.140 Loss 0.4331
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 92.295 Loss 0.4264
+* VALID - Accuracy 92.240 Loss 0.4295
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 92.578 Loss 0.4222
+* VALID - Accuracy 92.230 Loss 0.4276
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 92.695 Loss 0.4190
+* VALID - Accuracy 92.210 Loss 0.4280
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 92.732 Loss 0.4169
+* VALID - Accuracy 92.680 Loss 0.4241
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 92.885 Loss 0.4149
+* VALID - Accuracy 92.550 Loss 0.4236
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 84.490 Loss 0.6164
+validation split name: 2
+* VALID - Accuracy 93.350 Loss 0.2044
+validation split name: 3
+* VALID - Accuracy 93.930 Loss 0.1939
+validation split name: 4
+* VALID - Accuracy 93.020 Loss 0.2209
+validation split name: 5
+* VALID - Accuracy 92.080 Loss 0.2477
+validation split name: 6
+* VALID - Accuracy 92.550 Loss 0.2492
+============================== Task: 7 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.810 Loss 0.7981
+* VALID - Accuracy 88.770 Loss 0.5440
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 89.273 Loss 0.5350
+* VALID - Accuracy 90.390 Loss 0.5078
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 90.305 Loss 0.5079
+* VALID - Accuracy 90.820 Loss 0.4919
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 90.810 Loss 0.4951
+* VALID - Accuracy 91.240 Loss 0.4815
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 91.087 Loss 0.4880
+* VALID - Accuracy 91.310 Loss 0.4790
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 91.375 Loss 0.4832
+* VALID - Accuracy 91.530 Loss 0.4755
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 91.547 Loss 0.4806
+* VALID - Accuracy 91.510 Loss 0.4739
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 91.577 Loss 0.4786
+* VALID - Accuracy 91.780 Loss 0.4712
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 91.668 Loss 0.4765
+* VALID - Accuracy 91.890 Loss 0.4691
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 91.785 Loss 0.4751
+* VALID - Accuracy 91.760 Loss 0.4709
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 82.790 Loss 0.6169
+validation split name: 2
+* VALID - Accuracy 93.490 Loss 0.2014
+validation split name: 3
+* VALID - Accuracy 93.070 Loss 0.2298
+validation split name: 4
+* VALID - Accuracy 93.190 Loss 0.2098
+validation split name: 5
+* VALID - Accuracy 92.790 Loss 0.2307
+validation split name: 6
+* VALID - Accuracy 91.440 Loss 0.2744
+validation split name: 7
+* VALID - Accuracy 91.760 Loss 0.2699
+============================== Task: 8 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.010 Loss 0.8635
+* VALID - Accuracy 88.120 Loss 0.6126
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 88.227 Loss 0.6104
+* VALID - Accuracy 89.440 Loss 0.5764
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 89.115 Loss 0.5873
+* VALID - Accuracy 89.900 Loss 0.5671
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 89.467 Loss 0.5781
+* VALID - Accuracy 90.320 Loss 0.5595
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 89.833 Loss 0.5721
+* VALID - Accuracy 90.200 Loss 0.5584
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 89.907 Loss 0.5692
+* VALID - Accuracy 90.390 Loss 0.5578
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 90.078 Loss 0.5671
+* VALID - Accuracy 90.460 Loss 0.5559
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 90.215 Loss 0.5655
+* VALID - Accuracy 90.550 Loss 0.5552
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 90.135 Loss 0.5648
+* VALID - Accuracy 90.820 Loss 0.5521
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 90.232 Loss 0.5635
+* VALID - Accuracy 90.750 Loss 0.5511
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 71.640 Loss 1.0171
+validation split name: 2
+* VALID - Accuracy 90.600 Loss 0.2739
+validation split name: 3
+* VALID - Accuracy 92.180 Loss 0.2408
+validation split name: 4
+* VALID - Accuracy 90.430 Loss 0.2884
+validation split name: 5
+* VALID - Accuracy 91.880 Loss 0.2593
+validation split name: 6
+* VALID - Accuracy 90.010 Loss 0.3098
+validation split name: 7
+* VALID - Accuracy 90.510 Loss 0.3063
+validation split name: 8
+* VALID - Accuracy 90.750 Loss 0.3108
+============================== Task: 9 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 79.773 Loss 0.8884
+* VALID - Accuracy 87.090 Loss 0.6613
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 87.412 Loss 0.6644
+* VALID - Accuracy 88.260 Loss 0.6329
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 88.167 Loss 0.6461
+* VALID - Accuracy 88.660 Loss 0.6262
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 88.522 Loss 0.6387
+* VALID - Accuracy 89.070 Loss 0.6215
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 88.702 Loss 0.6354
+* VALID - Accuracy 88.970 Loss 0.6184
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 88.882 Loss 0.6327
+* VALID - Accuracy 89.320 Loss 0.6182
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 88.857 Loss 0.6317
+* VALID - Accuracy 89.370 Loss 0.6157
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 88.938 Loss 0.6311
+* VALID - Accuracy 89.220 Loss 0.6162
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 89.005 Loss 0.6303
+* VALID - Accuracy 89.380 Loss 0.6140
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 88.993 Loss 0.6299
+* VALID - Accuracy 89.360 Loss 0.6131
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 68.120 Loss 1.1370
+validation split name: 2
+* VALID - Accuracy 89.270 Loss 0.3194
+validation split name: 3
+* VALID - Accuracy 92.970 Loss 0.2216
+validation split name: 4
+* VALID - Accuracy 89.810 Loss 0.3166
+validation split name: 5
+* VALID - Accuracy 91.060 Loss 0.2919
+validation split name: 6
+* VALID - Accuracy 88.610 Loss 0.3537
+validation split name: 7
+* VALID - Accuracy 89.260 Loss 0.3442
+validation split name: 8
+* VALID - Accuracy 88.840 Loss 0.3752
+validation split name: 9
+* VALID - Accuracy 89.360 Loss 0.3472
+============================== Task: 10 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 79.987 Loss 0.9021
+* VALID - Accuracy 86.670 Loss 0.7064
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 86.920 Loss 0.7090
+* VALID - Accuracy 87.860 Loss 0.6859
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 87.538 Loss 0.6950
+* VALID - Accuracy 88.190 Loss 0.6786
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 87.838 Loss 0.6898
+* VALID - Accuracy 88.070 Loss 0.6777
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 87.957 Loss 0.6881
+* VALID - Accuracy 88.470 Loss 0.6736
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 88.047 Loss 0.6864
+* VALID - Accuracy 88.350 Loss 0.6725
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 88.040 Loss 0.6860
+* VALID - Accuracy 88.400 Loss 0.6761
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 88.073 Loss 0.6851
+* VALID - Accuracy 88.390 Loss 0.6700
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 88.095 Loss 0.6850
+* VALID - Accuracy 88.430 Loss 0.6718
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 88.152 Loss 0.6846
+* VALID - Accuracy 88.310 Loss 0.6719
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 67.920 Loss 1.1862
+validation split name: 2
+* VALID - Accuracy 89.120 Loss 0.3184
+validation split name: 3
+* VALID - Accuracy 92.130 Loss 0.2423
+validation split name: 4
+* VALID - Accuracy 90.190 Loss 0.3050
+validation split name: 5
+* VALID - Accuracy 90.580 Loss 0.3146
+validation split name: 6
+* VALID - Accuracy 88.590 Loss 0.3486
+validation split name: 7
+* VALID - Accuracy 89.340 Loss 0.3446
+validation split name: 8
+* VALID - Accuracy 86.530 Loss 0.4402
+validation split name: 9
+* VALID - Accuracy 87.510 Loss 0.3988
+validation split name: 10
+* VALID - Accuracy 88.310 Loss 0.3783
+OrderedDict([('1', OrderedDict([('1', 97.91), ('2', 97.37), ('3', 95.98), ('4', 93.74), ('5', 89.77), ('6', 84.49), ('7', 82.79), ('8', 71.64), ('9', 68.12), ('10', 67.92)])), ('2', OrderedDict([('2', 96.39), ('3', 96.02), ('4', 95.63), ('5', 94.78), ('6', 93.35), ('7', 93.49), ('8', 90.6), ('9', 89.27), ('10', 89.12)])), ('3', OrderedDict([('3', 95.46), ('4', 94.48), ('5', 94.33), ('6', 93.93), ('7', 93.07), ('8', 92.18), ('9', 92.97), ('10', 92.13)])), ('4', OrderedDict([('4', 95.07), ('5', 94.43), ('6', 93.02), ('7', 93.19), ('8', 90.43), ('9', 89.81), ('10', 90.19)])), ('5', OrderedDict([('5', 93.51), ('6', 92.08), ('7', 92.79), ('8', 91.88), ('9', 91.06), ('10', 90.58)])), ('6', OrderedDict([('6', 92.55), ('7', 91.44), ('8', 90.01), ('9', 88.61), ('10', 88.59)])), ('7', OrderedDict([('7', 91.76), ('8', 90.51), ('9', 89.26), ('10', 89.34)])), ('8', OrderedDict([('8', 90.75), ('9', 88.84), ('10', 86.53)])), ('9', OrderedDict([('9', 89.36), ('10', 87.51)])), ('10', OrderedDict([('10', 88.31)]))])
+Task 1 average acc: 97.91
+Task 2 average acc: 96.88
+Task 3 average acc: 95.82
+Task 4 average acc: 94.73
+Task 5 average acc: 93.364
+Task 6 average acc: 91.57
+Task 7 average acc: 91.21857142857142
+Task 8 average acc: 88.5
+Task 9 average acc: 87.47777777777777
+Task 10 average acc: 87.022
+===Summary of experiment repeats: 3 / 10 ===
+The regularization coefficient: 250.0
+The last avg acc of all repeats: [87.795 85.399 87.022  0.     0.     0.     0.     0.     0.     0.   ]
+mean: 26.0216 std: 39.75241256125218
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 88.220 Loss 0.4408
+* VALID - Accuracy 93.950 Loss 0.2033
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 95.070 Loss 0.1679
+* VALID - Accuracy 96.130 Loss 0.1312
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.578 Loss 0.1143
+* VALID - Accuracy 96.790 Loss 0.1040
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.435 Loss 0.0846
+* VALID - Accuracy 97.200 Loss 0.0896
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 98.113 Loss 0.0634
+* VALID - Accuracy 97.500 Loss 0.0762
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 98.493 Loss 0.0499
+* VALID - Accuracy 97.330 Loss 0.0813
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 98.853 Loss 0.0389
+* VALID - Accuracy 97.730 Loss 0.0730
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 99.108 Loss 0.0309
+* VALID - Accuracy 97.830 Loss 0.0685
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 99.332 Loss 0.0235
+* VALID - Accuracy 98.060 Loss 0.0623
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 99.557 Loss 0.0177
+* VALID - Accuracy 97.840 Loss 0.0697
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.840 Loss 0.0697
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 83.537 Loss 0.5546
+* VALID - Accuracy 91.410 Loss 0.2913
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 92.418 Loss 0.2624
+* VALID - Accuracy 93.200 Loss 0.2356
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.968 Loss 0.2170
+* VALID - Accuracy 94.080 Loss 0.2073
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.747 Loss 0.1906
+* VALID - Accuracy 94.650 Loss 0.1905
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 95.343 Loss 0.1720
+* VALID - Accuracy 95.010 Loss 0.1750
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.843 Loss 0.1579
+* VALID - Accuracy 95.400 Loss 0.1649
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 96.247 Loss 0.1467
+* VALID - Accuracy 95.760 Loss 0.1562
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 96.650 Loss 0.1373
+* VALID - Accuracy 95.960 Loss 0.1491
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.923 Loss 0.1295
+* VALID - Accuracy 96.220 Loss 0.1429
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 97.158 Loss 0.1225
+* VALID - Accuracy 96.330 Loss 0.1388
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.520 Loss 0.0862
+validation split name: 2
+* VALID - Accuracy 96.330 Loss 0.1180
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.640 Loss 0.6525
+* VALID - Accuracy 90.790 Loss 0.3426
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.753 Loss 0.3209
+* VALID - Accuracy 92.890 Loss 0.2885
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.228 Loss 0.2775
+* VALID - Accuracy 93.960 Loss 0.2629
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.140 Loss 0.2534
+* VALID - Accuracy 94.530 Loss 0.2475
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.743 Loss 0.2365
+* VALID - Accuracy 94.980 Loss 0.2358
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.152 Loss 0.2245
+* VALID - Accuracy 95.060 Loss 0.2295
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 95.533 Loss 0.2152
+* VALID - Accuracy 95.440 Loss 0.2212
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 95.817 Loss 0.2071
+* VALID - Accuracy 95.530 Loss 0.2184
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.008 Loss 0.2008
+* VALID - Accuracy 95.730 Loss 0.2114
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 96.208 Loss 0.1953
+* VALID - Accuracy 95.940 Loss 0.2084
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 95.950 Loss 0.1472
+validation split name: 2
+* VALID - Accuracy 95.330 Loss 0.1468
+validation split name: 3
+* VALID - Accuracy 95.940 Loss 0.1439
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.872 Loss 0.7317
+* VALID - Accuracy 90.240 Loss 0.4036
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.175 Loss 0.3786
+* VALID - Accuracy 92.010 Loss 0.3505
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.577 Loss 0.3368
+* VALID - Accuracy 93.100 Loss 0.3227
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 93.417 Loss 0.3139
+* VALID - Accuracy 93.640 Loss 0.3083
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.942 Loss 0.2986
+* VALID - Accuracy 94.030 Loss 0.2970
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 94.352 Loss 0.2880
+* VALID - Accuracy 94.220 Loss 0.2907
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 94.637 Loss 0.2796
+* VALID - Accuracy 94.610 Loss 0.2847
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 94.868 Loss 0.2737
+* VALID - Accuracy 94.780 Loss 0.2798
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 95.137 Loss 0.2684
+* VALID - Accuracy 94.860 Loss 0.2763
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 95.245 Loss 0.2641
+* VALID - Accuracy 94.880 Loss 0.2737
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 95.020 Loss 0.1757
+validation split name: 2
+* VALID - Accuracy 94.400 Loss 0.1779
+validation split name: 3
+* VALID - Accuracy 94.440 Loss 0.1803
+validation split name: 4
+* VALID - Accuracy 94.880 Loss 0.1722
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.177 Loss 0.7507
+* VALID - Accuracy 90.010 Loss 0.4483
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 90.748 Loss 0.4332
+* VALID - Accuracy 91.860 Loss 0.3991
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.013 Loss 0.3966
+* VALID - Accuracy 92.430 Loss 0.3801
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 92.715 Loss 0.3777
+* VALID - Accuracy 93.240 Loss 0.3656
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.142 Loss 0.3656
+* VALID - Accuracy 93.450 Loss 0.3571
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 93.493 Loss 0.3575
+* VALID - Accuracy 93.540 Loss 0.3537
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 93.705 Loss 0.3516
+* VALID - Accuracy 93.840 Loss 0.3471
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 93.922 Loss 0.3467
+* VALID - Accuracy 93.940 Loss 0.3456
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 94.008 Loss 0.3436
+* VALID - Accuracy 93.950 Loss 0.3434
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 94.137 Loss 0.3402
+* VALID - Accuracy 94.160 Loss 0.3391
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 93.650 Loss 0.2316
+validation split name: 2
+* VALID - Accuracy 93.640 Loss 0.1995
+validation split name: 3
+* VALID - Accuracy 92.940 Loss 0.2200
+validation split name: 4
+* VALID - Accuracy 93.980 Loss 0.2045
+validation split name: 5
+* VALID - Accuracy 94.160 Loss 0.1993
+============================== Task: 6 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.582 Loss 0.6976
+* VALID - Accuracy 89.720 Loss 0.4678
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 90.392 Loss 0.4542
+* VALID - Accuracy 91.330 Loss 0.4308
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 91.405 Loss 0.4270
+* VALID - Accuracy 91.860 Loss 0.4153
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 92.008 Loss 0.4135
+* VALID - Accuracy 92.080 Loss 0.4097
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 92.253 Loss 0.4059
+* VALID - Accuracy 92.510 Loss 0.4033
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 92.573 Loss 0.4002
+* VALID - Accuracy 92.650 Loss 0.3991
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 92.675 Loss 0.3968
+* VALID - Accuracy 92.600 Loss 0.3992
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 92.805 Loss 0.3940
+* VALID - Accuracy 92.840 Loss 0.3949
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 92.917 Loss 0.3922
+* VALID - Accuracy 92.960 Loss 0.3936
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 93.048 Loss 0.3905
+* VALID - Accuracy 92.840 Loss 0.3950
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 91.370 Loss 0.3052
+validation split name: 2
+* VALID - Accuracy 93.860 Loss 0.1947
+validation split name: 3
+* VALID - Accuracy 91.980 Loss 0.2445
+validation split name: 4
+* VALID - Accuracy 93.660 Loss 0.2108
+validation split name: 5
+* VALID - Accuracy 93.380 Loss 0.2205
+validation split name: 6
+* VALID - Accuracy 92.840 Loss 0.2377
+============================== Task: 7 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.427 Loss 0.7668
+* VALID - Accuracy 88.990 Loss 0.5326
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 89.100 Loss 0.5274
+* VALID - Accuracy 90.290 Loss 0.4993
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 90.015 Loss 0.5031
+* VALID - Accuracy 90.880 Loss 0.4831
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 90.555 Loss 0.4920
+* VALID - Accuracy 91.120 Loss 0.4781
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 90.845 Loss 0.4851
+* VALID - Accuracy 91.180 Loss 0.4755
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 91.107 Loss 0.4808
+* VALID - Accuracy 91.400 Loss 0.4698
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 91.232 Loss 0.4779
+* VALID - Accuracy 91.710 Loss 0.4700
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 91.328 Loss 0.4761
+* VALID - Accuracy 91.660 Loss 0.4665
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 91.365 Loss 0.4746
+* VALID - Accuracy 91.770 Loss 0.4654
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 91.455 Loss 0.4736
+* VALID - Accuracy 91.710 Loss 0.4656
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 88.870 Loss 0.4074
+validation split name: 2
+* VALID - Accuracy 92.960 Loss 0.2140
+validation split name: 3
+* VALID - Accuracy 89.930 Loss 0.3050
+validation split name: 4
+* VALID - Accuracy 92.960 Loss 0.2290
+validation split name: 5
+* VALID - Accuracy 92.900 Loss 0.2364
+validation split name: 6
+* VALID - Accuracy 92.320 Loss 0.2561
+validation split name: 7
+* VALID - Accuracy 91.710 Loss 0.2731
+============================== Task: 8 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.368 Loss 0.7891
+* VALID - Accuracy 88.750 Loss 0.5753
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 88.852 Loss 0.5769
+* VALID - Accuracy 89.730 Loss 0.5472
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 89.530 Loss 0.5577
+* VALID - Accuracy 90.130 Loss 0.5377
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 89.890 Loss 0.5495
+* VALID - Accuracy 90.320 Loss 0.5327
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 90.112 Loss 0.5445
+* VALID - Accuracy 90.600 Loss 0.5274
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 90.197 Loss 0.5419
+* VALID - Accuracy 90.640 Loss 0.5314
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 90.335 Loss 0.5405
+* VALID - Accuracy 90.710 Loss 0.5255
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 90.380 Loss 0.5391
+* VALID - Accuracy 90.790 Loss 0.5247
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 90.377 Loss 0.5377
+* VALID - Accuracy 90.740 Loss 0.5249
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 90.527 Loss 0.5375
+* VALID - Accuracy 90.720 Loss 0.5251
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 87.890 Loss 0.4265
+validation split name: 2
+* VALID - Accuracy 93.430 Loss 0.1975
+validation split name: 3
+* VALID - Accuracy 89.460 Loss 0.3050
+validation split name: 4
+* VALID - Accuracy 92.680 Loss 0.2309
+validation split name: 5
+* VALID - Accuracy 91.800 Loss 0.2556
+validation split name: 6
+* VALID - Accuracy 91.740 Loss 0.2653
+validation split name: 7
+* VALID - Accuracy 90.420 Loss 0.3061
+validation split name: 8
+* VALID - Accuracy 90.720 Loss 0.3030
+============================== Task: 9 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.720 Loss 0.7809
+* VALID - Accuracy 88.070 Loss 0.6031
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 87.887 Loss 0.6132
+* VALID - Accuracy 89.110 Loss 0.5819
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 88.590 Loss 0.5992
+* VALID - Accuracy 89.310 Loss 0.5762
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 88.937 Loss 0.5938
+* VALID - Accuracy 89.480 Loss 0.5739
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 89.095 Loss 0.5909
+* VALID - Accuracy 89.600 Loss 0.5725
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 89.157 Loss 0.5899
+* VALID - Accuracy 89.830 Loss 0.5709
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 89.323 Loss 0.5884
+* VALID - Accuracy 89.660 Loss 0.5698
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 89.278 Loss 0.5883
+* VALID - Accuracy 89.680 Loss 0.5696
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 89.288 Loss 0.5871
+* VALID - Accuracy 89.800 Loss 0.5706
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 89.368 Loss 0.5873
+* VALID - Accuracy 89.640 Loss 0.5697
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 85.350 Loss 0.5193
+validation split name: 2
+* VALID - Accuracy 92.000 Loss 0.2423
+validation split name: 3
+* VALID - Accuracy 89.010 Loss 0.3169
+validation split name: 4
+* VALID - Accuracy 92.430 Loss 0.2352
+validation split name: 5
+* VALID - Accuracy 90.560 Loss 0.2987
+validation split name: 6
+* VALID - Accuracy 90.650 Loss 0.2955
+validation split name: 7
+* VALID - Accuracy 89.970 Loss 0.3236
+validation split name: 8
+* VALID - Accuracy 89.580 Loss 0.3351
+validation split name: 9
+* VALID - Accuracy 89.640 Loss 0.3358
+============================== Task: 10 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.643 Loss 0.8487
+* VALID - Accuracy 87.160 Loss 0.6745
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 86.955 Loss 0.6823
+* VALID - Accuracy 87.950 Loss 0.6577
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 87.532 Loss 0.6700
+* VALID - Accuracy 88.300 Loss 0.6520
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 87.733 Loss 0.6657
+* VALID - Accuracy 88.450 Loss 0.6483
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 87.878 Loss 0.6635
+* VALID - Accuracy 88.550 Loss 0.6509
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 88.035 Loss 0.6626
+* VALID - Accuracy 88.560 Loss 0.6464
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 88.060 Loss 0.6614
+* VALID - Accuracy 88.610 Loss 0.6452
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 88.045 Loss 0.6616
+* VALID - Accuracy 88.400 Loss 0.6513
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 88.115 Loss 0.6605
+* VALID - Accuracy 88.310 Loss 0.6497
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 88.097 Loss 0.6611
+* VALID - Accuracy 88.650 Loss 0.6446
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 79.860 Loss 0.6716
+validation split name: 2
+* VALID - Accuracy 91.150 Loss 0.2617
+validation split name: 3
+* VALID - Accuracy 89.480 Loss 0.3025
+validation split name: 4
+* VALID - Accuracy 91.050 Loss 0.2740
+validation split name: 5
+* VALID - Accuracy 89.930 Loss 0.3150
+validation split name: 6
+* VALID - Accuracy 90.550 Loss 0.3046
+validation split name: 7
+* VALID - Accuracy 89.940 Loss 0.3138
+validation split name: 8
+* VALID - Accuracy 89.720 Loss 0.3507
+validation split name: 9
+* VALID - Accuracy 88.410 Loss 0.3738
+validation split name: 10
+* VALID - Accuracy 88.650 Loss 0.3750
+OrderedDict([('1', OrderedDict([('1', 97.84), ('2', 97.52), ('3', 95.95), ('4', 95.02), ('5', 93.65), ('6', 91.37), ('7', 88.87), ('8', 87.89), ('9', 85.35), ('10', 79.86)])), ('2', OrderedDict([('2', 96.33), ('3', 95.33), ('4', 94.4), ('5', 93.64), ('6', 93.86), ('7', 92.96), ('8', 93.43), ('9', 92.0), ('10', 91.15)])), ('3', OrderedDict([('3', 95.94), ('4', 94.44), ('5', 92.94), ('6', 91.98), ('7', 89.93), ('8', 89.46), ('9', 89.01), ('10', 89.48)])), ('4', OrderedDict([('4', 94.88), ('5', 93.98), ('6', 93.66), ('7', 92.96), ('8', 92.68), ('9', 92.43), ('10', 91.05)])), ('5', OrderedDict([('5', 94.16), ('6', 93.38), ('7', 92.9), ('8', 91.8), ('9', 90.56), ('10', 89.93)])), ('6', OrderedDict([('6', 92.84), ('7', 92.32), ('8', 91.74), ('9', 90.65), ('10', 90.55)])), ('7', OrderedDict([('7', 91.71), ('8', 90.42), ('9', 89.97), ('10', 89.94)])), ('8', OrderedDict([('8', 90.72), ('9', 89.58), ('10', 89.72)])), ('9', OrderedDict([('9', 89.64), ('10', 88.41)])), ('10', OrderedDict([('10', 88.65)]))])
+Task 1 average acc: 97.84
+Task 2 average acc: 96.925
+Task 3 average acc: 95.74000000000001
+Task 4 average acc: 94.685
+Task 5 average acc: 93.674
+Task 6 average acc: 92.84833333333334
+Task 7 average acc: 91.66428571428573
+Task 8 average acc: 91.0175
+Task 9 average acc: 89.91000000000001
+Task 10 average acc: 88.874
+===Summary of experiment repeats: 4 / 10 ===
+The regularization coefficient: 250.0
+The last avg acc of all repeats: [87.795 85.399 87.022 88.874  0.     0.     0.     0.     0.     0.   ]
+mean: 34.909000000000006 std: 42.76211498043566
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 88.358 Loss 0.4394
+* VALID - Accuracy 93.500 Loss 0.2147
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 94.952 Loss 0.1689
+* VALID - Accuracy 95.970 Loss 0.1351
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.620 Loss 0.1152
+* VALID - Accuracy 96.880 Loss 0.1034
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.470 Loss 0.0847
+* VALID - Accuracy 97.030 Loss 0.0958
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 98.065 Loss 0.0650
+* VALID - Accuracy 97.410 Loss 0.0806
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 98.545 Loss 0.0488
+* VALID - Accuracy 97.910 Loss 0.0680
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 98.837 Loss 0.0392
+* VALID - Accuracy 97.720 Loss 0.0699
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 99.075 Loss 0.0308
+* VALID - Accuracy 97.960 Loss 0.0676
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 99.245 Loss 0.0246
+* VALID - Accuracy 97.910 Loss 0.0672
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 99.507 Loss 0.0185
+* VALID - Accuracy 98.030 Loss 0.0679
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 98.030 Loss 0.0679
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 83.302 Loss 0.5603
+* VALID - Accuracy 91.250 Loss 0.2924
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 92.250 Loss 0.2671
+* VALID - Accuracy 92.930 Loss 0.2358
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.773 Loss 0.2201
+* VALID - Accuracy 93.860 Loss 0.2081
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.653 Loss 0.1932
+* VALID - Accuracy 94.630 Loss 0.1887
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 95.317 Loss 0.1741
+* VALID - Accuracy 95.100 Loss 0.1757
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.788 Loss 0.1597
+* VALID - Accuracy 95.560 Loss 0.1657
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 96.228 Loss 0.1480
+* VALID - Accuracy 95.850 Loss 0.1560
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 96.540 Loss 0.1387
+* VALID - Accuracy 96.040 Loss 0.1509
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.843 Loss 0.1306
+* VALID - Accuracy 96.190 Loss 0.1458
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 97.052 Loss 0.1240
+* VALID - Accuracy 96.390 Loss 0.1408
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.670 Loss 0.0854
+validation split name: 2
+* VALID - Accuracy 96.390 Loss 0.1189
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.040 Loss 0.6277
+* VALID - Accuracy 91.020 Loss 0.3383
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.815 Loss 0.3151
+* VALID - Accuracy 92.840 Loss 0.2852
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.342 Loss 0.2729
+* VALID - Accuracy 93.650 Loss 0.2612
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.163 Loss 0.2495
+* VALID - Accuracy 94.250 Loss 0.2444
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.730 Loss 0.2337
+* VALID - Accuracy 94.770 Loss 0.2323
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.173 Loss 0.2213
+* VALID - Accuracy 94.820 Loss 0.2243
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 95.518 Loss 0.2121
+* VALID - Accuracy 95.060 Loss 0.2193
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 95.820 Loss 0.2046
+* VALID - Accuracy 95.200 Loss 0.2163
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.012 Loss 0.1978
+* VALID - Accuracy 95.390 Loss 0.2091
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 96.272 Loss 0.1928
+* VALID - Accuracy 95.480 Loss 0.2072
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.070 Loss 0.1047
+validation split name: 2
+* VALID - Accuracy 95.660 Loss 0.1420
+validation split name: 3
+* VALID - Accuracy 95.480 Loss 0.1456
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.643 Loss 0.6800
+* VALID - Accuracy 90.510 Loss 0.3909
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.207 Loss 0.3734
+* VALID - Accuracy 92.200 Loss 0.3387
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.677 Loss 0.3335
+* VALID - Accuracy 93.040 Loss 0.3172
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 93.452 Loss 0.3121
+* VALID - Accuracy 93.510 Loss 0.3046
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.912 Loss 0.2981
+* VALID - Accuracy 93.760 Loss 0.2945
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 94.335 Loss 0.2879
+* VALID - Accuracy 94.140 Loss 0.2874
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 94.592 Loss 0.2805
+* VALID - Accuracy 94.420 Loss 0.2816
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 94.812 Loss 0.2742
+* VALID - Accuracy 94.490 Loss 0.2782
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 95.035 Loss 0.2694
+* VALID - Accuracy 94.610 Loss 0.2756
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 95.230 Loss 0.2653
+* VALID - Accuracy 94.730 Loss 0.2732
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 95.440 Loss 0.1625
+validation split name: 2
+* VALID - Accuracy 95.450 Loss 0.1449
+validation split name: 3
+* VALID - Accuracy 94.970 Loss 0.1572
+validation split name: 4
+* VALID - Accuracy 94.730 Loss 0.1720
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.235 Loss 0.6748
+* VALID - Accuracy 90.150 Loss 0.4355
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 90.662 Loss 0.4150
+* VALID - Accuracy 91.910 Loss 0.3920
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 91.968 Loss 0.3822
+* VALID - Accuracy 92.580 Loss 0.3743
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 92.615 Loss 0.3653
+* VALID - Accuracy 92.990 Loss 0.3622
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.023 Loss 0.3549
+* VALID - Accuracy 93.250 Loss 0.3537
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 93.353 Loss 0.3475
+* VALID - Accuracy 93.590 Loss 0.3494
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 93.605 Loss 0.3418
+* VALID - Accuracy 93.700 Loss 0.3458
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 93.782 Loss 0.3376
+* VALID - Accuracy 93.780 Loss 0.3424
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 93.928 Loss 0.3343
+* VALID - Accuracy 93.790 Loss 0.3425
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 94.040 Loss 0.3314
+* VALID - Accuracy 94.090 Loss 0.3383
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 92.990 Loss 0.2493
+validation split name: 2
+* VALID - Accuracy 94.510 Loss 0.1717
+validation split name: 3
+* VALID - Accuracy 94.500 Loss 0.1855
+validation split name: 4
+* VALID - Accuracy 93.930 Loss 0.1958
+validation split name: 5
+* VALID - Accuracy 94.090 Loss 0.2081
+============================== Task: 6 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.318 Loss 0.7904
+* VALID - Accuracy 89.170 Loss 0.5142
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 89.553 Loss 0.5048
+* VALID - Accuracy 90.790 Loss 0.4732
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 90.767 Loss 0.4737
+* VALID - Accuracy 91.470 Loss 0.4547
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 91.467 Loss 0.4590
+* VALID - Accuracy 91.800 Loss 0.4459
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 91.748 Loss 0.4499
+* VALID - Accuracy 92.020 Loss 0.4402
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 91.987 Loss 0.4442
+* VALID - Accuracy 92.270 Loss 0.4377
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 92.225 Loss 0.4396
+* VALID - Accuracy 92.270 Loss 0.4343
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 92.300 Loss 0.4364
+* VALID - Accuracy 92.490 Loss 0.4315
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 92.412 Loss 0.4341
+* VALID - Accuracy 92.610 Loss 0.4289
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 92.562 Loss 0.4315
+* VALID - Accuracy 92.650 Loss 0.4279
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 92.370 Loss 0.2700
+validation split name: 2
+* VALID - Accuracy 93.700 Loss 0.2002
+validation split name: 3
+* VALID - Accuracy 93.530 Loss 0.2027
+validation split name: 4
+* VALID - Accuracy 91.850 Loss 0.2500
+validation split name: 5
+* VALID - Accuracy 92.190 Loss 0.2495
+validation split name: 6
+* VALID - Accuracy 92.650 Loss 0.2445
+============================== Task: 7 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.247 Loss 0.7231
+* VALID - Accuracy 88.930 Loss 0.5166
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 89.525 Loss 0.5115
+* VALID - Accuracy 90.270 Loss 0.4842
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 90.370 Loss 0.4896
+* VALID - Accuracy 91.030 Loss 0.4716
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 90.965 Loss 0.4796
+* VALID - Accuracy 91.190 Loss 0.4656
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 91.105 Loss 0.4742
+* VALID - Accuracy 91.410 Loss 0.4629
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 91.363 Loss 0.4705
+* VALID - Accuracy 91.560 Loss 0.4607
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 91.498 Loss 0.4676
+* VALID - Accuracy 91.730 Loss 0.4585
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 91.513 Loss 0.4663
+* VALID - Accuracy 91.800 Loss 0.4595
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 91.647 Loss 0.4652
+* VALID - Accuracy 91.890 Loss 0.4564
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 91.707 Loss 0.4640
+* VALID - Accuracy 91.820 Loss 0.4562
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 90.760 Loss 0.3196
+validation split name: 2
+* VALID - Accuracy 92.090 Loss 0.2509
+validation split name: 3
+* VALID - Accuracy 92.350 Loss 0.2385
+validation split name: 4
+* VALID - Accuracy 90.050 Loss 0.2977
+validation split name: 5
+* VALID - Accuracy 90.980 Loss 0.2820
+validation split name: 6
+* VALID - Accuracy 91.680 Loss 0.2721
+validation split name: 7
+* VALID - Accuracy 91.820 Loss 0.2700
+============================== Task: 8 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 79.712 Loss 0.8634
+* VALID - Accuracy 87.400 Loss 0.6355
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 87.823 Loss 0.6275
+* VALID - Accuracy 88.750 Loss 0.6020
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 88.748 Loss 0.6049
+* VALID - Accuracy 89.250 Loss 0.5916
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 89.207 Loss 0.5951
+* VALID - Accuracy 89.540 Loss 0.5861
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 89.400 Loss 0.5902
+* VALID - Accuracy 89.740 Loss 0.5808
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 89.628 Loss 0.5867
+* VALID - Accuracy 89.630 Loss 0.5789
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 89.682 Loss 0.5850
+* VALID - Accuracy 90.000 Loss 0.5783
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 89.802 Loss 0.5834
+* VALID - Accuracy 89.850 Loss 0.5787
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 89.803 Loss 0.5826
+* VALID - Accuracy 89.990 Loss 0.5786
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 89.932 Loss 0.5812
+* VALID - Accuracy 89.870 Loss 0.5773
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 86.370 Loss 0.4714
+validation split name: 2
+* VALID - Accuracy 91.970 Loss 0.2516
+validation split name: 3
+* VALID - Accuracy 90.620 Loss 0.2940
+validation split name: 4
+* VALID - Accuracy 90.570 Loss 0.2876
+validation split name: 5
+* VALID - Accuracy 90.150 Loss 0.3010
+validation split name: 6
+* VALID - Accuracy 90.240 Loss 0.3119
+validation split name: 7
+* VALID - Accuracy 90.610 Loss 0.3117
+validation split name: 8
+* VALID - Accuracy 89.870 Loss 0.3301
+============================== Task: 9 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.123 Loss 0.8048
+* VALID - Accuracy 86.980 Loss 0.6369
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 87.458 Loss 0.6322
+* VALID - Accuracy 87.870 Loss 0.6151
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 88.062 Loss 0.6180
+* VALID - Accuracy 88.280 Loss 0.6072
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 88.442 Loss 0.6125
+* VALID - Accuracy 88.490 Loss 0.6036
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 88.572 Loss 0.6090
+* VALID - Accuracy 88.500 Loss 0.6034
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 88.692 Loss 0.6083
+* VALID - Accuracy 88.810 Loss 0.6017
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 88.737 Loss 0.6072
+* VALID - Accuracy 88.930 Loss 0.6003
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 88.833 Loss 0.6059
+* VALID - Accuracy 88.670 Loss 0.6027
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 88.820 Loss 0.6056
+* VALID - Accuracy 88.700 Loss 0.6031
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 88.847 Loss 0.6051
+* VALID - Accuracy 88.750 Loss 0.6049
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 83.820 Loss 0.5482
+validation split name: 2
+* VALID - Accuracy 90.780 Loss 0.2817
+validation split name: 3
+* VALID - Accuracy 84.000 Loss 0.4914
+validation split name: 4
+* VALID - Accuracy 89.620 Loss 0.3190
+validation split name: 5
+* VALID - Accuracy 89.450 Loss 0.3202
+validation split name: 6
+* VALID - Accuracy 89.730 Loss 0.3253
+validation split name: 7
+* VALID - Accuracy 88.020 Loss 0.3782
+validation split name: 8
+* VALID - Accuracy 88.990 Loss 0.3524
+validation split name: 9
+* VALID - Accuracy 88.750 Loss 0.3611
+============================== Task: 10 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 79.243 Loss 0.9368
+* VALID - Accuracy 85.620 Loss 0.7387
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 86.180 Loss 0.7342
+* VALID - Accuracy 86.950 Loss 0.7124
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 86.918 Loss 0.7207
+* VALID - Accuracy 87.460 Loss 0.7046
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 87.088 Loss 0.7155
+* VALID - Accuracy 87.760 Loss 0.6993
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 87.365 Loss 0.7133
+* VALID - Accuracy 87.900 Loss 0.7005
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 87.358 Loss 0.7117
+* VALID - Accuracy 87.440 Loss 0.7070
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 87.465 Loss 0.7114
+* VALID - Accuracy 87.750 Loss 0.7028
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 87.448 Loss 0.7107
+* VALID - Accuracy 88.110 Loss 0.6982
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 87.543 Loss 0.7100
+* VALID - Accuracy 88.100 Loss 0.6989
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 87.583 Loss 0.7103
+* VALID - Accuracy 87.910 Loss 0.7008
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 80.710 Loss 0.6829
+validation split name: 2
+* VALID - Accuracy 88.120 Loss 0.3547
+validation split name: 3
+* VALID - Accuracy 82.990 Loss 0.5191
+validation split name: 4
+* VALID - Accuracy 88.790 Loss 0.3387
+validation split name: 5
+* VALID - Accuracy 88.940 Loss 0.3333
+validation split name: 6
+* VALID - Accuracy 87.810 Loss 0.3594
+validation split name: 7
+* VALID - Accuracy 87.150 Loss 0.3904
+validation split name: 8
+* VALID - Accuracy 87.750 Loss 0.3801
+validation split name: 9
+* VALID - Accuracy 88.510 Loss 0.3728
+validation split name: 10
+* VALID - Accuracy 87.910 Loss 0.3940
+OrderedDict([('1', OrderedDict([('1', 98.03), ('2', 97.67), ('3', 97.07), ('4', 95.44), ('5', 92.99), ('6', 92.37), ('7', 90.76), ('8', 86.37), ('9', 83.82), ('10', 80.71)])), ('2', OrderedDict([('2', 96.39), ('3', 95.66), ('4', 95.45), ('5', 94.51), ('6', 93.7), ('7', 92.09), ('8', 91.97), ('9', 90.78), ('10', 88.12)])), ('3', OrderedDict([('3', 95.48), ('4', 94.97), ('5', 94.5), ('6', 93.53), ('7', 92.35), ('8', 90.62), ('9', 84.0), ('10', 82.99)])), ('4', OrderedDict([('4', 94.73), ('5', 93.93), ('6', 91.85), ('7', 90.05), ('8', 90.57), ('9', 89.62), ('10', 88.79)])), ('5', OrderedDict([('5', 94.09), ('6', 92.19), ('7', 90.98), ('8', 90.15), ('9', 89.45), ('10', 88.94)])), ('6', OrderedDict([('6', 92.65), ('7', 91.68), ('8', 90.24), ('9', 89.73), ('10', 87.81)])), ('7', OrderedDict([('7', 91.82), ('8', 90.61), ('9', 88.02), ('10', 87.15)])), ('8', OrderedDict([('8', 89.87), ('9', 88.99), ('10', 87.75)])), ('9', OrderedDict([('9', 88.75), ('10', 88.51)])), ('10', OrderedDict([('10', 87.91)]))])
+Task 1 average acc: 98.03
+Task 2 average acc: 97.03
+Task 3 average acc: 96.07
+Task 4 average acc: 95.14750000000001
+Task 5 average acc: 94.00399999999999
+Task 6 average acc: 92.71500000000002
+Task 7 average acc: 91.39
+Task 8 average acc: 90.05000000000001
+Task 9 average acc: 88.12888888888888
+Task 10 average acc: 86.868
+===Summary of experiment repeats: 5 / 10 ===
+The regularization coefficient: 250.0
+The last avg acc of all repeats: [87.795 85.399 87.022 88.874 86.868  0.     0.     0.     0.     0.   ]
+mean: 43.595800000000004 std: 43.60330174837681
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 87.778 Loss 0.4422
+* VALID - Accuracy 93.800 Loss 0.2009
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 95.122 Loss 0.1669
+* VALID - Accuracy 95.890 Loss 0.1388
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.578 Loss 0.1151
+* VALID - Accuracy 96.520 Loss 0.1089
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.498 Loss 0.0843
+* VALID - Accuracy 97.200 Loss 0.0858
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 98.083 Loss 0.0652
+* VALID - Accuracy 97.570 Loss 0.0774
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 98.462 Loss 0.0509
+* VALID - Accuracy 97.710 Loss 0.0681
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 98.840 Loss 0.0389
+* VALID - Accuracy 97.870 Loss 0.0697
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 99.072 Loss 0.0306
+* VALID - Accuracy 97.640 Loss 0.0777
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 99.280 Loss 0.0244
+* VALID - Accuracy 98.190 Loss 0.0589
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 99.503 Loss 0.0184
+* VALID - Accuracy 98.210 Loss 0.0623
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 98.210 Loss 0.0623
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.362 Loss 0.5936
+* VALID - Accuracy 91.050 Loss 0.2971
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 92.218 Loss 0.2667
+* VALID - Accuracy 92.950 Loss 0.2350
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.747 Loss 0.2167
+* VALID - Accuracy 94.020 Loss 0.2057
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.647 Loss 0.1885
+* VALID - Accuracy 94.500 Loss 0.1871
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 95.348 Loss 0.1686
+* VALID - Accuracy 95.060 Loss 0.1721
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.875 Loss 0.1536
+* VALID - Accuracy 95.440 Loss 0.1613
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 96.280 Loss 0.1415
+* VALID - Accuracy 95.730 Loss 0.1534
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 96.598 Loss 0.1318
+* VALID - Accuracy 95.960 Loss 0.1463
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.925 Loss 0.1232
+* VALID - Accuracy 96.170 Loss 0.1407
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 97.135 Loss 0.1162
+* VALID - Accuracy 96.250 Loss 0.1371
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.160 Loss 0.0945
+validation split name: 2
+* VALID - Accuracy 96.250 Loss 0.1198
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.925 Loss 0.5869
+* VALID - Accuracy 91.270 Loss 0.3277
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.945 Loss 0.3037
+* VALID - Accuracy 92.850 Loss 0.2723
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.428 Loss 0.2614
+* VALID - Accuracy 93.790 Loss 0.2482
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.307 Loss 0.2378
+* VALID - Accuracy 94.400 Loss 0.2333
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.930 Loss 0.2218
+* VALID - Accuracy 94.650 Loss 0.2229
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.405 Loss 0.2098
+* VALID - Accuracy 95.110 Loss 0.2139
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 95.668 Loss 0.2010
+* VALID - Accuracy 95.340 Loss 0.2058
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 95.992 Loss 0.1932
+* VALID - Accuracy 95.430 Loss 0.2025
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.220 Loss 0.1872
+* VALID - Accuracy 95.640 Loss 0.1977
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 96.438 Loss 0.1821
+* VALID - Accuracy 95.770 Loss 0.1951
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 96.180 Loss 0.1418
+validation split name: 2
+* VALID - Accuracy 95.890 Loss 0.1370
+validation split name: 3
+* VALID - Accuracy 95.770 Loss 0.1385
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.823 Loss 0.6291
+* VALID - Accuracy 90.290 Loss 0.3817
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.465 Loss 0.3601
+* VALID - Accuracy 92.270 Loss 0.3363
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.813 Loss 0.3243
+* VALID - Accuracy 93.090 Loss 0.3142
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 93.495 Loss 0.3043
+* VALID - Accuracy 93.490 Loss 0.3031
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.043 Loss 0.2911
+* VALID - Accuracy 94.020 Loss 0.2926
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 94.378 Loss 0.2814
+* VALID - Accuracy 94.190 Loss 0.2869
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 94.620 Loss 0.2745
+* VALID - Accuracy 94.330 Loss 0.2823
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 94.940 Loss 0.2685
+* VALID - Accuracy 94.550 Loss 0.2779
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 95.063 Loss 0.2638
+* VALID - Accuracy 94.610 Loss 0.2748
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 95.243 Loss 0.2596
+* VALID - Accuracy 94.690 Loss 0.2722
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 92.670 Loss 0.2677
+validation split name: 2
+* VALID - Accuracy 94.590 Loss 0.1722
+validation split name: 3
+* VALID - Accuracy 95.590 Loss 0.1458
+validation split name: 4
+* VALID - Accuracy 94.690 Loss 0.1757
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.063 Loss 0.6887
+* VALID - Accuracy 89.750 Loss 0.4385
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 90.718 Loss 0.4155
+* VALID - Accuracy 91.340 Loss 0.3919
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.030 Loss 0.3812
+* VALID - Accuracy 92.210 Loss 0.3708
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 92.752 Loss 0.3633
+* VALID - Accuracy 92.660 Loss 0.3590
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.138 Loss 0.3518
+* VALID - Accuracy 92.970 Loss 0.3514
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 93.425 Loss 0.3441
+* VALID - Accuracy 93.290 Loss 0.3487
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 93.695 Loss 0.3381
+* VALID - Accuracy 93.280 Loss 0.3438
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 93.900 Loss 0.3336
+* VALID - Accuracy 93.600 Loss 0.3406
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 94.103 Loss 0.3295
+* VALID - Accuracy 93.500 Loss 0.3378
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 94.228 Loss 0.3267
+* VALID - Accuracy 93.590 Loss 0.3357
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 90.230 Loss 0.3414
+validation split name: 2
+* VALID - Accuracy 94.550 Loss 0.1724
+validation split name: 3
+* VALID - Accuracy 94.640 Loss 0.1675
+validation split name: 4
+* VALID - Accuracy 94.140 Loss 0.1902
+validation split name: 5
+* VALID - Accuracy 93.590 Loss 0.2059
+============================== Task: 6 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.103 Loss 0.7039
+* VALID - Accuracy 89.510 Loss 0.4776
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 90.112 Loss 0.4633
+* VALID - Accuracy 90.950 Loss 0.4401
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 91.235 Loss 0.4357
+* VALID - Accuracy 91.670 Loss 0.4247
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 91.773 Loss 0.4215
+* VALID - Accuracy 91.930 Loss 0.4168
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 92.108 Loss 0.4134
+* VALID - Accuracy 92.080 Loss 0.4110
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 92.317 Loss 0.4075
+* VALID - Accuracy 92.530 Loss 0.4061
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 92.523 Loss 0.4038
+* VALID - Accuracy 92.630 Loss 0.4032
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 92.747 Loss 0.4005
+* VALID - Accuracy 92.620 Loss 0.4017
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 92.758 Loss 0.3981
+* VALID - Accuracy 92.700 Loss 0.4014
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 92.933 Loss 0.3965
+* VALID - Accuracy 92.740 Loss 0.3991
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 85.780 Loss 0.4894
+validation split name: 2
+* VALID - Accuracy 94.790 Loss 0.1692
+validation split name: 3
+* VALID - Accuracy 93.220 Loss 0.2077
+validation split name: 4
+* VALID - Accuracy 93.600 Loss 0.2075
+validation split name: 5
+* VALID - Accuracy 93.000 Loss 0.2325
+validation split name: 6
+* VALID - Accuracy 92.740 Loss 0.2381
+============================== Task: 7 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.195 Loss 0.7309
+* VALID - Accuracy 89.040 Loss 0.5248
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 89.768 Loss 0.5171
+* VALID - Accuracy 90.510 Loss 0.4917
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 90.630 Loss 0.4944
+* VALID - Accuracy 90.820 Loss 0.4795
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 91.093 Loss 0.4837
+* VALID - Accuracy 91.290 Loss 0.4718
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 91.283 Loss 0.4778
+* VALID - Accuracy 91.450 Loss 0.4682
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 91.503 Loss 0.4738
+* VALID - Accuracy 91.460 Loss 0.4665
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 91.603 Loss 0.4716
+* VALID - Accuracy 91.380 Loss 0.4653
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 91.742 Loss 0.4695
+* VALID - Accuracy 91.700 Loss 0.4633
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 91.852 Loss 0.4681
+* VALID - Accuracy 91.830 Loss 0.4640
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 91.887 Loss 0.4667
+* VALID - Accuracy 91.750 Loss 0.4630
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 77.940 Loss 0.7906
+validation split name: 2
+* VALID - Accuracy 94.270 Loss 0.1787
+validation split name: 3
+* VALID - Accuracy 92.480 Loss 0.2250
+validation split name: 4
+* VALID - Accuracy 92.850 Loss 0.2241
+validation split name: 5
+* VALID - Accuracy 92.150 Loss 0.2522
+validation split name: 6
+* VALID - Accuracy 92.310 Loss 0.2535
+validation split name: 7
+* VALID - Accuracy 91.750 Loss 0.2706
+============================== Task: 8 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.112 Loss 0.8131
+* VALID - Accuracy 88.330 Loss 0.5834
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 88.242 Loss 0.5866
+* VALID - Accuracy 89.510 Loss 0.5575
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 89.287 Loss 0.5650
+* VALID - Accuracy 89.960 Loss 0.5468
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 89.695 Loss 0.5570
+* VALID - Accuracy 90.350 Loss 0.5422
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 89.918 Loss 0.5523
+* VALID - Accuracy 90.610 Loss 0.5374
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 90.040 Loss 0.5493
+* VALID - Accuracy 90.640 Loss 0.5371
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 90.137 Loss 0.5478
+* VALID - Accuracy 90.760 Loss 0.5355
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 90.170 Loss 0.5464
+* VALID - Accuracy 90.640 Loss 0.5347
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 90.312 Loss 0.5454
+* VALID - Accuracy 90.580 Loss 0.5360
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 90.348 Loss 0.5449
+* VALID - Accuracy 90.640 Loss 0.5349
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 77.270 Loss 0.8141
+validation split name: 2
+* VALID - Accuracy 93.520 Loss 0.2152
+validation split name: 3
+* VALID - Accuracy 89.590 Loss 0.3068
+validation split name: 4
+* VALID - Accuracy 91.820 Loss 0.2624
+validation split name: 5
+* VALID - Accuracy 91.660 Loss 0.2565
+validation split name: 6
+* VALID - Accuracy 90.920 Loss 0.2877
+validation split name: 7
+* VALID - Accuracy 90.440 Loss 0.3096
+validation split name: 8
+* VALID - Accuracy 90.640 Loss 0.3075
+============================== Task: 9 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 79.685 Loss 0.9076
+* VALID - Accuracy 87.340 Loss 0.6743
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 87.200 Loss 0.6768
+* VALID - Accuracy 88.290 Loss 0.6475
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 88.022 Loss 0.6577
+* VALID - Accuracy 88.490 Loss 0.6414
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 88.443 Loss 0.6503
+* VALID - Accuracy 88.770 Loss 0.6328
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 88.612 Loss 0.6462
+* VALID - Accuracy 89.000 Loss 0.6328
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 88.722 Loss 0.6434
+* VALID - Accuracy 89.130 Loss 0.6312
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 88.870 Loss 0.6426
+* VALID - Accuracy 89.270 Loss 0.6285
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 88.938 Loss 0.6421
+* VALID - Accuracy 89.060 Loss 0.6293
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 88.913 Loss 0.6411
+* VALID - Accuracy 89.310 Loss 0.6284
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 88.960 Loss 0.6403
+* VALID - Accuracy 89.180 Loss 0.6310
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 77.760 Loss 0.8398
+validation split name: 2
+* VALID - Accuracy 91.720 Loss 0.2597
+validation split name: 3
+* VALID - Accuracy 86.370 Loss 0.3876
+validation split name: 4
+* VALID - Accuracy 90.830 Loss 0.2892
+validation split name: 5
+* VALID - Accuracy 90.740 Loss 0.2892
+validation split name: 6
+* VALID - Accuracy 88.200 Loss 0.3588
+validation split name: 7
+* VALID - Accuracy 87.820 Loss 0.3845
+validation split name: 8
+* VALID - Accuracy 89.200 Loss 0.3439
+validation split name: 9
+* VALID - Accuracy 89.180 Loss 0.3522
+============================== Task: 10 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 79.870 Loss 0.8847
+* VALID - Accuracy 86.120 Loss 0.7040
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 86.497 Loss 0.7053
+* VALID - Accuracy 87.260 Loss 0.6842
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 87.095 Loss 0.6914
+* VALID - Accuracy 87.310 Loss 0.6801
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 87.400 Loss 0.6868
+* VALID - Accuracy 87.850 Loss 0.6737
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 87.473 Loss 0.6849
+* VALID - Accuracy 87.800 Loss 0.6726
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 87.698 Loss 0.6828
+* VALID - Accuracy 88.130 Loss 0.6697
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 87.668 Loss 0.6824
+* VALID - Accuracy 87.860 Loss 0.6714
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 87.733 Loss 0.6816
+* VALID - Accuracy 88.110 Loss 0.6684
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 87.787 Loss 0.6813
+* VALID - Accuracy 88.040 Loss 0.6718
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 87.747 Loss 0.6813
+* VALID - Accuracy 88.120 Loss 0.6682
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 68.630 Loss 1.1847
+validation split name: 2
+* VALID - Accuracy 90.910 Loss 0.2844
+validation split name: 3
+* VALID - Accuracy 86.800 Loss 0.3877
+validation split name: 4
+* VALID - Accuracy 90.560 Loss 0.2956
+validation split name: 5
+* VALID - Accuracy 91.210 Loss 0.2795
+validation split name: 6
+* VALID - Accuracy 87.490 Loss 0.3847
+validation split name: 7
+* VALID - Accuracy 89.290 Loss 0.3470
+validation split name: 8
+* VALID - Accuracy 89.660 Loss 0.3385
+validation split name: 9
+* VALID - Accuracy 88.440 Loss 0.3827
+validation split name: 10
+* VALID - Accuracy 88.120 Loss 0.3849
+OrderedDict([('1', OrderedDict([('1', 98.21), ('2', 97.16), ('3', 96.18), ('4', 92.67), ('5', 90.23), ('6', 85.78), ('7', 77.94), ('8', 77.27), ('9', 77.76), ('10', 68.63)])), ('2', OrderedDict([('2', 96.25), ('3', 95.89), ('4', 94.59), ('5', 94.55), ('6', 94.79), ('7', 94.27), ('8', 93.52), ('9', 91.72), ('10', 90.91)])), ('3', OrderedDict([('3', 95.77), ('4', 95.59), ('5', 94.64), ('6', 93.22), ('7', 92.48), ('8', 89.59), ('9', 86.37), ('10', 86.8)])), ('4', OrderedDict([('4', 94.69), ('5', 94.14), ('6', 93.6), ('7', 92.85), ('8', 91.82), ('9', 90.83), ('10', 90.56)])), ('5', OrderedDict([('5', 93.59), ('6', 93.0), ('7', 92.15), ('8', 91.66), ('9', 90.74), ('10', 91.21)])), ('6', OrderedDict([('6', 92.74), ('7', 92.31), ('8', 90.92), ('9', 88.2), ('10', 87.49)])), ('7', OrderedDict([('7', 91.75), ('8', 90.44), ('9', 87.82), ('10', 89.29)])), ('8', OrderedDict([('8', 90.64), ('9', 89.2), ('10', 89.66)])), ('9', OrderedDict([('9', 89.18), ('10', 88.44)])), ('10', OrderedDict([('10', 88.12)]))])
+Task 1 average acc: 98.21
+Task 2 average acc: 96.705
+Task 3 average acc: 95.94666666666666
+Task 4 average acc: 94.385
+Task 5 average acc: 93.42999999999999
+Task 6 average acc: 92.18833333333333
+Task 7 average acc: 90.53571428571429
+Task 8 average acc: 89.4825
+Task 9 average acc: 87.98000000000002
+Task 10 average acc: 87.11099999999998
+===Summary of experiment repeats: 6 / 10 ===
+The regularization coefficient: 250.0
+The last avg acc of all repeats: [87.795 85.399 87.022 88.874 86.868 87.111  0.     0.     0.     0.   ]
+mean: 52.3069 std: 42.71606893769603
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 87.798 Loss 0.4453
+* VALID - Accuracy 94.180 Loss 0.1965
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 95.017 Loss 0.1699
+* VALID - Accuracy 96.130 Loss 0.1312
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.577 Loss 0.1156
+* VALID - Accuracy 96.690 Loss 0.1065
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.453 Loss 0.0852
+* VALID - Accuracy 97.380 Loss 0.0856
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 98.073 Loss 0.0644
+* VALID - Accuracy 97.680 Loss 0.0749
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 98.453 Loss 0.0505
+* VALID - Accuracy 97.910 Loss 0.0648
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 98.817 Loss 0.0387
+* VALID - Accuracy 97.720 Loss 0.0715
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 99.095 Loss 0.0303
+* VALID - Accuracy 98.040 Loss 0.0621
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 99.345 Loss 0.0231
+* VALID - Accuracy 97.970 Loss 0.0677
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 99.478 Loss 0.0184
+* VALID - Accuracy 98.000 Loss 0.0657
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 98.000 Loss 0.0657
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.252 Loss 0.5960
+* VALID - Accuracy 91.350 Loss 0.2936
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 92.175 Loss 0.2681
+* VALID - Accuracy 93.050 Loss 0.2345
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.727 Loss 0.2196
+* VALID - Accuracy 94.270 Loss 0.2048
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.698 Loss 0.1916
+* VALID - Accuracy 94.800 Loss 0.1864
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 95.302 Loss 0.1722
+* VALID - Accuracy 95.200 Loss 0.1728
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.878 Loss 0.1573
+* VALID - Accuracy 95.610 Loss 0.1618
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 96.303 Loss 0.1456
+* VALID - Accuracy 95.750 Loss 0.1544
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 96.577 Loss 0.1360
+* VALID - Accuracy 96.140 Loss 0.1464
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.877 Loss 0.1277
+* VALID - Accuracy 96.300 Loss 0.1416
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 97.108 Loss 0.1207
+* VALID - Accuracy 96.440 Loss 0.1369
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.180 Loss 0.0871
+validation split name: 2
+* VALID - Accuracy 96.440 Loss 0.1163
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.345 Loss 0.6078
+* VALID - Accuracy 90.830 Loss 0.3290
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.830 Loss 0.3103
+* VALID - Accuracy 92.740 Loss 0.2769
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.408 Loss 0.2670
+* VALID - Accuracy 93.620 Loss 0.2508
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.293 Loss 0.2434
+* VALID - Accuracy 94.220 Loss 0.2381
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.790 Loss 0.2272
+* VALID - Accuracy 94.770 Loss 0.2246
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.275 Loss 0.2153
+* VALID - Accuracy 95.080 Loss 0.2151
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 95.623 Loss 0.2056
+* VALID - Accuracy 95.230 Loss 0.2102
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 95.860 Loss 0.1981
+* VALID - Accuracy 95.460 Loss 0.2054
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.108 Loss 0.1917
+* VALID - Accuracy 95.730 Loss 0.1994
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 96.308 Loss 0.1861
+* VALID - Accuracy 95.820 Loss 0.1965
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 95.820 Loss 0.1362
+validation split name: 2
+* VALID - Accuracy 95.850 Loss 0.1297
+validation split name: 3
+* VALID - Accuracy 95.820 Loss 0.1382
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.195 Loss 0.6419
+* VALID - Accuracy 90.590 Loss 0.3804
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.502 Loss 0.3594
+* VALID - Accuracy 92.220 Loss 0.3326
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.942 Loss 0.3210
+* VALID - Accuracy 93.080 Loss 0.3108
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 93.747 Loss 0.3008
+* VALID - Accuracy 93.640 Loss 0.2970
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.197 Loss 0.2869
+* VALID - Accuracy 93.940 Loss 0.2869
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 94.583 Loss 0.2772
+* VALID - Accuracy 94.090 Loss 0.2848
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 94.882 Loss 0.2701
+* VALID - Accuracy 94.420 Loss 0.2767
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 95.082 Loss 0.2645
+* VALID - Accuracy 94.480 Loss 0.2719
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 95.273 Loss 0.2590
+* VALID - Accuracy 94.610 Loss 0.2703
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 95.412 Loss 0.2553
+* VALID - Accuracy 94.890 Loss 0.2651
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 94.290 Loss 0.1871
+validation split name: 2
+* VALID - Accuracy 95.690 Loss 0.1366
+validation split name: 3
+* VALID - Accuracy 95.200 Loss 0.1543
+validation split name: 4
+* VALID - Accuracy 94.890 Loss 0.1676
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.977 Loss 0.7610
+* VALID - Accuracy 89.960 Loss 0.4370
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 90.598 Loss 0.4236
+* VALID - Accuracy 91.420 Loss 0.3890
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 91.965 Loss 0.3860
+* VALID - Accuracy 92.230 Loss 0.3664
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 92.732 Loss 0.3669
+* VALID - Accuracy 92.830 Loss 0.3581
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.197 Loss 0.3547
+* VALID - Accuracy 93.020 Loss 0.3480
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 93.470 Loss 0.3461
+* VALID - Accuracy 93.290 Loss 0.3418
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 93.722 Loss 0.3399
+* VALID - Accuracy 93.590 Loss 0.3356
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 93.937 Loss 0.3352
+* VALID - Accuracy 93.600 Loss 0.3345
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 94.070 Loss 0.3310
+* VALID - Accuracy 93.820 Loss 0.3312
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 94.232 Loss 0.3278
+* VALID - Accuracy 94.130 Loss 0.3280
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 92.750 Loss 0.2481
+validation split name: 2
+* VALID - Accuracy 94.710 Loss 0.1668
+validation split name: 3
+* VALID - Accuracy 93.440 Loss 0.2032
+validation split name: 4
+* VALID - Accuracy 93.220 Loss 0.2116
+validation split name: 5
+* VALID - Accuracy 94.130 Loss 0.1956
+============================== Task: 6 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.750 Loss 0.6959
+* VALID - Accuracy 90.030 Loss 0.4759
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 90.470 Loss 0.4599
+* VALID - Accuracy 91.040 Loss 0.4387
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 91.473 Loss 0.4321
+* VALID - Accuracy 91.680 Loss 0.4229
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 92.047 Loss 0.4184
+* VALID - Accuracy 92.170 Loss 0.4149
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 92.355 Loss 0.4104
+* VALID - Accuracy 92.280 Loss 0.4100
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 92.560 Loss 0.4050
+* VALID - Accuracy 92.580 Loss 0.4059
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 92.667 Loss 0.4008
+* VALID - Accuracy 92.490 Loss 0.4040
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 92.843 Loss 0.3977
+* VALID - Accuracy 92.720 Loss 0.4038
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 92.953 Loss 0.3955
+* VALID - Accuracy 92.860 Loss 0.3987
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 93.015 Loss 0.3934
+* VALID - Accuracy 92.900 Loss 0.3978
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 89.470 Loss 0.3800
+validation split name: 2
+* VALID - Accuracy 94.230 Loss 0.1840
+validation split name: 3
+* VALID - Accuracy 92.900 Loss 0.2321
+validation split name: 4
+* VALID - Accuracy 93.290 Loss 0.2142
+validation split name: 5
+* VALID - Accuracy 93.460 Loss 0.2116
+validation split name: 6
+* VALID - Accuracy 92.900 Loss 0.2384
+============================== Task: 7 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.480 Loss 0.7792
+* VALID - Accuracy 88.910 Loss 0.5373
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 89.540 Loss 0.5351
+* VALID - Accuracy 90.200 Loss 0.5030
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 90.428 Loss 0.5104
+* VALID - Accuracy 90.900 Loss 0.4908
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 90.913 Loss 0.4988
+* VALID - Accuracy 91.070 Loss 0.4863
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 91.240 Loss 0.4924
+* VALID - Accuracy 91.250 Loss 0.4805
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 91.427 Loss 0.4882
+* VALID - Accuracy 91.430 Loss 0.4798
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 91.553 Loss 0.4854
+* VALID - Accuracy 91.480 Loss 0.4748
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 91.628 Loss 0.4831
+* VALID - Accuracy 91.890 Loss 0.4720
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 91.662 Loss 0.4818
+* VALID - Accuracy 91.550 Loss 0.4766
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 91.683 Loss 0.4807
+* VALID - Accuracy 91.930 Loss 0.4706
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 87.430 Loss 0.4631
+validation split name: 2
+* VALID - Accuracy 94.000 Loss 0.1903
+validation split name: 3
+* VALID - Accuracy 92.560 Loss 0.2425
+validation split name: 4
+* VALID - Accuracy 91.380 Loss 0.2703
+validation split name: 5
+* VALID - Accuracy 92.840 Loss 0.2311
+validation split name: 6
+* VALID - Accuracy 91.470 Loss 0.2689
+validation split name: 7
+* VALID - Accuracy 91.930 Loss 0.2682
+============================== Task: 8 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.070 Loss 0.7558
+* VALID - Accuracy 88.890 Loss 0.5620
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 88.887 Loss 0.5665
+* VALID - Accuracy 89.840 Loss 0.5365
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 89.563 Loss 0.5488
+* VALID - Accuracy 90.100 Loss 0.5282
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 89.950 Loss 0.5412
+* VALID - Accuracy 90.400 Loss 0.5237
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 90.133 Loss 0.5369
+* VALID - Accuracy 90.760 Loss 0.5207
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 90.307 Loss 0.5347
+* VALID - Accuracy 90.620 Loss 0.5202
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 90.408 Loss 0.5325
+* VALID - Accuracy 90.710 Loss 0.5199
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 90.465 Loss 0.5323
+* VALID - Accuracy 90.710 Loss 0.5182
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 90.540 Loss 0.5310
+* VALID - Accuracy 90.610 Loss 0.5179
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 90.592 Loss 0.5306
+* VALID - Accuracy 90.960 Loss 0.5160
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 84.970 Loss 0.5615
+validation split name: 2
+* VALID - Accuracy 93.250 Loss 0.2102
+validation split name: 3
+* VALID - Accuracy 91.520 Loss 0.2696
+validation split name: 4
+* VALID - Accuracy 89.890 Loss 0.3040
+validation split name: 5
+* VALID - Accuracy 92.960 Loss 0.2330
+validation split name: 6
+* VALID - Accuracy 91.070 Loss 0.2809
+validation split name: 7
+* VALID - Accuracy 91.360 Loss 0.2834
+validation split name: 8
+* VALID - Accuracy 90.960 Loss 0.3010
+============================== Task: 9 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.847 Loss 0.8730
+* VALID - Accuracy 87.420 Loss 0.6599
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 88.008 Loss 0.6510
+* VALID - Accuracy 88.460 Loss 0.6322
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 88.742 Loss 0.6333
+* VALID - Accuracy 88.790 Loss 0.6236
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 89.033 Loss 0.6261
+* VALID - Accuracy 89.050 Loss 0.6202
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 89.233 Loss 0.6224
+* VALID - Accuracy 89.000 Loss 0.6192
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 89.325 Loss 0.6204
+* VALID - Accuracy 89.400 Loss 0.6162
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 89.442 Loss 0.6190
+* VALID - Accuracy 89.370 Loss 0.6153
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 89.440 Loss 0.6184
+* VALID - Accuracy 89.480 Loss 0.6135
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 89.550 Loss 0.6176
+* VALID - Accuracy 89.220 Loss 0.6147
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 89.583 Loss 0.6171
+* VALID - Accuracy 89.470 Loss 0.6155
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 80.310 Loss 0.7715
+validation split name: 2
+* VALID - Accuracy 92.790 Loss 0.2302
+validation split name: 3
+* VALID - Accuracy 90.300 Loss 0.3089
+validation split name: 4
+* VALID - Accuracy 88.850 Loss 0.3399
+validation split name: 5
+* VALID - Accuracy 92.070 Loss 0.2618
+validation split name: 6
+* VALID - Accuracy 91.040 Loss 0.2872
+validation split name: 7
+* VALID - Accuracy 90.850 Loss 0.2964
+validation split name: 8
+* VALID - Accuracy 89.460 Loss 0.3427
+validation split name: 9
+* VALID - Accuracy 89.470 Loss 0.3489
+============================== Task: 10 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 79.770 Loss 0.8648
+* VALID - Accuracy 86.600 Loss 0.6831
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 86.313 Loss 0.6951
+* VALID - Accuracy 87.590 Loss 0.6665
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 87.003 Loss 0.6823
+* VALID - Accuracy 87.850 Loss 0.6608
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 87.330 Loss 0.6779
+* VALID - Accuracy 87.990 Loss 0.6590
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 87.427 Loss 0.6755
+* VALID - Accuracy 88.100 Loss 0.6609
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 87.460 Loss 0.6747
+* VALID - Accuracy 88.200 Loss 0.6560
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 87.545 Loss 0.6733
+* VALID - Accuracy 88.530 Loss 0.6574
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 87.610 Loss 0.6736
+* VALID - Accuracy 88.200 Loss 0.6547
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 87.715 Loss 0.6726
+* VALID - Accuracy 88.170 Loss 0.6559
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 87.678 Loss 0.6724
+* VALID - Accuracy 88.310 Loss 0.6566
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 78.740 Loss 0.8452
+validation split name: 2
+* VALID - Accuracy 91.210 Loss 0.2741
+validation split name: 3
+* VALID - Accuracy 88.910 Loss 0.3412
+validation split name: 4
+* VALID - Accuracy 89.380 Loss 0.3214
+validation split name: 5
+* VALID - Accuracy 90.740 Loss 0.2931
+validation split name: 6
+* VALID - Accuracy 90.650 Loss 0.3063
+validation split name: 7
+* VALID - Accuracy 90.260 Loss 0.3180
+validation split name: 8
+* VALID - Accuracy 89.180 Loss 0.3546
+validation split name: 9
+* VALID - Accuracy 88.030 Loss 0.3900
+validation split name: 10
+* VALID - Accuracy 88.310 Loss 0.3836
+OrderedDict([('1', OrderedDict([('1', 98.0), ('2', 97.18), ('3', 95.82), ('4', 94.29), ('5', 92.75), ('6', 89.47), ('7', 87.43), ('8', 84.97), ('9', 80.31), ('10', 78.74)])), ('2', OrderedDict([('2', 96.44), ('3', 95.85), ('4', 95.69), ('5', 94.71), ('6', 94.23), ('7', 94.0), ('8', 93.25), ('9', 92.79), ('10', 91.21)])), ('3', OrderedDict([('3', 95.82), ('4', 95.2), ('5', 93.44), ('6', 92.9), ('7', 92.56), ('8', 91.52), ('9', 90.3), ('10', 88.91)])), ('4', OrderedDict([('4', 94.89), ('5', 93.22), ('6', 93.29), ('7', 91.38), ('8', 89.89), ('9', 88.85), ('10', 89.38)])), ('5', OrderedDict([('5', 94.13), ('6', 93.46), ('7', 92.84), ('8', 92.96), ('9', 92.07), ('10', 90.74)])), ('6', OrderedDict([('6', 92.9), ('7', 91.47), ('8', 91.07), ('9', 91.04), ('10', 90.65)])), ('7', OrderedDict([('7', 91.93), ('8', 91.36), ('9', 90.85), ('10', 90.26)])), ('8', OrderedDict([('8', 90.96), ('9', 89.46), ('10', 89.18)])), ('9', OrderedDict([('9', 89.47), ('10', 88.03)])), ('10', OrderedDict([('10', 88.31)]))])
+Task 1 average acc: 98.0
+Task 2 average acc: 96.81
+Task 3 average acc: 95.83
+Task 4 average acc: 95.0175
+Task 5 average acc: 93.65
+Task 6 average acc: 92.70833333333333
+Task 7 average acc: 91.65857142857145
+Task 8 average acc: 90.7475
+Task 9 average acc: 89.46000000000001
+Task 10 average acc: 88.54099999999998
+===Summary of experiment repeats: 7 / 10 ===
+The regularization coefficient: 250.0
+The last avg acc of all repeats: [87.795 85.399 87.022 88.874 86.868 87.111 88.541  0.     0.     0.   ]
+mean: 61.161 std: 40.04943545419835
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 88.415 Loss 0.4395
+* VALID - Accuracy 93.770 Loss 0.2052
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 95.063 Loss 0.1659
+* VALID - Accuracy 96.000 Loss 0.1319
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.617 Loss 0.1126
+* VALID - Accuracy 96.530 Loss 0.1079
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.493 Loss 0.0828
+* VALID - Accuracy 97.220 Loss 0.0877
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 98.108 Loss 0.0627
+* VALID - Accuracy 97.420 Loss 0.0803
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 98.535 Loss 0.0492
+* VALID - Accuracy 97.770 Loss 0.0705
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 98.878 Loss 0.0380
+* VALID - Accuracy 97.740 Loss 0.0710
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 99.140 Loss 0.0294
+* VALID - Accuracy 97.960 Loss 0.0681
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 99.297 Loss 0.0230
+* VALID - Accuracy 97.790 Loss 0.0732
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 99.420 Loss 0.0193
+* VALID - Accuracy 97.970 Loss 0.0657
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.970 Loss 0.0657
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 83.260 Loss 0.5598
+* VALID - Accuracy 91.400 Loss 0.2892
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 92.405 Loss 0.2623
+* VALID - Accuracy 93.180 Loss 0.2348
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.858 Loss 0.2165
+* VALID - Accuracy 94.060 Loss 0.2058
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.722 Loss 0.1896
+* VALID - Accuracy 94.700 Loss 0.1892
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 95.363 Loss 0.1710
+* VALID - Accuracy 95.220 Loss 0.1743
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.848 Loss 0.1565
+* VALID - Accuracy 95.470 Loss 0.1647
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 96.250 Loss 0.1450
+* VALID - Accuracy 95.660 Loss 0.1572
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 96.567 Loss 0.1357
+* VALID - Accuracy 95.960 Loss 0.1502
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.878 Loss 0.1275
+* VALID - Accuracy 96.210 Loss 0.1438
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 97.073 Loss 0.1207
+* VALID - Accuracy 96.340 Loss 0.1395
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.540 Loss 0.0864
+validation split name: 2
+* VALID - Accuracy 96.340 Loss 0.1199
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.458 Loss 0.6676
+* VALID - Accuracy 90.670 Loss 0.3484
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.668 Loss 0.3178
+* VALID - Accuracy 92.700 Loss 0.2903
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.190 Loss 0.2733
+* VALID - Accuracy 93.570 Loss 0.2648
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.125 Loss 0.2488
+* VALID - Accuracy 94.220 Loss 0.2471
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.710 Loss 0.2322
+* VALID - Accuracy 94.620 Loss 0.2368
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.160 Loss 0.2202
+* VALID - Accuracy 94.950 Loss 0.2275
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 95.555 Loss 0.2104
+* VALID - Accuracy 95.110 Loss 0.2220
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 95.798 Loss 0.2030
+* VALID - Accuracy 95.260 Loss 0.2173
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.035 Loss 0.1962
+* VALID - Accuracy 95.420 Loss 0.2116
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 96.288 Loss 0.1910
+* VALID - Accuracy 95.610 Loss 0.2087
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 96.260 Loss 0.1314
+validation split name: 2
+* VALID - Accuracy 95.350 Loss 0.1465
+validation split name: 3
+* VALID - Accuracy 95.610 Loss 0.1481
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.307 Loss 0.6913
+* VALID - Accuracy 90.250 Loss 0.3985
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.195 Loss 0.3744
+* VALID - Accuracy 92.210 Loss 0.3438
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.608 Loss 0.3343
+* VALID - Accuracy 93.090 Loss 0.3229
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 93.417 Loss 0.3125
+* VALID - Accuracy 93.630 Loss 0.3084
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.943 Loss 0.2979
+* VALID - Accuracy 94.070 Loss 0.2973
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 94.360 Loss 0.2880
+* VALID - Accuracy 94.240 Loss 0.2906
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 94.702 Loss 0.2798
+* VALID - Accuracy 94.510 Loss 0.2851
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 94.903 Loss 0.2740
+* VALID - Accuracy 94.700 Loss 0.2810
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 95.080 Loss 0.2689
+* VALID - Accuracy 94.810 Loss 0.2765
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 95.193 Loss 0.2643
+* VALID - Accuracy 94.860 Loss 0.2753
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 94.020 Loss 0.2158
+validation split name: 2
+* VALID - Accuracy 93.980 Loss 0.1899
+validation split name: 3
+* VALID - Accuracy 95.080 Loss 0.1576
+validation split name: 4
+* VALID - Accuracy 94.860 Loss 0.1756
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 83.170 Loss 0.6426
+* VALID - Accuracy 90.200 Loss 0.4126
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.148 Loss 0.3996
+* VALID - Accuracy 92.020 Loss 0.3716
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.247 Loss 0.3680
+* VALID - Accuracy 92.810 Loss 0.3533
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 92.890 Loss 0.3517
+* VALID - Accuracy 93.200 Loss 0.3426
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.292 Loss 0.3413
+* VALID - Accuracy 93.520 Loss 0.3371
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 93.548 Loss 0.3344
+* VALID - Accuracy 93.830 Loss 0.3321
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 93.832 Loss 0.3287
+* VALID - Accuracy 93.860 Loss 0.3293
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 93.988 Loss 0.3248
+* VALID - Accuracy 93.970 Loss 0.3262
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 94.090 Loss 0.3214
+* VALID - Accuracy 93.830 Loss 0.3269
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 94.205 Loss 0.3190
+* VALID - Accuracy 93.970 Loss 0.3231
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 90.740 Loss 0.3470
+validation split name: 2
+* VALID - Accuracy 93.040 Loss 0.2197
+validation split name: 3
+* VALID - Accuracy 93.500 Loss 0.1976
+validation split name: 4
+* VALID - Accuracy 94.200 Loss 0.1897
+validation split name: 5
+* VALID - Accuracy 93.970 Loss 0.2000
+============================== Task: 6 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.987 Loss 0.7344
+* VALID - Accuracy 89.770 Loss 0.4891
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 90.485 Loss 0.4792
+* VALID - Accuracy 91.050 Loss 0.4505
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 91.425 Loss 0.4506
+* VALID - Accuracy 91.860 Loss 0.4354
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 91.962 Loss 0.4368
+* VALID - Accuracy 91.980 Loss 0.4286
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 92.327 Loss 0.4285
+* VALID - Accuracy 92.270 Loss 0.4203
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 92.548 Loss 0.4226
+* VALID - Accuracy 92.510 Loss 0.4157
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 92.700 Loss 0.4191
+* VALID - Accuracy 92.540 Loss 0.4164
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 92.835 Loss 0.4160
+* VALID - Accuracy 92.790 Loss 0.4099
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 92.872 Loss 0.4136
+* VALID - Accuracy 92.920 Loss 0.4087
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 93.067 Loss 0.4114
+* VALID - Accuracy 92.820 Loss 0.4079
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 88.880 Loss 0.4261
+validation split name: 2
+* VALID - Accuracy 92.880 Loss 0.2293
+validation split name: 3
+* VALID - Accuracy 92.870 Loss 0.2260
+validation split name: 4
+* VALID - Accuracy 93.570 Loss 0.2051
+validation split name: 5
+* VALID - Accuracy 92.590 Loss 0.2356
+validation split name: 6
+* VALID - Accuracy 92.820 Loss 0.2325
+============================== Task: 7 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.805 Loss 0.7584
+* VALID - Accuracy 89.060 Loss 0.5340
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 89.682 Loss 0.5194
+* VALID - Accuracy 90.240 Loss 0.4965
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 90.535 Loss 0.4954
+* VALID - Accuracy 90.720 Loss 0.4849
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 91.063 Loss 0.4846
+* VALID - Accuracy 90.940 Loss 0.4759
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 91.288 Loss 0.4783
+* VALID - Accuracy 91.300 Loss 0.4705
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 91.537 Loss 0.4742
+* VALID - Accuracy 91.330 Loss 0.4701
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 91.672 Loss 0.4716
+* VALID - Accuracy 91.360 Loss 0.4679
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 91.687 Loss 0.4699
+* VALID - Accuracy 91.390 Loss 0.4714
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 91.853 Loss 0.4683
+* VALID - Accuracy 91.700 Loss 0.4669
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 91.783 Loss 0.4673
+* VALID - Accuracy 91.690 Loss 0.4640
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 87.270 Loss 0.4616
+validation split name: 2
+* VALID - Accuracy 93.140 Loss 0.2135
+validation split name: 3
+* VALID - Accuracy 93.200 Loss 0.2167
+validation split name: 4
+* VALID - Accuracy 92.760 Loss 0.2304
+validation split name: 5
+* VALID - Accuracy 91.390 Loss 0.2759
+validation split name: 6
+* VALID - Accuracy 91.500 Loss 0.2615
+validation split name: 7
+* VALID - Accuracy 91.690 Loss 0.2694
+============================== Task: 8 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.310 Loss 0.8059
+* VALID - Accuracy 88.530 Loss 0.5868
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 88.578 Loss 0.5872
+* VALID - Accuracy 89.300 Loss 0.5638
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 89.400 Loss 0.5685
+* VALID - Accuracy 89.980 Loss 0.5509
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 89.633 Loss 0.5607
+* VALID - Accuracy 89.890 Loss 0.5523
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 89.932 Loss 0.5567
+* VALID - Accuracy 90.280 Loss 0.5446
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 90.022 Loss 0.5538
+* VALID - Accuracy 90.490 Loss 0.5414
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 90.172 Loss 0.5519
+* VALID - Accuracy 90.570 Loss 0.5419
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 90.272 Loss 0.5511
+* VALID - Accuracy 90.500 Loss 0.5404
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 90.312 Loss 0.5500
+* VALID - Accuracy 90.600 Loss 0.5396
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 90.345 Loss 0.5495
+* VALID - Accuracy 90.610 Loss 0.5391
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 84.150 Loss 0.5923
+validation split name: 2
+* VALID - Accuracy 93.480 Loss 0.2081
+validation split name: 3
+* VALID - Accuracy 91.210 Loss 0.2781
+validation split name: 4
+* VALID - Accuracy 91.630 Loss 0.2573
+validation split name: 5
+* VALID - Accuracy 90.940 Loss 0.2876
+validation split name: 6
+* VALID - Accuracy 90.760 Loss 0.2872
+validation split name: 7
+* VALID - Accuracy 90.820 Loss 0.2990
+validation split name: 8
+* VALID - Accuracy 90.610 Loss 0.3069
+============================== Task: 9 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.318 Loss 0.8110
+* VALID - Accuracy 87.610 Loss 0.6239
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 87.887 Loss 0.6297
+* VALID - Accuracy 88.830 Loss 0.6037
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 88.637 Loss 0.6152
+* VALID - Accuracy 89.430 Loss 0.5952
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 88.787 Loss 0.6095
+* VALID - Accuracy 89.610 Loss 0.5937
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 89.035 Loss 0.6072
+* VALID - Accuracy 89.600 Loss 0.5910
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 89.110 Loss 0.6049
+* VALID - Accuracy 89.590 Loss 0.5895
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 89.198 Loss 0.6041
+* VALID - Accuracy 89.520 Loss 0.5899
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 89.160 Loss 0.6041
+* VALID - Accuracy 89.730 Loss 0.5907
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 89.220 Loss 0.6031
+* VALID - Accuracy 89.690 Loss 0.5922
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 89.247 Loss 0.6026
+* VALID - Accuracy 89.800 Loss 0.5905
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 82.930 Loss 0.6210
+validation split name: 2
+* VALID - Accuracy 92.710 Loss 0.2355
+validation split name: 3
+* VALID - Accuracy 91.300 Loss 0.2754
+validation split name: 4
+* VALID - Accuracy 91.620 Loss 0.2520
+validation split name: 5
+* VALID - Accuracy 91.220 Loss 0.2926
+validation split name: 6
+* VALID - Accuracy 90.290 Loss 0.2997
+validation split name: 7
+* VALID - Accuracy 90.080 Loss 0.3210
+validation split name: 8
+* VALID - Accuracy 89.550 Loss 0.3425
+validation split name: 9
+* VALID - Accuracy 89.800 Loss 0.3447
+============================== Task: 10 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 79.350 Loss 0.9240
+* VALID - Accuracy 86.670 Loss 0.7083
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 86.412 Loss 0.7212
+* VALID - Accuracy 87.760 Loss 0.6850
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 87.040 Loss 0.7062
+* VALID - Accuracy 88.180 Loss 0.6777
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 87.442 Loss 0.7003
+* VALID - Accuracy 88.430 Loss 0.6754
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 87.530 Loss 0.6967
+* VALID - Accuracy 88.470 Loss 0.6748
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 87.562 Loss 0.6960
+* VALID - Accuracy 88.320 Loss 0.6728
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 87.685 Loss 0.6949
+* VALID - Accuracy 88.660 Loss 0.6705
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 87.695 Loss 0.6944
+* VALID - Accuracy 88.520 Loss 0.6715
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 87.740 Loss 0.6942
+* VALID - Accuracy 88.560 Loss 0.6723
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 87.695 Loss 0.6934
+* VALID - Accuracy 88.500 Loss 0.6721
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 77.030 Loss 0.8409
+validation split name: 2
+* VALID - Accuracy 92.360 Loss 0.2333
+validation split name: 3
+* VALID - Accuracy 91.500 Loss 0.2668
+validation split name: 4
+* VALID - Accuracy 89.580 Loss 0.3118
+validation split name: 5
+* VALID - Accuracy 90.050 Loss 0.3129
+validation split name: 6
+* VALID - Accuracy 88.250 Loss 0.3570
+validation split name: 7
+* VALID - Accuracy 89.800 Loss 0.3277
+validation split name: 8
+* VALID - Accuracy 89.410 Loss 0.3458
+validation split name: 9
+* VALID - Accuracy 88.070 Loss 0.3888
+validation split name: 10
+* VALID - Accuracy 88.500 Loss 0.3792
+OrderedDict([('1', OrderedDict([('1', 97.97), ('2', 97.54), ('3', 96.26), ('4', 94.02), ('5', 90.74), ('6', 88.88), ('7', 87.27), ('8', 84.15), ('9', 82.93), ('10', 77.03)])), ('2', OrderedDict([('2', 96.34), ('3', 95.35), ('4', 93.98), ('5', 93.04), ('6', 92.88), ('7', 93.14), ('8', 93.48), ('9', 92.71), ('10', 92.36)])), ('3', OrderedDict([('3', 95.61), ('4', 95.08), ('5', 93.5), ('6', 92.87), ('7', 93.2), ('8', 91.21), ('9', 91.3), ('10', 91.5)])), ('4', OrderedDict([('4', 94.86), ('5', 94.2), ('6', 93.57), ('7', 92.76), ('8', 91.63), ('9', 91.62), ('10', 89.58)])), ('5', OrderedDict([('5', 93.97), ('6', 92.59), ('7', 91.39), ('8', 90.94), ('9', 91.22), ('10', 90.05)])), ('6', OrderedDict([('6', 92.82), ('7', 91.5), ('8', 90.76), ('9', 90.29), ('10', 88.25)])), ('7', OrderedDict([('7', 91.69), ('8', 90.82), ('9', 90.08), ('10', 89.8)])), ('8', OrderedDict([('8', 90.61), ('9', 89.55), ('10', 89.41)])), ('9', OrderedDict([('9', 89.8), ('10', 88.07)])), ('10', OrderedDict([('10', 88.5)]))])
+Task 1 average acc: 97.97
+Task 2 average acc: 96.94
+Task 3 average acc: 95.74000000000001
+Task 4 average acc: 94.485
+Task 5 average acc: 93.08999999999999
+Task 6 average acc: 92.26833333333332
+Task 7 average acc: 91.56428571428572
+Task 8 average acc: 90.45
+Task 9 average acc: 89.94444444444443
+Task 10 average acc: 88.455
+===Summary of experiment repeats: 8 / 10 ===
+The regularization coefficient: 250.0
+The last avg acc of all repeats: [87.795 85.399 87.022 88.874 86.868 87.111 88.541 88.455  0.     0.   ]
+mean: 70.0065 std: 35.016337065004386
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 88.358 Loss 0.4462
+* VALID - Accuracy 93.920 Loss 0.2049
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 95.007 Loss 0.1708
+* VALID - Accuracy 95.730 Loss 0.1436
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.435 Loss 0.1187
+* VALID - Accuracy 96.550 Loss 0.1083
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.420 Loss 0.0874
+* VALID - Accuracy 97.480 Loss 0.0846
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 97.983 Loss 0.0670
+* VALID - Accuracy 97.550 Loss 0.0766
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 98.413 Loss 0.0518
+* VALID - Accuracy 97.760 Loss 0.0732
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 98.815 Loss 0.0407
+* VALID - Accuracy 97.860 Loss 0.0670
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 99.062 Loss 0.0321
+* VALID - Accuracy 97.880 Loss 0.0678
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 99.273 Loss 0.0254
+* VALID - Accuracy 98.010 Loss 0.0659
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 99.482 Loss 0.0192
+* VALID - Accuracy 98.100 Loss 0.0629
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 98.100 Loss 0.0629
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.818 Loss 0.5798
+* VALID - Accuracy 90.880 Loss 0.2977
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 92.288 Loss 0.2627
+* VALID - Accuracy 93.170 Loss 0.2342
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.855 Loss 0.2158
+* VALID - Accuracy 94.100 Loss 0.2056
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.780 Loss 0.1887
+* VALID - Accuracy 94.690 Loss 0.1854
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 95.400 Loss 0.1701
+* VALID - Accuracy 95.130 Loss 0.1725
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.905 Loss 0.1558
+* VALID - Accuracy 95.500 Loss 0.1612
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 96.253 Loss 0.1445
+* VALID - Accuracy 95.780 Loss 0.1532
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 96.623 Loss 0.1349
+* VALID - Accuracy 95.990 Loss 0.1463
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.965 Loss 0.1270
+* VALID - Accuracy 96.170 Loss 0.1418
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 97.200 Loss 0.1200
+* VALID - Accuracy 96.370 Loss 0.1358
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.370 Loss 0.0898
+validation split name: 2
+* VALID - Accuracy 96.370 Loss 0.1160
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.560 Loss 0.7262
+* VALID - Accuracy 90.320 Loss 0.3537
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.520 Loss 0.3280
+* VALID - Accuracy 92.540 Loss 0.2928
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.112 Loss 0.2814
+* VALID - Accuracy 93.590 Loss 0.2662
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.023 Loss 0.2554
+* VALID - Accuracy 94.250 Loss 0.2486
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.598 Loss 0.2379
+* VALID - Accuracy 94.570 Loss 0.2354
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.038 Loss 0.2251
+* VALID - Accuracy 94.960 Loss 0.2272
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 95.440 Loss 0.2148
+* VALID - Accuracy 95.120 Loss 0.2215
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 95.720 Loss 0.2067
+* VALID - Accuracy 95.070 Loss 0.2155
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.015 Loss 0.1997
+* VALID - Accuracy 95.360 Loss 0.2105
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 96.185 Loss 0.1943
+* VALID - Accuracy 95.580 Loss 0.2057
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 96.490 Loss 0.1221
+validation split name: 2
+* VALID - Accuracy 94.980 Loss 0.1553
+validation split name: 3
+* VALID - Accuracy 95.580 Loss 0.1442
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 83.418 Loss 0.5882
+* VALID - Accuracy 91.060 Loss 0.3642
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.870 Loss 0.3464
+* VALID - Accuracy 92.810 Loss 0.3210
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.103 Loss 0.3127
+* VALID - Accuracy 93.450 Loss 0.3018
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 93.705 Loss 0.2952
+* VALID - Accuracy 94.080 Loss 0.2898
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.235 Loss 0.2825
+* VALID - Accuracy 94.080 Loss 0.2840
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 94.512 Loss 0.2744
+* VALID - Accuracy 94.610 Loss 0.2758
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 94.763 Loss 0.2677
+* VALID - Accuracy 94.640 Loss 0.2719
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 95.010 Loss 0.2622
+* VALID - Accuracy 94.880 Loss 0.2673
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 95.173 Loss 0.2580
+* VALID - Accuracy 94.910 Loss 0.2648
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 95.320 Loss 0.2543
+* VALID - Accuracy 95.060 Loss 0.2623
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 94.100 Loss 0.2118
+validation split name: 2
+* VALID - Accuracy 94.640 Loss 0.1663
+validation split name: 3
+* VALID - Accuracy 95.200 Loss 0.1610
+validation split name: 4
+* VALID - Accuracy 95.060 Loss 0.1697
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.525 Loss 0.6749
+* VALID - Accuracy 90.710 Loss 0.4217
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.183 Loss 0.4078
+* VALID - Accuracy 92.080 Loss 0.3789
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.307 Loss 0.3758
+* VALID - Accuracy 92.720 Loss 0.3595
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 92.973 Loss 0.3588
+* VALID - Accuracy 93.280 Loss 0.3497
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.312 Loss 0.3484
+* VALID - Accuracy 93.670 Loss 0.3412
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 93.572 Loss 0.3413
+* VALID - Accuracy 93.420 Loss 0.3398
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 93.840 Loss 0.3359
+* VALID - Accuracy 93.850 Loss 0.3323
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 94.030 Loss 0.3316
+* VALID - Accuracy 93.850 Loss 0.3333
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 94.117 Loss 0.3286
+* VALID - Accuracy 94.040 Loss 0.3266
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 94.282 Loss 0.3261
+* VALID - Accuracy 94.170 Loss 0.3251
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 93.190 Loss 0.2487
+validation split name: 2
+* VALID - Accuracy 94.280 Loss 0.1803
+validation split name: 3
+* VALID - Accuracy 94.760 Loss 0.1679
+validation split name: 4
+* VALID - Accuracy 94.770 Loss 0.1772
+validation split name: 5
+* VALID - Accuracy 94.170 Loss 0.1958
+============================== Task: 6 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.633 Loss 0.7175
+* VALID - Accuracy 89.210 Loss 0.4774
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 90.177 Loss 0.4603
+* VALID - Accuracy 90.950 Loss 0.4375
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 91.432 Loss 0.4306
+* VALID - Accuracy 91.620 Loss 0.4218
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 91.980 Loss 0.4162
+* VALID - Accuracy 91.950 Loss 0.4108
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 92.412 Loss 0.4072
+* VALID - Accuracy 92.010 Loss 0.4096
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 92.633 Loss 0.4012
+* VALID - Accuracy 92.300 Loss 0.4030
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 92.783 Loss 0.3969
+* VALID - Accuracy 92.370 Loss 0.3982
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 92.898 Loss 0.3939
+* VALID - Accuracy 92.410 Loss 0.3967
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 93.010 Loss 0.3917
+* VALID - Accuracy 92.450 Loss 0.3956
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 93.163 Loss 0.3896
+* VALID - Accuracy 92.640 Loss 0.3942
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 90.800 Loss 0.3445
+validation split name: 2
+* VALID - Accuracy 92.850 Loss 0.2299
+validation split name: 3
+* VALID - Accuracy 93.710 Loss 0.1981
+validation split name: 4
+* VALID - Accuracy 94.040 Loss 0.1941
+validation split name: 5
+* VALID - Accuracy 93.620 Loss 0.2102
+validation split name: 6
+* VALID - Accuracy 92.640 Loss 0.2368
+============================== Task: 7 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.903 Loss 0.8007
+* VALID - Accuracy 88.660 Loss 0.5473
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 89.298 Loss 0.5406
+* VALID - Accuracy 89.880 Loss 0.5133
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 90.317 Loss 0.5144
+* VALID - Accuracy 90.620 Loss 0.4962
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 90.848 Loss 0.5026
+* VALID - Accuracy 90.880 Loss 0.4893
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 91.137 Loss 0.4961
+* VALID - Accuracy 91.210 Loss 0.4873
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 91.223 Loss 0.4915
+* VALID - Accuracy 91.160 Loss 0.4839
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 91.443 Loss 0.4887
+* VALID - Accuracy 91.440 Loss 0.4812
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 91.613 Loss 0.4869
+* VALID - Accuracy 91.450 Loss 0.4791
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 91.658 Loss 0.4850
+* VALID - Accuracy 91.510 Loss 0.4803
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 91.633 Loss 0.4841
+* VALID - Accuracy 91.440 Loss 0.4800
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 87.220 Loss 0.4780
+validation split name: 2
+* VALID - Accuracy 91.790 Loss 0.2626
+validation split name: 3
+* VALID - Accuracy 93.240 Loss 0.2096
+validation split name: 4
+* VALID - Accuracy 92.800 Loss 0.2314
+validation split name: 5
+* VALID - Accuracy 92.730 Loss 0.2319
+validation split name: 6
+* VALID - Accuracy 92.130 Loss 0.2556
+validation split name: 7
+* VALID - Accuracy 91.440 Loss 0.2747
+============================== Task: 8 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.785 Loss 0.7819
+* VALID - Accuracy 88.720 Loss 0.5726
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 88.978 Loss 0.5722
+* VALID - Accuracy 89.890 Loss 0.5453
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 89.807 Loss 0.5529
+* VALID - Accuracy 90.210 Loss 0.5367
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 90.198 Loss 0.5454
+* VALID - Accuracy 90.460 Loss 0.5301
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 90.445 Loss 0.5409
+* VALID - Accuracy 90.400 Loss 0.5290
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 90.465 Loss 0.5390
+* VALID - Accuracy 90.550 Loss 0.5273
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 90.582 Loss 0.5369
+* VALID - Accuracy 90.820 Loss 0.5252
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 90.590 Loss 0.5359
+* VALID - Accuracy 91.090 Loss 0.5236
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 90.652 Loss 0.5346
+* VALID - Accuracy 90.890 Loss 0.5235
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 90.727 Loss 0.5343
+* VALID - Accuracy 90.900 Loss 0.5236
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 86.970 Loss 0.4698
+validation split name: 2
+* VALID - Accuracy 90.370 Loss 0.2987
+validation split name: 3
+* VALID - Accuracy 92.760 Loss 0.2267
+validation split name: 4
+* VALID - Accuracy 91.910 Loss 0.2582
+validation split name: 5
+* VALID - Accuracy 91.620 Loss 0.2628
+validation split name: 6
+* VALID - Accuracy 90.660 Loss 0.3003
+validation split name: 7
+* VALID - Accuracy 89.800 Loss 0.3215
+validation split name: 8
+* VALID - Accuracy 90.900 Loss 0.3009
+============================== Task: 9 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.545 Loss 0.7765
+* VALID - Accuracy 88.230 Loss 0.5982
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 87.977 Loss 0.6070
+* VALID - Accuracy 88.750 Loss 0.5787
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 88.635 Loss 0.5923
+* VALID - Accuracy 89.160 Loss 0.5720
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 88.942 Loss 0.5867
+* VALID - Accuracy 89.190 Loss 0.5740
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 89.062 Loss 0.5841
+* VALID - Accuracy 89.530 Loss 0.5665
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 89.115 Loss 0.5823
+* VALID - Accuracy 89.640 Loss 0.5663
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 89.223 Loss 0.5817
+* VALID - Accuracy 89.560 Loss 0.5645
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 89.298 Loss 0.5807
+* VALID - Accuracy 89.700 Loss 0.5640
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 89.287 Loss 0.5808
+* VALID - Accuracy 89.770 Loss 0.5628
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 89.343 Loss 0.5806
+* VALID - Accuracy 89.400 Loss 0.5658
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 87.310 Loss 0.4756
+validation split name: 2
+* VALID - Accuracy 91.100 Loss 0.2817
+validation split name: 3
+* VALID - Accuracy 92.180 Loss 0.2392
+validation split name: 4
+* VALID - Accuracy 90.670 Loss 0.2890
+validation split name: 5
+* VALID - Accuracy 90.680 Loss 0.2932
+validation split name: 6
+* VALID - Accuracy 90.820 Loss 0.3094
+validation split name: 7
+* VALID - Accuracy 88.880 Loss 0.3478
+validation split name: 8
+* VALID - Accuracy 89.130 Loss 0.3501
+validation split name: 9
+* VALID - Accuracy 89.400 Loss 0.3350
+============================== Task: 10 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 79.673 Loss 0.9164
+* VALID - Accuracy 87.210 Loss 0.7068
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 86.893 Loss 0.7152
+* VALID - Accuracy 88.280 Loss 0.6829
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 87.597 Loss 0.7000
+* VALID - Accuracy 88.250 Loss 0.6762
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 87.833 Loss 0.6937
+* VALID - Accuracy 88.740 Loss 0.6722
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 88.100 Loss 0.6900
+* VALID - Accuracy 88.620 Loss 0.6678
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 88.088 Loss 0.6883
+* VALID - Accuracy 88.680 Loss 0.6700
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 88.155 Loss 0.6874
+* VALID - Accuracy 88.960 Loss 0.6702
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 88.195 Loss 0.6862
+* VALID - Accuracy 88.870 Loss 0.6665
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 88.240 Loss 0.6844
+* VALID - Accuracy 89.180 Loss 0.6640
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 88.325 Loss 0.6834
+* VALID - Accuracy 88.780 Loss 0.6650
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 82.070 Loss 0.6992
+validation split name: 2
+* VALID - Accuracy 89.520 Loss 0.3327
+validation split name: 3
+* VALID - Accuracy 90.870 Loss 0.2797
+validation split name: 4
+* VALID - Accuracy 88.890 Loss 0.3414
+validation split name: 5
+* VALID - Accuracy 89.380 Loss 0.3336
+validation split name: 6
+* VALID - Accuracy 89.800 Loss 0.3283
+validation split name: 7
+* VALID - Accuracy 88.100 Loss 0.3656
+validation split name: 8
+* VALID - Accuracy 85.130 Loss 0.4520
+validation split name: 9
+* VALID - Accuracy 87.860 Loss 0.3890
+validation split name: 10
+* VALID - Accuracy 88.780 Loss 0.3747
+OrderedDict([('1', OrderedDict([('1', 98.1), ('2', 97.37), ('3', 96.49), ('4', 94.1), ('5', 93.19), ('6', 90.8), ('7', 87.22), ('8', 86.97), ('9', 87.31), ('10', 82.07)])), ('2', OrderedDict([('2', 96.37), ('3', 94.98), ('4', 94.64), ('5', 94.28), ('6', 92.85), ('7', 91.79), ('8', 90.37), ('9', 91.1), ('10', 89.52)])), ('3', OrderedDict([('3', 95.58), ('4', 95.2), ('5', 94.76), ('6', 93.71), ('7', 93.24), ('8', 92.76), ('9', 92.18), ('10', 90.87)])), ('4', OrderedDict([('4', 95.06), ('5', 94.77), ('6', 94.04), ('7', 92.8), ('8', 91.91), ('9', 90.67), ('10', 88.89)])), ('5', OrderedDict([('5', 94.17), ('6', 93.62), ('7', 92.73), ('8', 91.62), ('9', 90.68), ('10', 89.38)])), ('6', OrderedDict([('6', 92.64), ('7', 92.13), ('8', 90.66), ('9', 90.82), ('10', 89.8)])), ('7', OrderedDict([('7', 91.44), ('8', 89.8), ('9', 88.88), ('10', 88.1)])), ('8', OrderedDict([('8', 90.9), ('9', 89.13), ('10', 85.13)])), ('9', OrderedDict([('9', 89.4), ('10', 87.86)])), ('10', OrderedDict([('10', 88.78)]))])
+Task 1 average acc: 98.1
+Task 2 average acc: 96.87
+Task 3 average acc: 95.68333333333334
+Task 4 average acc: 94.75
+Task 5 average acc: 94.23400000000001
+Task 6 average acc: 92.94333333333333
+Task 7 average acc: 91.6214285714286
+Task 8 average acc: 90.62374999999999
+Task 9 average acc: 90.01888888888888
+Task 10 average acc: 88.03999999999999
+===Summary of experiment repeats: 9 / 10 ===
+The regularization coefficient: 250.0
+The last avg acc of all repeats: [87.795 85.399 87.022 88.874 86.868 87.111 88.541 88.455 88.04   0.   ]
+mean: 78.8105 std: 26.288080063975762
+MLP2(
+  (linear): Sequential(
+    (0): Linear(in_features=784, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=512, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): ReLU()
+  )
+  (last): ModuleDict(
+    (All): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+#parameter of model: 1462538
+Task order: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+============================== Task: 1 ==============================
+#reg_term: 0
+Epoch:0
+LR: 0.0001
+* TRAIN - Accuracy 88.480 Loss 0.4376
+* VALID - Accuracy 93.800 Loss 0.2043
+Epoch:1
+LR: 0.0001
+* TRAIN - Accuracy 95.078 Loss 0.1672
+* VALID - Accuracy 96.010 Loss 0.1337
+Epoch:2
+LR: 0.0001
+* TRAIN - Accuracy 96.587 Loss 0.1146
+* VALID - Accuracy 96.740 Loss 0.1063
+Epoch:3
+LR: 0.0001
+* TRAIN - Accuracy 97.478 Loss 0.0838
+* VALID - Accuracy 97.230 Loss 0.0884
+Epoch:4
+LR: 0.0001
+* TRAIN - Accuracy 98.078 Loss 0.0642
+* VALID - Accuracy 97.460 Loss 0.0814
+Epoch:5
+LR: 0.0001
+* TRAIN - Accuracy 98.543 Loss 0.0501
+* VALID - Accuracy 97.720 Loss 0.0713
+Epoch:6
+LR: 0.0001
+* TRAIN - Accuracy 98.873 Loss 0.0380
+* VALID - Accuracy 97.760 Loss 0.0693
+Epoch:7
+LR: 0.0001
+* TRAIN - Accuracy 99.107 Loss 0.0305
+* VALID - Accuracy 98.080 Loss 0.0666
+Epoch:8
+LR: 0.0001
+* TRAIN - Accuracy 99.282 Loss 0.0240
+* VALID - Accuracy 97.970 Loss 0.0645
+Epoch:9
+LR: 0.0001
+* TRAIN - Accuracy 99.517 Loss 0.0176
+* VALID - Accuracy 98.080 Loss 0.0652
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 98.080 Loss 0.0652
+============================== Task: 2 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.268 Loss 0.5942
+* VALID - Accuracy 91.140 Loss 0.2874
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 92.307 Loss 0.2626
+* VALID - Accuracy 93.230 Loss 0.2276
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.903 Loss 0.2152
+* VALID - Accuracy 94.250 Loss 0.1986
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.845 Loss 0.1882
+* VALID - Accuracy 94.800 Loss 0.1813
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 95.458 Loss 0.1696
+* VALID - Accuracy 95.270 Loss 0.1689
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.958 Loss 0.1551
+* VALID - Accuracy 95.680 Loss 0.1577
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 96.367 Loss 0.1437
+* VALID - Accuracy 95.870 Loss 0.1494
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 96.668 Loss 0.1343
+* VALID - Accuracy 95.990 Loss 0.1435
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 96.955 Loss 0.1259
+* VALID - Accuracy 96.310 Loss 0.1390
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 97.188 Loss 0.1191
+* VALID - Accuracy 96.310 Loss 0.1351
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 97.750 Loss 0.0809
+validation split name: 2
+* VALID - Accuracy 96.310 Loss 0.1158
+============================== Task: 3 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.757 Loss 0.7036
+* VALID - Accuracy 90.370 Loss 0.3635
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.515 Loss 0.3303
+* VALID - Accuracy 92.360 Loss 0.3027
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 93.130 Loss 0.2839
+* VALID - Accuracy 93.300 Loss 0.2749
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 94.057 Loss 0.2585
+* VALID - Accuracy 93.800 Loss 0.2569
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 94.653 Loss 0.2411
+* VALID - Accuracy 94.270 Loss 0.2434
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 95.132 Loss 0.2282
+* VALID - Accuracy 94.690 Loss 0.2343
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 95.458 Loss 0.2180
+* VALID - Accuracy 95.060 Loss 0.2262
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 95.772 Loss 0.2094
+* VALID - Accuracy 95.150 Loss 0.2211
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 95.997 Loss 0.2025
+* VALID - Accuracy 95.320 Loss 0.2175
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 96.217 Loss 0.1969
+* VALID - Accuracy 95.410 Loss 0.2143
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 96.120 Loss 0.1244
+validation split name: 2
+* VALID - Accuracy 96.010 Loss 0.1258
+validation split name: 3
+* VALID - Accuracy 95.410 Loss 0.1507
+============================== Task: 4 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 80.613 Loss 0.7269
+* VALID - Accuracy 89.920 Loss 0.4101
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 91.068 Loss 0.3817
+* VALID - Accuracy 91.900 Loss 0.3523
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.632 Loss 0.3405
+* VALID - Accuracy 92.730 Loss 0.3303
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 93.388 Loss 0.3184
+* VALID - Accuracy 93.390 Loss 0.3158
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.920 Loss 0.3037
+* VALID - Accuracy 93.800 Loss 0.3052
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 94.325 Loss 0.2934
+* VALID - Accuracy 94.100 Loss 0.2986
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 94.640 Loss 0.2853
+* VALID - Accuracy 94.180 Loss 0.2936
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 94.872 Loss 0.2794
+* VALID - Accuracy 94.430 Loss 0.2888
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 95.063 Loss 0.2743
+* VALID - Accuracy 94.590 Loss 0.2853
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 95.228 Loss 0.2703
+* VALID - Accuracy 94.670 Loss 0.2823
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 93.820 Loss 0.2141
+validation split name: 2
+* VALID - Accuracy 95.820 Loss 0.1337
+validation split name: 3
+* VALID - Accuracy 94.640 Loss 0.1748
+validation split name: 4
+* VALID - Accuracy 94.670 Loss 0.1766
+============================== Task: 5 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.617 Loss 0.6593
+* VALID - Accuracy 90.010 Loss 0.4281
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 90.870 Loss 0.4092
+* VALID - Accuracy 91.930 Loss 0.3843
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 92.063 Loss 0.3784
+* VALID - Accuracy 92.600 Loss 0.3659
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 92.685 Loss 0.3619
+* VALID - Accuracy 92.890 Loss 0.3577
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 93.068 Loss 0.3523
+* VALID - Accuracy 93.240 Loss 0.3508
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 93.360 Loss 0.3454
+* VALID - Accuracy 93.410 Loss 0.3459
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 93.525 Loss 0.3402
+* VALID - Accuracy 93.570 Loss 0.3438
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 93.773 Loss 0.3362
+* VALID - Accuracy 93.790 Loss 0.3430
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 93.915 Loss 0.3332
+* VALID - Accuracy 93.970 Loss 0.3370
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 94.010 Loss 0.3307
+* VALID - Accuracy 93.890 Loss 0.3355
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 90.630 Loss 0.3261
+validation split name: 2
+* VALID - Accuracy 95.270 Loss 0.1461
+validation split name: 3
+* VALID - Accuracy 94.580 Loss 0.1796
+validation split name: 4
+* VALID - Accuracy 93.980 Loss 0.1967
+validation split name: 5
+* VALID - Accuracy 93.890 Loss 0.2042
+============================== Task: 6 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 81.463 Loss 0.7506
+* VALID - Accuracy 89.410 Loss 0.4931
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 89.832 Loss 0.4764
+* VALID - Accuracy 90.910 Loss 0.4470
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 90.960 Loss 0.4464
+* VALID - Accuracy 91.550 Loss 0.4334
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 91.623 Loss 0.4314
+* VALID - Accuracy 91.840 Loss 0.4248
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 91.963 Loss 0.4233
+* VALID - Accuracy 92.030 Loss 0.4198
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 92.217 Loss 0.4174
+* VALID - Accuracy 92.400 Loss 0.4194
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 92.432 Loss 0.4130
+* VALID - Accuracy 92.390 Loss 0.4140
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 92.588 Loss 0.4100
+* VALID - Accuracy 92.380 Loss 0.4123
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 92.685 Loss 0.4078
+* VALID - Accuracy 92.630 Loss 0.4078
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 92.795 Loss 0.4062
+* VALID - Accuracy 92.720 Loss 0.4080
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 88.550 Loss 0.3788
+validation split name: 2
+* VALID - Accuracy 94.830 Loss 0.1596
+validation split name: 3
+* VALID - Accuracy 92.990 Loss 0.2122
+validation split name: 4
+* VALID - Accuracy 92.840 Loss 0.2297
+validation split name: 5
+* VALID - Accuracy 92.860 Loss 0.2296
+validation split name: 6
+* VALID - Accuracy 92.720 Loss 0.2434
+============================== Task: 7 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.432 Loss 0.7129
+* VALID - Accuracy 89.110 Loss 0.5155
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 89.362 Loss 0.5183
+* VALID - Accuracy 90.520 Loss 0.4854
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 90.235 Loss 0.4965
+* VALID - Accuracy 90.960 Loss 0.4749
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 90.690 Loss 0.4864
+* VALID - Accuracy 91.320 Loss 0.4681
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 90.985 Loss 0.4811
+* VALID - Accuracy 91.560 Loss 0.4640
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 91.157 Loss 0.4777
+* VALID - Accuracy 91.570 Loss 0.4628
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 91.202 Loss 0.4754
+* VALID - Accuracy 91.760 Loss 0.4607
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 91.313 Loss 0.4738
+* VALID - Accuracy 91.700 Loss 0.4616
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 91.453 Loss 0.4720
+* VALID - Accuracy 91.790 Loss 0.4592
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 91.493 Loss 0.4713
+* VALID - Accuracy 91.870 Loss 0.4579
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 84.840 Loss 0.5457
+validation split name: 2
+* VALID - Accuracy 94.630 Loss 0.1732
+validation split name: 3
+* VALID - Accuracy 93.350 Loss 0.2066
+validation split name: 4
+* VALID - Accuracy 92.550 Loss 0.2294
+validation split name: 5
+* VALID - Accuracy 92.870 Loss 0.2283
+validation split name: 6
+* VALID - Accuracy 91.580 Loss 0.2701
+validation split name: 7
+* VALID - Accuracy 91.870 Loss 0.2689
+============================== Task: 8 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 82.112 Loss 0.7752
+* VALID - Accuracy 88.880 Loss 0.5674
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 88.900 Loss 0.5659
+* VALID - Accuracy 89.820 Loss 0.5394
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 89.732 Loss 0.5468
+* VALID - Accuracy 90.210 Loss 0.5298
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 90.023 Loss 0.5390
+* VALID - Accuracy 90.350 Loss 0.5256
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 90.265 Loss 0.5345
+* VALID - Accuracy 90.410 Loss 0.5234
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 90.328 Loss 0.5321
+* VALID - Accuracy 90.430 Loss 0.5231
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 90.410 Loss 0.5305
+* VALID - Accuracy 90.530 Loss 0.5256
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 90.508 Loss 0.5292
+* VALID - Accuracy 90.610 Loss 0.5188
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 90.500 Loss 0.5286
+* VALID - Accuracy 90.480 Loss 0.5235
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 90.607 Loss 0.5279
+* VALID - Accuracy 90.680 Loss 0.5191
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 82.030 Loss 0.6332
+validation split name: 2
+* VALID - Accuracy 93.590 Loss 0.1982
+validation split name: 3
+* VALID - Accuracy 91.440 Loss 0.2582
+validation split name: 4
+* VALID - Accuracy 90.580 Loss 0.2862
+validation split name: 5
+* VALID - Accuracy 90.850 Loss 0.2849
+validation split name: 6
+* VALID - Accuracy 90.940 Loss 0.2942
+validation split name: 7
+* VALID - Accuracy 90.900 Loss 0.2965
+validation split name: 8
+* VALID - Accuracy 90.680 Loss 0.3006
+============================== Task: 9 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 79.512 Loss 0.9131
+* VALID - Accuracy 86.940 Loss 0.6718
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 87.047 Loss 0.6784
+* VALID - Accuracy 88.200 Loss 0.6430
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 87.843 Loss 0.6592
+* VALID - Accuracy 88.660 Loss 0.6335
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 88.290 Loss 0.6512
+* VALID - Accuracy 88.870 Loss 0.6297
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 88.433 Loss 0.6477
+* VALID - Accuracy 88.880 Loss 0.6272
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 88.595 Loss 0.6456
+* VALID - Accuracy 88.840 Loss 0.6273
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 88.685 Loss 0.6439
+* VALID - Accuracy 89.070 Loss 0.6247
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 88.637 Loss 0.6437
+* VALID - Accuracy 89.210 Loss 0.6239
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 88.762 Loss 0.6428
+* VALID - Accuracy 89.150 Loss 0.6243
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 88.810 Loss 0.6422
+* VALID - Accuracy 88.830 Loss 0.6236
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 77.430 Loss 0.8115
+validation split name: 2
+* VALID - Accuracy 93.150 Loss 0.2104
+validation split name: 3
+* VALID - Accuracy 89.920 Loss 0.2992
+validation split name: 4
+* VALID - Accuracy 88.290 Loss 0.3529
+validation split name: 5
+* VALID - Accuracy 89.040 Loss 0.3214
+validation split name: 6
+* VALID - Accuracy 89.470 Loss 0.3256
+validation split name: 7
+* VALID - Accuracy 90.310 Loss 0.3103
+validation split name: 8
+* VALID - Accuracy 89.900 Loss 0.3220
+validation split name: 9
+* VALID - Accuracy 88.830 Loss 0.3482
+============================== Task: 10 ==============================
+#reg_term: 1
+Epoch:0
+LR: 1e-05
+* TRAIN - Accuracy 79.935 Loss 0.8699
+* VALID - Accuracy 87.090 Loss 0.6790
+Epoch:1
+LR: 1e-05
+* TRAIN - Accuracy 86.498 Loss 0.6913
+* VALID - Accuracy 87.910 Loss 0.6602
+Epoch:2
+LR: 1e-05
+* TRAIN - Accuracy 87.118 Loss 0.6789
+* VALID - Accuracy 88.340 Loss 0.6527
+Epoch:3
+LR: 1e-05
+* TRAIN - Accuracy 87.315 Loss 0.6734
+* VALID - Accuracy 88.510 Loss 0.6496
+Epoch:4
+LR: 1e-05
+* TRAIN - Accuracy 87.543 Loss 0.6718
+* VALID - Accuracy 88.540 Loss 0.6518
+Epoch:5
+LR: 1e-05
+* TRAIN - Accuracy 87.603 Loss 0.6702
+* VALID - Accuracy 88.660 Loss 0.6477
+Epoch:6
+LR: 1e-05
+* TRAIN - Accuracy 87.763 Loss 0.6696
+* VALID - Accuracy 88.550 Loss 0.6484
+Epoch:7
+LR: 1e-05
+* TRAIN - Accuracy 87.700 Loss 0.6690
+* VALID - Accuracy 88.640 Loss 0.6478
+Epoch:8
+LR: 1e-05
+* TRAIN - Accuracy 87.757 Loss 0.6689
+* VALID - Accuracy 88.630 Loss 0.6476
+Epoch:9
+LR: 1e-05
+* TRAIN - Accuracy 87.848 Loss 0.6689
+* VALID - Accuracy 88.770 Loss 0.6479
+Computing EWC
+validation split name: 1
+* VALID - Accuracy 73.240 Loss 0.9500
+validation split name: 2
+* VALID - Accuracy 93.290 Loss 0.2090
+validation split name: 3
+* VALID - Accuracy 90.660 Loss 0.2755
+validation split name: 4
+* VALID - Accuracy 88.360 Loss 0.3532
+validation split name: 5
+* VALID - Accuracy 89.930 Loss 0.3087
+validation split name: 6
+* VALID - Accuracy 90.080 Loss 0.3188
+validation split name: 7
+* VALID - Accuracy 89.870 Loss 0.3341
+validation split name: 8
+* VALID - Accuracy 89.740 Loss 0.3396
+validation split name: 9
+* VALID - Accuracy 88.480 Loss 0.3677
+validation split name: 10
+* VALID - Accuracy 88.770 Loss 0.3758
+OrderedDict([('1', OrderedDict([('1', 98.08), ('2', 97.75), ('3', 96.12), ('4', 93.82), ('5', 90.63), ('6', 88.55), ('7', 84.84), ('8', 82.03), ('9', 77.43), ('10', 73.24)])), ('2', OrderedDict([('2', 96.31), ('3', 96.01), ('4', 95.82), ('5', 95.27), ('6', 94.83), ('7', 94.63), ('8', 93.59), ('9', 93.15), ('10', 93.29)])), ('3', OrderedDict([('3', 95.41), ('4', 94.64), ('5', 94.58), ('6', 92.99), ('7', 93.35), ('8', 91.44), ('9', 89.92), ('10', 90.66)])), ('4', OrderedDict([('4', 94.67), ('5', 93.98), ('6', 92.84), ('7', 92.55), ('8', 90.58), ('9', 88.29), ('10', 88.36)])), ('5', OrderedDict([('5', 93.89), ('6', 92.86), ('7', 92.87), ('8', 90.85), ('9', 89.04), ('10', 89.93)])), ('6', OrderedDict([('6', 92.72), ('7', 91.58), ('8', 90.94), ('9', 89.47), ('10', 90.08)])), ('7', OrderedDict([('7', 91.87), ('8', 90.9), ('9', 90.31), ('10', 89.87)])), ('8', OrderedDict([('8', 90.68), ('9', 89.9), ('10', 89.74)])), ('9', OrderedDict([('9', 88.83), ('10', 88.48)])), ('10', OrderedDict([('10', 88.77)]))])
+Task 1 average acc: 98.08
+Task 2 average acc: 97.03
+Task 3 average acc: 95.84666666666665
+Task 4 average acc: 94.7375
+Task 5 average acc: 93.66999999999999
+Task 6 average acc: 92.46500000000002
+Task 7 average acc: 91.67
+Task 8 average acc: 90.12625
+Task 9 average acc: 88.48222222222223
+Task 10 average acc: 88.242
+===Summary of experiment repeats: 10 / 10 ===
+The regularization coefficient: 250.0
+The last avg acc of all repeats: [87.795 85.399 87.022 88.874 86.868 87.111 88.541 88.455 88.04  88.242]
+mean: 87.6347 std: 0.9911992786518751
+reg_coef: 250.0 mean: 87.6347 std: 0.9911992786518751
