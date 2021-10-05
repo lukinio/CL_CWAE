@@ -2,9 +2,21 @@
 ## How to run
 The scripts for reproducing the results of this paper are under the scripts folder.
 
-- Example: Run all algorithms in the all scenarios with split MNIST.
+- Run all algorithms in the all scenarios with split MNIST.
 ```bash
 ./scripts/mlp2/split_MNIST_CW_TaLaR.sh 0
+# The last number is gpuid
+# Outputs will be saved in ./outputs
+```
+- Run all algorithms in the IDL scenario with permuted MNIST.
+```bash
+./scripts/mlp2/permuted_MNIST_CW_TaLaR.sh 0
+# The last number is gpuid
+# Outputs will be saved in ./outputs
+```
+- Run all algorithms in the all scenarios with split CIFAR.
+```bash
+./scripts/cnn/split_CIFAR10_CW_TaLaR.sh 0
 # The last number is gpuid
 # Outputs will be saved in ./outputs
 ```
