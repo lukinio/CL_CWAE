@@ -67,14 +67,17 @@ def plot_avg_acc(path, setting, files, fig_name, runs, task, title=""):
 
 
 if __name__ == '__main__':
-    path = "cnn/split_CIFAR10/"
+    # path = "cnn/split_CIFAR10/"
     # path = "mlp2/split_MNIST/"
-    # path = "mlp2/permuted_MNIST/"
+    path = "split_CIFAR10_resnet50_baseline/"
+    files = ("CW_TaLaR", "CW_TaLaR_enc", "SI", "MAS", "L2", "EWC", "EWC_online")
+    files = ("cw_talar_Adam_best", "cw_talar_SDG_best")
     files = ("CW_TaLaR", "SI", "MAS", "L2", "EWC", "EWC_online")
-    setting = "IC_"
-    runs, task, epoch = 10, 5, 12
+    # files = ("SI", "MAS", "L2", "EWC", "EWC_online")
+    setting = "ID_"
+    runs, task, epoch = 3, 5, 12
 
     # plot_learn(path, setting, files, "", runs, task, epoch)
-    plot_avg_acc(path, setting, files, "cnn", runs, task)
+    plot_avg_acc(path, setting, files, "resnet", runs, task)
 
 

@@ -14,13 +14,24 @@ The scripts for reproducing the results of this paper are under the scripts fold
 # The last number is gpuid
 # Outputs will be saved in ./outputs
 ```
-- Run all algorithms in the all scenarios with split CIFAR.
+- Run all algorithms in the all scenarios with split CIFAR-10.
 ```bash
-./scripts/cnn/split_CIFAR10_CW_TaLaR.sh 0
+./scripts/cnn/split_CIFAR10_cw_talar.sh 0
 # The last number is gpuid
 # Outputs will be saved in ./outputs
 ```
-
+- Run all algorithms in the all scenarios with split CIFAR-100 with 5 tasks
+```bash
+./scripts/cnn/split_CIFAR100_5t_cw_talar.sh 0
+# The last number is gpuid
+# Outputs will be saved in ./outputs
+```
+- Run all algorithms in the all scenarios with split CIFAR-100 with 20 tasks
+```bash
+./scripts/cnn/split_CIFAR100_20t_cw_talar.sh 0
+# The last number is gpuid
+# Outputs will be saved in ./outputs
+```
 
 # Continual-Learning-Benchmark
 Evaluate three types of task shifting with popular continual learning algorithms.

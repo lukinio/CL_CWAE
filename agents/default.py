@@ -39,7 +39,7 @@ class NormalNN(nn.Module):
         self.valid_out_dim = 'ALL'
 
     def init_optimizer(self):
-        optimizer_arg = {'params': self.model.parameters(),
+        optimizer_arg = {'params': (param for param in self.model.parameters() if param.requires_grad),
                          'lr': self.config['lr'],
                          'weight_decay': self.config['weight_decay']}
         if self.config['optimizer'] in ['SGD', 'RMSprop']:
@@ -84,8 +84,17 @@ class NormalNN(nn.Module):
             print('=> Load model weights:', cfg['model_weights'])
             model_state = torch.load(cfg['model_weights'],
                                      map_location=lambda storage, loc: storage)  # Load to CPU.
-            model.load_state_dict(model_state)
+            # self.load_my_state_dict(model_state)
+            model.load_state_dict(model_state, False)
             print('=> Load Done')
+        if cfg['freeze_model']:
+            for name, param in model.named_parameters():
+                if 'last' in name or 'fc1' in name:
+                    param.requires_grad = True
+                else:
+                    param.requires_grad = False
+                print(f"{name} - {param.requires_grad}")
+            print("=> Freeze model without last fully connected layers")
         return model
 
     def forward(self, x):
@@ -185,8 +194,6 @@ class NormalNN(nn.Module):
                     targets = targets.cuda()
 
                 loss, outputs = self.update_model(inputs, targets, task)
-                inputs = inputs.detach()
-                targets = targets.detach()
 
                 # measure accuracy and record loss
                 acc = accumulate_acc(outputs, targets, task, acc)

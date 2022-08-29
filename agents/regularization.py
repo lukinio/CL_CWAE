@@ -51,6 +51,8 @@ class L2(NormalNN):
         else:
             # Use a new slot to store the task-specific information
             self.regularization_terms[self.task_count] = {'importance':importance, 'task_param':task_param}
+            # if not self.online_reg and self.task_count >= 2:
+            #     del self.regularization_terms[self.task_count - 1]
 
     def criterion(self, inputs, targets, tasks, regularization=True, **kwargs):
         loss = super(L2, self).criterion(inputs, targets, tasks, **kwargs)
@@ -147,7 +149,6 @@ class EWC(L2):
                     p += ((self.params[n].grad ** 2) * len(input) / len(dataloader))
 
         self.train(mode=mode)
-
         return importance
 
 

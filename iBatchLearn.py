@@ -12,6 +12,7 @@ import dataloaders.base
 from dataloaders.datasetGen import SplitGen, PermutedGen
 import agents
 import wandb
+import gc
 
 
 def exp_name(runs_dir: Path, run_name: str, tag: str = "", rep: str = "", reg_coef: int = 0):
@@ -46,6 +47,8 @@ def run(args, rep=1):
                     'reg_coef_2': args.reg_coef_2,
                     'reset_optimizer': args.reset_optimizer,
                     'cwae_online': args.cwae_online,
+                    'freeze_model': args.freeze_model,
+                    'mode': args.mode,
                     }
     agent = agents.__dict__[args.agent_type].__dict__[args.agent_name](agent_config)
     print(agent.model)
@@ -100,16 +103,26 @@ def run(args, rep=1):
             acc_table[train_name] = OrderedDict()
             for j in range(i+1):
                 val_name = task_names[j]
-                print('validation split name:', val_name)
+                # res = -1
                 if args.eval_on_train_set:
-                    loader = DataLoader(train_dataset_splits[val_name], batch_size=args.batch_size, shuffle=False,
+                    train_loader = DataLoader(train_dataset_splits[val_name], batch_size=args.batch_size, shuffle=False,
                                         num_workers=args.workers)
-                    agent.validation(loader)
+                    print('train split name:', val_name)
+                    res = agent.validation(train_loader)
+                else:
+                    print('validation split name:', val_name)
+                    val_loader = DataLoader(val_dataset_splits[val_name], batch_size=args.batch_size, shuffle=False, num_workers=args.workers)
+                    res = agent.validation(val_loader)
 
-                val_data = val_dataset_splits[val_name]
-                val_loader = DataLoader(val_data, batch_size=args.batch_size, shuffle=False, num_workers=args.workers)
-                acc_table[val_name][train_name] = agent.validation(val_loader)
+                acc_table[val_name][train_name] = res
 
+            del train_loader
+            del val_loader
+
+
+    del agent
+    gc.collect()
+    torch.cuda.empty_cache()
     return acc_table, task_names
 
 def get_args(argv):
@@ -136,6 +149,7 @@ def get_args(argv):
                         help="Avoid the dataset with a subset of classes doing the remapping. Ex: [2,5,6 ...] -> [0,1,2 ...]")
     parser.add_argument('--train_aug', dest='train_aug', default=False, action='store_true',
                         help="Allow data augmentation during training")
+    parser.add_argument('--mode', type=str, default="GENERATOR", help="ENCODER|GENERATOR")
     parser.add_argument('--rand_split', dest='rand_split', default=False, action='store_true',
                         help="Randomize the classes in splits")
     parser.add_argument('--rand_split_order', dest='rand_split_order', default=False, action='store_true',
@@ -150,6 +164,8 @@ def get_args(argv):
     parser.add_argument('--generator_epoch', type=int, default=2)
     parser.add_argument('--generator_lr', type=float, default=2)
     parser.add_argument('--latent_size', type=int, default=8)
+    parser.add_argument('--save_path', type=str, default='')
+    parser.add_argument('--freeze_model', dest='freeze_model', default=False, action='store_true')
     parser.add_argument('--model_weights', type=str, default=None,
                         help="The path to the file for the model weights (*.pth).")
     parser.add_argument('--reg_coef', nargs="+", type=float, default=[0.], help="The coefficient for regularization. Larger means less plasilicity. Give a list for hyperparameter search.")

@@ -82,3 +82,33 @@ class GeneratorCIFAR(nn.Module):
     def forward(self, input_latent: torch.Tensor):
         decoded_images = self.main(input_latent)
         return decoded_images
+
+
+class EncoderCIFAR(nn.Module):
+    def __init__(self, latent_size: int):
+        super().__init__()
+        self.__sequential_blocks = [
+            nn.Linear(256, 256),
+            nn.BatchNorm1d(256),
+            nn.ReLU(),
+            nn.Linear(256, 128),
+            nn.BatchNorm1d(128),
+            nn.ReLU(),
+            nn.Linear(128, 64),
+            nn.BatchNorm1d(64),
+            nn.Linear(64, latent_size),
+            # nn.ReLU()
+        ]
+        self.main = nn.Sequential(*self.__sequential_blocks)
+
+    def forward(self, input_latent: torch.Tensor):
+        decoded_images = self.main(input_latent)
+        return decoded_images
+
+
+if __name__ == '__main__':
+    model = EncoderCIFAR(64)
+    print(model)
+    x = torch.rand(128, 256)
+    o = model(x)
+    print(o.size())

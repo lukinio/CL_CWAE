@@ -31,6 +31,23 @@ class CWAE(NormalNN):
         self.generators[task_id] = self.create_generator()
         return self.generators[task_id]
 
+    def train_encoder(self, train_loader, generator, optimizer, scheduler):
+        self.log(f"{15 * '='} Train Encoder {15 * '='}")
+        losses = AverageMeter()
+        generator.train()
+        for epoch in range(self.config['generator_epoch']):
+            for y in train_loader:
+                y = y.cuda()
+                generator_loss = (cw.cw(generator(y)))
+                optimizer.zero_grad()
+                generator_loss.backward()
+                optimizer.step()
+                losses.update(generator_loss, y.size(0))
+
+            self.log(f"Epoch: {epoch+1}  |  loss: {losses.avg:.4f}")
+            scheduler.step()
+        generator.eval()
+
     def train_generator(self, train_loader, generator, optimizer, scheduler):
         self.log(f"{15 * '='} Train Generator {15 * '='}")
 
@@ -72,18 +89,29 @@ class CWAE(NormalNN):
             wandb.log({"z_actv": wandb.Histogram(actv_data.cpu())})
         actv_loader = DataLoader(actv_data, batch_size=self.config['batch_size'], shuffle=True)
 
-        # 3. train generator
+        # 3. train generator/encoder
         if self.cwae_online:
-            generator, optimizer, scheduler = self.get_generator(self.task_count+1)
+            generator, optimizer, scheduler = self.get_generator(self.task_count + 1)
         else:
             generator, optimizer, scheduler = self.get_generator(0)
 
-        self.train_generator(actv_loader, generator, optimizer, scheduler)
+        if self.config['mode'] == "GENERATOR":
+            self.train_generator(actv_loader, generator, optimizer, scheduler)
+        elif self.config['mode'] == "ENCODER":
+            self.train_encoder(actv_loader, generator, optimizer, scheduler)
+        else:
+            raise ValueError("Incorrect mode")
 
         # 4. Unfroze network
         self.train(mode=mode)
-        for p in self.model.parameters():
-            p.requires_grad = True
+        for name, param in self.model.named_parameters():
+            param.requires_grad = True
+            # if self.config['freeze_model']:
+            #     param.requires_grad = False
+            #     if 'last' in name or 'fc1' in name:
+            #         param.requires_grad = True
+            # else:
+            #     param.requires_grad = True
         self.task_count += 1
 
     def criterion(self, inputs, targets, tasks, regularization=True, z_actv=None, **kwargs):
@@ -98,13 +126,18 @@ class CWAE(NormalNN):
                 wandb.log({f"{mode}/batch/task#{self.task_count}/norm": norm})
 
         if regularization and self.task_count >= 1:
+            # print(f"z: {z_actv.size()}")
             v = torch.randn((z_actv.size(0), self.config['latent_size'])).cuda()
             # coeff = torch.as_tensor(self.config['reg_coef_2']).cuda() if self.config['reg_coef_2'] != 0 else None
             # cw_loss = torch.log(cw.cw_sampling_silverman(z_actv, self.generator(v)))
             cw_loss = 0
             for gen_id, (generator, _, _) in self.generators.items():
-                cw_loss += cw.cw_sampling_silverman(z_actv, generator(v)) / len(self.generators)
-            # cw_loss = cw.cw_sampling_silverman(z_actv, self.generator(v))
+                if self.config['mode'] == "GENERATOR":
+                    cw_loss += cw.cw_sampling_silverman(z_actv, generator(v)) / len(self.generators)
+                elif self.config['mode'] == "ENCODER":
+                    cw_loss += (cw.cw(generator(z_actv))) / len(self.generators)
+                else:
+                    raise ValueError("Incorrect mode")
             loss += self.config['reg_coef'] * cw_loss
             if self.wandb_is_on:
                 wandb.log({f"{mode}/batch/task#{self.task_count}/cw_loss": cw_loss})
@@ -150,6 +183,7 @@ class CWAE(NormalNN):
 
     def forward_once(self, x):
         z_actv = self.model.features(x)
+        # print(f"zactv: {z_actv.size()}")
         out = self.model.logits(z_actv)
         return z_actv, out
 
